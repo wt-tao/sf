@@ -1,0 +1,29 @@
+/* pages/research_list/Photograph_and_upload/Photograph_and_upload.wxss */
+.divs{
+  width: 100%;
+  background-color: white;
+  border-bottom: 1rpx solid #DDDDDD;
+}
+.title1{
+  height:90rpx;
+  line-height: 90rpx;
+  margin-left: 20rpx;
+  background-color: #F8F8F8;
+  border-bottom: 1rpx solid #EEEEEE;
+  
+}
+.photo{
+  width: 97.5%;
+  min-height: 250rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: 1rpx solid black; */
+}
+.photo_img{
+  height: 125rpx;
+  width: 125rpx;
+  background-color: #D3D3D3;
+  margin-top: 20rpx;
+  margin-left: 2.5%;
+}

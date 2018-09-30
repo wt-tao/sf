@@ -1,0 +1,448 @@
+<!--pages/research_list/hemorrhage_event/hemorrhage_event.wxml-->
+<view class='title'>
+    <image src='../../../img/xz-2-kb-7.png' style='width:50rpx;margin-top:30rpx;margin-left:20rpx;' mode='widthFix'/>
+    <view style='line-height:100rpx;margin-left:10rpx;font-size:30rpx;'>请认真填写并完善以下资料</view>
+    <image src='../../../img/yjjx-5-kb-2.png' style='width:40rpx;margin-top:40rpx;margin-left:260rpx;' mode='widthFix' hidden='{{s1}}' bindtap='sec'/>
+</view>
+
+<view hidden='{{s2}}'>
+<view class='conm direction' style='margin-top:30rpx;'>
+    <view class='name'>项目期间是否发生出血事件?</view>
+    <image src='{{s3==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5.png"}}' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix'  bindtap='fly'/>
+    <view style='margin-left:20rpx;'>是</view>
+
+    <image src='{{s3==true?"../../../img/yjjx-5.png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix'  bindtap='fly'/>
+    <view style='margin-left:20rpx;'>否</view>
+</view>
+<view class='tips'>
+    <view class='name' style='color: #D22626;'>提示:若“是”，请填写下表</view>
+</view>
+
+<view class='div'>
+    <view class='list'>
+      <view class='name'>症状:</view>
+    </view>
+     <view class='list direction'>
+      <view class='name'>发生时间:</view>
+       <view class='inp'>{{date}}</view>
+       <picker mode="date" bindchange='bindDateChange' value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+    </view>
+    <view class='list direction'>
+        <view class='list_list' wx:for='{{degree}}'>
+              <view style='margin-left:20rpx;'>{{item.name}}</view>
+              <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  bindtap='de' id='{{item.id}}'/>
+        </view>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>回生使用情况:</view>
+    </view>
+     <view class='list'>
+        <input class='name'></input>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>抗凝药使用情况:</view>
+    </view>
+     <view class='list'>
+        <input class='name'></input>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list'>
+      <view class='name'>症状:</view>
+    </view>
+     <view class='list direction'>
+      <view class='name'>发生时间:</view>
+       <view class='inp'>{{date1}}</view>
+       <picker mode="date" bindchange='bindDate1Change' value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+    </view>
+    <view class='list direction'>
+        <view class='list_list' wx:for='{{degree}}'>
+              <view style='margin-left:20rpx;'>{{item.name}}</view>
+              <image src='{{item.id==ids1?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  bindtap='de1' id='{{item.id}}'/>
+        </view>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>回生使用情况:</view>
+    </view>
+     <view class='list'>
+        <input class='name'></input>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>抗凝药使用情况:</view>
+    </view>
+     <view class='list'>
+        <input class='name'></input>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list'>
+      <view class='name'>症状:</view>
+    </view>
+     <view class='list direction'>
+      <view class='name'>发生时间:</view>
+       <view class='inp'>{{date2}}</view>
+       <picker mode="date" bindchange='bindDate2Change' value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+    </view>
+    <view class='list direction'>
+        <view class='list_list' wx:for='{{degree}}'>
+              <view style='margin-left:20rpx;'>{{item.name}}</view>
+              <image src='{{item.id==ids2?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  bindtap='de2' id='{{item.id}}'/>
+        </view>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>回生使用情况:</view>
+    </view>
+     <view class='list'>
+        <input class='name'></input>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>抗凝药使用情况:</view>
+    </view>
+     <view class='list'>
+        <input class='name'></input>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list' style='border:none'>
+        <view class='name'>对出血事件的处理:</view>
+    </view>
+     <view class='list direction'>
+        <view class='list_list' style='width：25%;border:none;font-size:24rpx;' wx:for='{{handle}}'>
+              <view style='margin-left:20rpx;'>{{item.name}}</view>
+              <image src='{{item.id==cls?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  bindtap='cl' id='{{item.id}}'/>
+        </view>
+    </view>
+    <view class='list' style='border:none'>
+        <view class='name'>对所观察干预药品采取的措施:</view>
+    </view>
+     <view class='list direction'>
+        <view class='list_list' style='width：25%;border:none;font-size:24rpx;' wx:for='{{measures}}'>
+              <view style='margin-left:20rpx;'>{{item.name}}</view>
+              <image src='{{item.id==css?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  bindtap='cs' id='{{item.id}}'/>
+        </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list'>
+        <view class='name' style='background-color: #F8F8F8;'>其他不良反应①:</view>
+    </view>
+    <view class='list direction'>
+        <view class='name'>不良反应表现:</view>
+        <input class='inputs'></input>
+    </view>
+    <view class='list direction'>
+        <view class='name'>出现日期:</view>
+        <view class='inpt'  >{{dates1}}</view>
+        <picker mode="date" bindchange='bindDates1Change' value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:70rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理方式:</view>
+        <input class='inputs'></input>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理结果:</view>
+        <input class='inputs'></input>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list'>
+        <view class='name' style='background-color: #F8F8F8;'>其他不良反应②:</view>
+    </view>
+    <view class='list direction'>
+        <view class='name'>不良反应表现:</view>
+        <input class='inputs'></input>
+    </view>
+    <view class='list direction'>
+        <view class='name'>出现日期:</view>
+        <view class='inpt'  >{{dates2}}</view>
+        <picker mode="date" bindchange='bindDates2Change' value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:70rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理方式:</view>
+        <input class='inputs'></input>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理结果:</view>
+        <input class='inputs'></input>
+    </view>
+</view>
+
+
+<view class='div'>
+    <view class='list'>
+        <view class='name' style='background-color: #F8F8F8;'>其他不良反应③:</view>
+    </view>
+    <view class='list direction'>
+        <view class='name'>不良反应表现:</view>
+        <input class='inputs'></input>
+    </view>
+    <view class='list direction'>
+        <view class='name'>出现日期:</view>
+        <view class='inpt'  >{{dates3}}</view>
+        <picker mode="date" bindchange='bindDates3Change' value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:70rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理方式:</view>
+        <input class='inputs'></input>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理结果:</view>
+        <input class='inputs'></input>
+    </view>
+</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+<view hidden='{{s1}}'>
+<view class='conm direction' style='margin-top:30rpx;'>
+    <view class='name'>项目期间是否发生出血事件?</view>
+    <image src='{{s3==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5.png"}}' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix'  />
+    <view style='margin-left:20rpx;'>是</view>
+
+    <image src='{{s3==true?"../../../img/yjjx-5.png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix'  />
+    <view style='margin-left:20rpx;'>否</view>
+</view>
+<view class='tips'>
+    <view class='name' style='color: #D22626;'>提示:若“是”，请填写下表</view>
+</view>
+
+<view class='div'>
+    <view class='list'>
+      <view class='name'>症状:</view>
+    </view>
+     <view class='list direction'>
+      <view class='name'>发生时间:</view>
+       <view class='inp'>{{date}}</view>
+       <view mode="date"  value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </view>
+    </view>
+    <view class='list direction'>
+        <view class='list_list' wx:for='{{degree}}'>
+              <view style='margin-left:20rpx;'>{{item.name}}</view>
+              <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  />
+        </view>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>回生使用情况:</view>
+    </view>
+     <view class='list'>
+        <view class='name'></view>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>抗凝药使用情况:</view>
+    </view>
+     <view class='list'>
+        <view class='name'></view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list'>
+      <view class='name'>症状:</view>
+    </view>
+     <view class='list direction'>
+      <view class='name'>发生时间:</view>
+       <view class='inp'>{{date1}}</view>
+       <view mode="date"  value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </view>
+    </view>
+    <view class='list direction'>
+        <view class='list_list' wx:for='{{degree}}'>
+              <view style='margin-left:20rpx;'>{{item.name}}</view>
+              <image src='{{item.id==ids1?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  />
+        </view>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>回生使用情况:</view>
+    </view>
+     <view class='list'>
+        <view class='name'></view>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>抗凝药使用情况:</view>
+    </view>
+     <view class='list'>
+        <view class='name'></view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list'>
+      <view class='name'>症状:</view>
+    </view>
+     <view class='list direction'>
+      <view class='name'>发生时间:</view>
+       <view class='inp'>{{date2}}</view>
+       <view mode="date"  value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </view>
+    </view>
+    <view class='list direction'>
+        <view class='list_list' wx:for='{{degree}}'>
+              <view style='margin-left:20rpx;'>{{item.name}}</view>
+              <image src='{{item.id==ids2?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  />
+        </view>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>回生使用情况:</view>
+    </view>
+     <view class='list'>
+        <view class='name'></view>
+    </view>
+     <view class='list' style='border:none'>
+        <view class='name'>抗凝药使用情况:</view>
+    </view>
+     <view class='list'>
+        <view class='name'></view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list' style='border:none'>
+        <view class='name'>对出血事件的处理:</view>
+    </view>
+     <view class='list direction'>
+        <view class='list_list' style='width：25%;border:none;font-size:24rpx;' wx:for='{{handle}}'>
+              <view style='margin-left:20rpx;'>{{item.name}}</view>
+              <image src='{{item.id==cls?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  />
+        </view>
+    </view>
+    <view class='list' style='border:none'>
+        <view class='name'>对所观察干预药品采取的措施:</view>
+    </view>
+     <view class='list direction'>
+        <view class='list_list' style='width：25%;border:none;font-size:24rpx;' wx:for='{{measures}}'>
+              <view style='margin-left:20rpx;'>{{item.name}}</view>
+              <image src='{{item.id==css?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:20rpx;' mode='widthFix' />
+        </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list'>
+        <view class='name' style='background-color: #F8F8F8;'>其他不良反应①:</view>
+    </view>
+    <view class='list direction'>
+        <view class='name'>不良反应表现:</view>
+        <view class='inputs'></view>
+    </view>
+    <view class='list direction'>
+        <view class='name'>出现日期:</view>
+        <view class='inpt'  >{{dates1}}</view>
+        <view mode="date"  value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:70rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </view>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理方式:</view>
+        <view class='inputs'></view>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理结果:</view>
+        <view class='inputs'></view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list'>
+        <view class='name' style='background-color: #F8F8F8;'>其他不良反应②:</view>
+    </view>
+    <view class='list direction'>
+        <view class='name'>不良反应表现:</view>
+        <view class='inputs'></view>
+    </view>
+    <view class='list direction'>
+        <view class='name'>出现日期:</view>
+        <view class='inpt'  >{{dates2}}</view>
+        <view mode="date"   value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:70rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </view>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理方式:</view>
+        <view class='inputs'></view>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理结果:</view>
+        <view class='inputs'></view>
+    </view>
+</view>
+
+
+<view class='div'>
+    <view class='list'>
+        <view class='name' style='background-color: #F8F8F8;'>其他不良反应③:</view>
+    </view>
+    <view class='list direction'>
+        <view class='name'>不良反应表现:</view>
+        <view class='inputs'></view>
+    </view>
+    <view class='list direction'>
+        <view class='name'>出现日期:</view>
+        <view class='inpt'  >{{dates3}}</view>
+        <view mode="date"  value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:70rpx;margin-top:15rpx;' mode='widthFix'/>
+          </view>
+        </view>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理方式:</view>
+        <view class='inputs'></view>
+    </view>
+     <view class='list direction'>
+        <view class='name'>对症处理结果:</view>
+        <view class='inputs'></view>
+    </view>
+</view>
+</view>
+<view class='button' hidden='{{s2}}' bindtap='submin'>提交</view>

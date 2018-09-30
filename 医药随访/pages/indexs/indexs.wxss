@@ -1,0 +1,46 @@
+/* pages/indexs/indexs.wxss */
+.getuser{
+  width: 70%;
+  margin-left: 15%;
+  height: 600rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  position: relative;
+  z-index: 1002;
+  margin-top: -150%;
+}
+.text{
+  width: 100%;
+  height: 50rpx;
+  line-height: 150rpx;
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: 800;
+  z-index: 1002;
+  color: #404040;
+  /* border: 1rpx solid black; */
+}
+.imgs{
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 100rpx;
+  margin-left: 160rpx;
+  border-radius: 50%;
+  border: 1rpx solid #EEEEEE;
+  display: flex;
+  z-index: 1002;
+}
+.button{
+  width: 100%;
+  border-radius: 15rpx;
+  color: #EDEFF4;
+  font-size: 30rpx;
+  background-color: #013F91;
+}
+.texts{
+  width: 100%;
+  margin-top: 40rpx;
+  font-size: 26rpx;
+  color: #818181;
+  text-align: center;
+}

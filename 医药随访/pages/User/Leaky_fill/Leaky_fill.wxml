@@ -1,0 +1,17 @@
+<!--pages/User/Leaky_fill/Leaky_fill.wxml-->
+<view class='div'>
+    <view class='time'>3月1日 星期四 09：22：08</view>
+    <view class='botton row'>
+    <!-- 头像 -->
+        <view class='head_img'></view>
+        <view class='ciount'>您参与的随访项目<text style='color:#307ADA'>《凝血指标对非小细胞肺癌复发转移的影响及消鰴化瘀法干预效果的注册登录研究》</text>第一阶段未填写完整，请及时完善有积分赠送哦~！</view>
+    </view>
+</view>
+<view class='div'>
+    <view class='time'>3月1日 星期四 09：22：08</view>
+    <view class='botton row'>
+    <!-- 头像 -->
+        <view class='head_img'></view>
+        <view class='ciount'>您参与的随访项目<text style='color:#307ADA'>《凝血指标对非小细胞肺癌复发转移的影响及消鰴化瘀法干预效果的注册登录研究》</text>第一阶段未填写完整，请及时完善有积分赠送哦~！</view>
+    </view>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/Message_push/Message_push.wxml-->
+<view class='top'>
+    <view class='top_all'>全部</view>
+    <image src='../../img/xz-2.png' style='width:25rpx;margin-left:20rpx;margin-top:35rpx;' mode='widthFix'/>
+</view>
+<view style='height:80rpx;width:100%'></view>
+<view class='div'>
+    <view class='margin title'>胃癌的治疗手段有哪些？</view>
+    <view class='margin time'>2018-08-28</view>
+    <view class='margin img'></view>
+    <view class='margin text'>的说法阿道夫爱的风格阿法狗爱如风格翻滚吧阿尔泽风大过水电费的说法水电费扔ava如果二狗发阿尔阿道夫问 </view>
+    <view class='margin botton row'>
+        <view class='booton_an'>科普知识</view>
+        <view class='booton_an' style='margin-left:65%;color:#2573D8;border:none'>查看详细</view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='margin title'>胃癌的治疗手段有哪些？</view>
+    <view class='margin time'>2018-08-28</view>
+    <view class='margin img'></view>
+    <view class='margin text'>的说法阿道夫爱的风格阿法狗爱如风格翻滚吧阿尔泽风大过水电费的说法水电费扔ava如果二狗发阿尔阿道夫问 </view>
+    <view class='margin botton row'>
+        <view class='booton_an'>科普知识</view>
+        <view class='booton_an' style='margin-left:65%;color:#2573D8;border:none'>查看详细</view>
+    </view>
+</view>
+<view style='height:40rpx;width:100%'></view>

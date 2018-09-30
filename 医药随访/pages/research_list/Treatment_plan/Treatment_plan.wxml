@@ -1,0 +1,164 @@
+<!--pages/research_list/Treatment_plan/Treatment_plan.wxml-->
+<view class='title'>
+    <image src='../../../img/xz-2-kb-7.png' style='width:50rpx;margin-top:30rpx;margin-left:20rpx;' mode='widthFix'/>
+    <view style='line-height:100rpx;margin-left:10rpx;font-size:30rpx;'>请认真填写并完善以下资料</view>
+    <image src='../../../img/yjjx-5-kb-2.png' style='width:40rpx;margin-top:40rpx;margin-left:260rpx;' mode='widthFix' hidden='{{s1}}' bindtap='sec'/>
+</view>
+
+<view hidden='{{s2}}'>
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='name' style='color:#090909'>手术</view>
+    </view>
+    <view class='list' >
+        <view class='name' >日期：</view>
+         <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >方式：</view>
+        <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >疗程：</view>
+        <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >备注：</view>
+        <input class='input'></input>
+    </view>
+</view>
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='name' style='color:#090909'>化疗</view>
+    </view>
+   <view class='list' >
+        <view class='name' >日期：</view>
+         <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >方式：</view>
+        <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >疗程：</view>
+        <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >备注：</view>
+        <input class='input'></input>
+    </view>
+</view>
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='name' style='color:#090909'>放疗</view>
+    </view>
+   <view class='list' >
+        <view class='name' >日期：</view>
+         <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >方式：</view>
+        <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >疗程：</view>
+        <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >备注：</view>
+        <input class='input'></input>
+    </view>
+</view>
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='name' style='color:#090909'>其他治疗</view>
+    </view>
+    <view class='list' >
+        <view class='name' >日期：</view>
+         <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >方式：</view>
+        <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >疗程：</view>
+        <input class='input'></input>
+    </view>
+    <view class='list' >
+        <view class='name' >备注：</view>
+        <input class='input'></input>
+    </view>
+</view>
+</view>
+ <view hidden='{{s1}}'>
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='name' style='color:#090909'>手术</view>
+    </view>
+    <view class='list' >
+        <view class='name' >日期：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >方式：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >疗程：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >备注：</view>
+    </view>
+</view>
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='name' style='color:#090909'>化疗</view>
+    </view>
+    <view class='list' >
+        <view class='name' >日期：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >方式：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >疗程：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >备注：</view>
+    </view>
+</view>
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='name' style='color:#090909'>放疗</view>
+    </view>
+    <view class='list' >
+        <view class='name' >日期：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >方式：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >疗程：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >备注：</view>
+    </view>
+</view>
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='name' style='color:#090909'>其他治疗</view>
+    </view>
+    <view class='list' >
+        <view class='name' >日期：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >方式：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >疗程：</view>
+    </view>
+    <view class='list' >
+        <view class='name' >备注：</view>
+    </view>
+</view>
+</view>
+<view class='button' hidden='{{s2}}' bindtap='submin' style='margin-top:30rpx;'>提交</view>

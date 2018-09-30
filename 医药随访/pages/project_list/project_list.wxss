@@ -1,0 +1,63 @@
+/* pages/project_list/project_list.wxss */
+page{
+  background-color: #EBEBEB;
+}
+.list{
+  height: 270rpx;
+  width: 100%;
+}
+.list_div{
+background-color: white;
+height: 245rpx;
+display: flex;
+flex-direction: row;
+/* border: 1rpx solid black; */
+}
+.check{
+  width: 50rpx;
+  margin-left: 20rpx;
+  
+}
+.list_right{
+  margin-left: 15rpx;
+  height: 100%;
+  width: 85%;
+  /* border: 1rpx solid black; */
+}
+.list_title{
+  width: 100%;
+  font-size: 34rpx;
+  color: #4E4E4E;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  margin-top: 30rpx;
+}
+.id_card{
+  width: 100%;
+  /* border: 1rpx solid black; */
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+.list_right_id{
+  color: #9F9F9F;
+  font-size: 28rpx;
+  width: 80%;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+}
+.sure{
+  width: 100%;
+  background-color: #013F91;
+  color: white;
+  text-align: center;
+  line-height: 100rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+  position: fixed;
+  bottom: 0;
+}

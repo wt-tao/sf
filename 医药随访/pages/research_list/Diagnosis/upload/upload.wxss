@@ -1,0 +1,56 @@
+/* pages/research_list/Diagnosis/upload/upload.wxss */
+
+.top{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #F8F8F8;
+  border-bottom: #E7E7E7;
+  display: flex;
+  flex-direction: row;
+}
+.text{
+  color: #545454;
+  font-size: 32rpx;
+  margin-left: 20rpx;
+}
+.se{
+  font-size: 26rpx;
+  color: #6A6A6A;
+  margin-left: 10rpx;
+}
+.div{
+  width: 100%;
+  height: 350rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+.imgs{
+  width: 220rpx;
+  height: 220rpx;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  border: 1rpx solid #EDEDED;
+}
+.right{
+  width: 350rpx;
+  height: 250rpx;
+  margin-top: 40rpx;
+  /* border: 1rpx solid black; */
+  margin-left: 40rpx;
+}
+.top_texe{
+  font-size: 28rpx;
+  font-weight: 700;
+  line-height: 80rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.te{
+  color: #949494;
+  font-size: 26rpx;
+  line-height: 60rpx;
+}

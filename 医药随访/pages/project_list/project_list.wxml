@@ -1,0 +1,39 @@
+<!--pages/project_list/project_list.wxml-->
+<view class='list'>
+    <view class='list_div'>
+        <view class='check'>
+          <image src='../../img/121.png' style='width:45rpx;margin-left:2.5%;margin-top:30rpx;' mode='widthFix'></image>
+          <image src='../../img/yjjx-5_49 (1).png' style='width:45rpx;margin-left:2.5%;margin-top:30rpx;' mode='widthFix' wx:if='{{s1}}'></image>
+        </view>
+        <view class='list_right'>
+            <view class='list_title'>按时发的撒阿斯蒂芬是DF水电费SDF dSDF 都是分工的方式的发布的</view>
+            <view class='id_card'>
+               <view class='list_right_id'>临床研究注册号：DATF121231231234</view>
+               <image src='../../img/tc-159-kb-4.png' style='width:40rpx;margin-top:45rpx;margin-left:60rpx;' mode='widthFix'></image>
+            </view>
+        </view>
+    </view>
+  <view style='height:25rpx;width:100%'></view>
+</view>
+
+
+<view class='list'>
+    <view class='list_div'>
+        <view class='check'>
+          <image src='../../img/121.png' style='width:45rpx;margin-left:2.5%;margin-top:30rpx;' mode='widthFix'></image>
+          <image src='../../img/yjjx-5_49 (1).png' style='width:45rpx;margin-left:2.5%;margin-top:30rpx;' mode='widthFix' wx:if='{{s1}}'></image>
+        </view>
+        <view class='list_right'>
+            <view class='list_title'>按时发的撒阿斯蒂芬是DF水电费SDF dSDF 都是分工的方式的发布的</view>
+            <view class='id_card'>
+               <view class='list_right_id'>临床研究注册号：DATF121231231234</view>
+               <image src='../../img/tc-159-kb-4.png' style='width:40rpx;margin-top:45rpx;margin-left:60rpx;' mode='widthFix'></image>
+            </view>
+        </view>
+    </view>
+  <view style='height:25rpx;width:100%'></view>
+</view>
+<view style='width:100%;height:100rpx;'></view>
+<view class='sure' bindtap='sure'>确定</view>
+
+

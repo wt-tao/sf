@@ -1,0 +1,61 @@
+/* pages/research_list/research_list.wxss */
+
+.swiper-box{ 
+  height: 100%; 
+  width: 100%; 
+} 
+.top{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.top_coun{
+  width: 14.5%;
+  font-size: 30rpx;
+  color: #333333;
+  text-align: center;
+  height: 100rpx;
+  flex-wrap: wrap;
+  line-height: 50rpx;
+  border: 1rpx solid #E5E5E5;
+}
+.ls{
+  line-height: 100rpx;
+}
+.on{
+  background-color: #00C2A0;
+  color: white;
+  border: none
+}
+.title{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  color: #397CDA;
+  background-color: #F8F8F8;
+  border-bottom: 1rpx solid #ECECEC;
+}
+.list{
+  width: 100%;
+  background-color: white;
+  border-bottom: 1rpx solid #ECECEC;
+  color: #575757;
+  font-size: 30rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  display: flex;
+  flex-direction: row;
+}
+.left{
+  margin-left: 20rpx;
+  width: 60%;
+  /* border: 1rpx solid black; */
+}
+.zhong{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}

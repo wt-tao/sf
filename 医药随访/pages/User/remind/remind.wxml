@@ -1,0 +1,38 @@
+<!--pages/User/remind/remind.wxml-->
+
+<view class='list row'>
+    <image src='../../../img/yjjx-9_25 (3).png' style='width:60rpx;' mode='widthFix' class='img'></image>
+    <view class='text'>复诊周期提醒</view>
+    <view class='dian'></view>
+    <image src='../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:30rpx;margin-left:30rpx;' mode='widthFix'/>
+</view>
+<view class='list row'>
+    <image src='../../../img/yjjx-9_25 (1).png' style='width:60rpx;' mode='widthFix' class='img'></image>
+    <view class='text'>随访问卷填写提醒</view>
+    <view class='dian'></view>
+    <image src='../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:30rpx;margin-left:30rpx;' mode='widthFix'/>
+</view>
+<view class='list row' bindtap='Leaky_fill'>
+    <image src='../../../img/yjjx-9_25 (2).png' style='width:60rpx;' mode='widthFix' class='img'></image>
+    <view class='text'>漏填提醒</view>
+    <view class='dian'></view>
+    <image src='../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:30rpx;margin-left:30rpx;' mode='widthFix'/>
+</view>
+<view class='list row'>
+    <image src='../../../img/yjjx-9_25 (5).png' style='width:60rpx;' mode='widthFix' class='img'></image>
+    <view class='text'>奖励领取提醒</view>
+    <view class='dian'></view>
+    <image src='../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:30rpx;margin-left:30rpx;' mode='widthFix'/>
+</view>
+<view class='list row'>
+    <image src='../../../img/yjjx-9_25 (6).png' style='width:60rpx;' mode='widthFix' class='img'></image>
+    <view class='text'>中止随访提醒</view>
+    <view class='dian'></view>
+    <image src='../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:30rpx;margin-left:30rpx;' mode='widthFix'/>
+</view>
+<view class='list row'>
+    <image src='../../../img/yjjx-9_25 (4).png' style='width:60rpx;' mode='widthFix' class='img'></image>
+    <view class='text'>线下活动提醒</view>
+    <view class='dian'></view>
+    <image src='../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:30rpx;margin-left:30rpx;' mode='widthFix'/>
+</view>

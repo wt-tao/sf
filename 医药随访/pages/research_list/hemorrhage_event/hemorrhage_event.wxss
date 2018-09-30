@@ -1,0 +1,63 @@
+/* pages/research_list/hemorrhage_event/hemorrhage_event.wxss */
+page{
+  color: #333333;
+  font-size: 30rpx;
+}
+.conm{
+ height: 100rpx;
+  width: 100%;
+  background-color: white;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #DDDDDD;
+}
+
+.direction{
+  display: flex;
+  flex-direction: row;
+}
+.name{
+margin-left: 20rpx;
+color: #555555;
+}
+.tips{
+  width: 100%;
+  line-height: 100rpx;
+}
+
+.div{
+  width: 100%;
+  margin-top: 30rpx;
+  background-color: white;
+}
+.list{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #DDDDDD;
+}
+.inp{
+  width: 60%;
+  margin-left: 30rpx;
+}
+.picker{
+  width: 100%;
+  height: 80rpx;
+}
+.list_list{
+  width: 33.3%;
+  display: flex;
+  flex-direction: row;
+  border-right: 1rpx solid #DDDDDD;
+}
+.inpt{
+  width: 50%;
+  height: 80rpx;
+  /* border: 1rpx solid black; */
+  margin-left: 78rpx;
+}
+.inputs{
+  width: 50%;
+  height: 80rpx;
+  /* border: 1rpx solid black; */
+  margin-left: 20rpx;
+}

@@ -1,0 +1,177 @@
+<!--pages/Typical_case/Typical_case.wxml-->
+<view class='div' style='margin-top:0'>
+    <view class='list'>
+        <view class='name'>填写时间：</view>
+        <input class='input' placeholder='2018-09-08' placeholder-style='color:#979797;font-size:30rpx;'></input>
+    </view>
+    <view class='list'>
+        <view class='name'>片区</view>
+        <input class='input' ></input>
+    </view>
+    <view class='list'>
+        <view class='name'>小区</view>
+        <input class='input' ></input>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='names' style='font-weight: 700;'>典型病例基本信息</view>
+    </view>
+      <view class='list'>
+        <view class='name'>您的姓名</view>
+        <input class='input' ></input>
+    </view>
+    <view class='list'>
+        <view class='name'>您的年龄</view>
+        <input class='input' ></input>
+    </view>
+    <view class='list'>
+        <view class='name'>您的性别</view>
+         <image src='{{s1==true?"../../img/ty-9 (1).png":"../../img/ty-9 (2).png"}}' style='width:40rpx;margin-top:20rpx;margin-left:20rpx' mode='widthFix'  bindtap='fly'/>
+  <view style='margin-left:20rpx;'>男</view>
+
+  <image src='{{s1==true?"../../img/ty-9 (2).png":"../../img/ty-9 (1).png"}}' style='width:40rpx;margin-top:20rpx;margin-left:80rpx' mode='widthFix'  bindtap='fly'/>
+  <view style='margin-left:20rpx;'>女</view>
+    </view>
+     <view class='list'>
+        <view class='name'>本人联系方式</view>
+        <input class='input' ></input>
+    </view>
+    <view class='list'>
+       <picker bindchange="bindProvincerChange" value="{{pro}}" range="{{province}}" style='width:33%;'>
+        <view class='list_city'>
+            <view class='list_city_text'>{{province[pro]}}</view>
+            <image src='../../img/xz-2.png' style='width:20rpx;margin-top:40rpx;margin-left:10rpx;' mode='widthFix'></image>
+        </view>
+      </picker>
+       <picker bindchange="bindCityChange" value="{{citys}}" range="{{city}}" style='width:33%;'>
+        <view class='list_city'>
+            <view class='list_city_text'>{{city[citys]}}</view>
+            <image src='../../img/xz-2.png' style='width:20rpx;margin-top:40rpx;margin-left:10rpx;' mode='widthFix'></image>
+        </view>
+      </picker>
+        <picker bindchange="bindContryChange" value="{{con}}" range="{{contry}}" style='width:33%;'>
+        <view class='list_city'>
+            <view class='list_city_text'>{{contry[con]}}</view>
+            <image src='../../img/xz-2.png' style='width:20rpx;margin-top:40rpx;margin-left:10rpx;' mode='widthFix'></image>
+        </view>
+      </picker>
+    </view>
+    <view class='list'>
+        <view class='name' style='width:32%'>您的详细地址信息</view>
+        <input class='input' ></input>
+    </view>
+</view>
+
+<view class='div' >
+    <view class='list'>
+        <view class='name' style='width:30%'>主要联系人姓名</view>
+        <input class='input' ></input>
+    </view>
+    <view class='list'>
+        <view class='name'>关系</view>
+        <input class='input' ></input>
+    </view>
+    <view class='list'>
+        <view class='name'>联系方式</view>
+        <input class='input' ></input>
+    </view>
+</view>
+
+<view class='div' >
+    <view class='list'>
+        <view class='name'>病程诊断</view>
+        <input class='input' ></input>
+    </view>
+    <view class='list'>
+        <view class='name'>病程时长</view>
+        <input class='input' ></input>
+    </view>
+    <view class='list'>
+        <view class='name'>确诊医院</view>
+        <input class='input' ></input>
+    </view>
+     <view class='list'>
+        <view class='name'>其他合并疾病</view>
+        <input class='input' ></input>
+    </view>
+     <view class='list'>
+        <view class='name'>主要治疗方式</view>
+        <input class='input' ></input>
+    </view>
+    <view class='list' style='height:100rpx;line-height:50rpx;border:none'>
+        <view class='name' style='width:95%;flex-wrap: wrap;' >目前状况描述(如症状体征、检查指标、生存状态、生活质量等)</view>
+    </view>
+    <textarea class='textarea'></textarea>
+</view>
+
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='names' >主要药品使用情况(如回生、活力苏、地榆等品种)</view>
+    </view>
+     <view class='list' >
+        <view class='names' >1、开始使用日期:</view>
+    </view>
+    <view class='list' >
+        <picker  bindchange="bindYearsChange" value="{{years1}}" range="{{year}}" style='width:33.3%'>
+          <view class='picker'>
+            <view class='text'>{{year[years1]}}年</view>
+            <image src='../../../img/xz-2.png' style='width:25rpx;margin-top:35rpx;margin-left:15rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+        <picker  bindchange="bindMonthsChange" value="{{mon1}}" range="{{month}}" style='width:33.3%'>
+          <view class='picker'>
+            <view class='text'>{{month[mon1]}}月</view>
+            <image src='../../../img/xz-2.png' style='width:25rpx;margin-top:35rpx;margin-left:15rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+        <picker  bindchange="bindDaysChange" value="{{days1}}" range="{{day}}" style='width:33.3%'>
+          <view class='picker'>
+            <view class='text'>{{day[days1]}}日</view>
+            <image src='../../../img/xz-2.png' style='width:25rpx;margin-top:35rpx;margin-left:15rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+    </view>
+     <view class='list' style='border:none' >
+        <view class='names' >2、每日服用剂量:</view>
+    </view>
+    <textarea class='textarea' style='height:100rpx;border-bottom:1rpx solid #DDDDDD'></textarea>
+    <!-- 3 -->
+    <view class='list' style='border:none' >
+        <view class='names' >3、是否持续服用？:</view>
+    </view>
+    <view class='list' style='border:none' >
+         <image src='{{s4==true?"../../img/yjjx-5_49 (1).png":"../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:20rpx;margin-left:20rpx;' mode='widthFix' bindtap='s4'/>
+        <view class='names' >是，持续用药的时间:</view>
+    </view>
+      <textarea class='textarea' style='height:80rpx;'></textarea>
+        <view class='list' style='border:none' >
+         <image src='{{s4==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:20rpx;margin-left:20rpx;' mode='widthFix' bindtap='s4'/>
+        <view class='names' >否，间断或停止用药的原因:</view>
+    </view>
+      <textarea class='textarea' style='height:80rpx; border-bottom:1rpx solid #DDDDDD'></textarea>
+
+    <!-- 4 -->
+    <view class='list' style='border:none' >
+        <view class='names' >4、情况说明:</view>
+    </view>
+    <textarea class='textarea' style='height:150rpx;border-bottom:1rpx solid #DDDDDD'></textarea>
+</view>
+
+<view class='divs' style='margin-top:30rpx;min-height:450rpx;'>
+  <view class='title1'>附件上传</view>
+  <view style='line-height:80rpx;color:#8F8F8F;margin-left:20rpx;'>如病历(门诊或住院)资料、相关资料、其他说明资料等</view>
+  <view class='photo' >
+      <view class='photo_img' wx:for='{{tempFilePaths}}' wx:if='{{tempFilePaths!=""}}'>
+        <image src='{{item}}' style='width:100%;height:100%' mode='aspectFill'/>
+      </view>
+      <view class='photo_img' bindtap='img' wx:if='{{tempFilePaths.length<=8}}'>
+        <image src='../../../img/tc-154-kb.png' style='width:50rpx;margin-left:37.5rpx;margin-top:37rpx;' mode='widthFix'/>
+      </view>
+ 
+  </view>
+  <view style='height:20rpx;width:100%'></view>
+</view>
+
+<view class='button'  bindtap='submin'>提交</view>

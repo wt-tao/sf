@@ -1,0 +1,125 @@
+/* pages/User/integral/integral.wxss */
+.top{
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+  background-color: white;
+  color: #333333;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 25rpx;
+  border: 1rpx solid #FFE1C1;
+  background-color: #FFFDF3;
+  border-radius: 50%;
+  margin-left: 20rpx;
+}
+.imgs{
+  position: relative;
+  top:-15rpx;
+}
+.my_integral{
+  width: 50%;
+  margin-left: 20rpx;
+  font-size: 34rpx;
+}
+.right{
+  width: 200rpx;
+  font-size: 28rpx;
+}
+.tabber{
+  margin-top: 30rpx;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-bottom: 1rpx solid #E9E9E9;
+  color:#373737;
+  font-size: 30rpx;
+  background-color: white;
+}
+.tabber_list{
+  width: 50%;
+  border-right: 1rpx solid #E9E9E9;
+}
+.on{
+  border-bottom: 4rpx solid #003189;
+}
+.list{
+  height: 80rpx;
+  width: 100%;
+  background-color: white;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #353535;
+  border-bottom: 1rpx solid #E9E9E9;
+}
+.time{
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  color: #989898;
+}
+.text{
+  width: 50%;
+  /* border: 1rpx solid black; */
+  margin-left: 30rpx;
+}
+.number{
+  width: 20%;
+  /* border: 1rpx solid black; */
+  text-align: right;
+  color: #E31F1F;
+  font-size: 28rpx;
+}
+.lists_com{
+  background-color: white;
+  width: 100%;
+  height: 350rpx;
+  border-bottom: 1rpx solid #E9E9E9;
+}
+.head_img{
+  height: 300rpx;
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+  width: 250rpx;
+  border: 1rpx solid #E9E9E9;
+}
+.com_right{
+   height: 300rpx;
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+  width: 400rpx;
+  /* border: 1rpx solid black; */
+}
+.com_tit{
+  height: 100rpx;
+  line-height: 50rpx;
+  font-size: 32rpx;
+  color: #414141;
+   display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;  
+  flex-wrap: wrap;
+}
+.jif_number{
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #E21111;
+  margin-top: 30rpx;
+  /* border: 1rpx solid black; */
+}
+.dh{
+  width: 250rpx;
+  background-color: #E25E16;
+  color: white;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 5rpx;
+  margin-top: 50rpx;
+}

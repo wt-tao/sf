@@ -1,0 +1,56 @@
+<!--pages/research_list/CRO_Check/CRO_Check.wxml-->
+<view class='title'>
+    <image src='../../../img/xz-2-kb-7.png' style='width:50rpx;margin-top:30rpx;margin-left:20rpx;' mode='widthFix'/>
+    <view style='line-height:100rpx;margin-left:10rpx;font-size:30rpx;'>请认真填写并完善以下资料</view>
+    <image src='../../../img/yjjx-5-kb-2.png' style='width:40rpx;margin-top:40rpx;margin-left:260rpx;' mode='widthFix' hidden='{{s1}}' bindtap='sec'/>
+</view>
+
+<view hidden='{{s2}}'>
+<view class='div'>
+    <view class='list'>CRF表审核确认</view>
+    <view class='text'>
+        <view class='titl'>CRO审核确认：</view>
+        <text class='text1'>本人作为该患者随访负责人特此声明:经审核,此报告表中所有项目的记录都是真实、完整和准确的。</text>
+    </view>
+    <view class='list1'>
+        <view class='name'>CRO签名：</view>
+        <input class='input'></input>
+    </view>
+    <view class='list1'>
+        <view class='name'>日期：</view>
+        <view class='input' style='width:65%;margin-left:8%'>{{date}}</view>
+        <picker mode="date" value="{{date}}" style='width:10%' bindchange="bindDateChange">
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:10rpx;margin-top:20rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+    </view>
+</view>
+</view>
+
+<view hidden='{{s1}}'>
+<view class='div'>
+    <view class='list'>CRF表审核确认</view>
+    <view class='text'>
+        <view class='titl'>CRO审核确认：</view>
+        <text class='text1'>本人作为该患者随访负责人特此声明:经审核,此报告表中所有项目的记录都是真实、完整和准确的。</text>
+    </view>
+    <view class='list1'>
+        <view class='name'>CRO签名：</view>
+        <view class='input'></view>
+    </view>
+    <view class='list1'>
+        <view class='name'>日期：</view>
+        <view class='input' style='width:65%;margin-left:8%'>{{date}}</view>
+        <view mode="date" value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:10rpx;margin-top:20rpx;' mode='widthFix'/>
+          </view>
+        </view>
+    </view>
+</view>
+</view>
+
+
+
+<view class='button fixed' hidden='{{s2}}' bindtap='submin' style='margin-top:30rpx;'>提交</view>

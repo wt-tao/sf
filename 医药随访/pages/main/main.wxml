@@ -1,0 +1,53 @@
+<!--pages/main/main.wxml-->
+<view class='top'>
+    <view style='margin-left:20rpx;width:70%;'>我参与的项目 共<text style='color:#E83333'>2</text>个</view>
+    <image src='../../img/yjjx-9.png' style='width:50rpx;margin-top:10rpx;' mode='widthFix'/>
+    <view class='number' style='{{number.length>=2?"margin-left:-33rpx":"margin-left:-28rpx"}}'>{{number}}</view>
+    <view style='margin-left:20rpx;'>项目提醒</view>
+</view>
+
+<view class='div' bindtap='research_list' id='1' data-title='{{title}}'>
+    <view class='imgs'>
+        <image src='../../img/tc-152.png' style='width:80rpx;' mode='widthFix' />
+        <view class='numbers'  style='{{numbers.length>=3?"margin-left:-75rpx":""}}'>{{numbers}}</view>
+    </view>
+    <view class='text' >
+        <view class='left' style='{{title.length<18?"margin-top:30rpx;":""}}'>
+            <text class='left_top'>{{title}}</text>
+            <view class='id_card' style='{{title.length<18?"margin-top:60rpx;":""}}'>临床研究注册号：DSA1234123412</view>
+        </view>
+        <view class='right'>
+            <image src='../../img/tc-164-kb_3.png' style='width:30rpx;margin-left:20rpx;margin-top:30rpx;' mode='widthFix' />
+            <image src='../../img/tc-159-kb-4.png' style='width:40rpx;margin-left:10rpx;margin-top:30rpx;' mode='widthFix' catchtap='ewm' />
+        </view>
+    </view>
+</view>
+
+<view class='div' bindtap='Typical_case' id='1' data-title='{{title}}'>
+    <view class='imgs'>
+        <image src='../../img/tc-152.png' style='width:80rpx;' mode='widthFix' />
+        <view class='numbers'  style='{{numbers.length>=3?"margin-left:-75rpx":""}}'>2.</view>
+    </view>
+    <view class='text' >
+        <view class='left' style='{{title.length<18?"margin-top:30rpx;":""}}'>
+            <text class='left_top'>典型病例</text>
+            <view class='id_card' style='margin-top:60rpx;'>临床研究注册号：DSA1234123412</view>
+        </view>
+        <view class='right'>
+            <image src='../../img/tc-164-kb_3.png' style='width:30rpx;margin-left:20rpx;margin-top:30rpx;' mode='widthFix' />
+            <image src='../../img/tc-159-kb-4.png' style='width:40rpx;margin-left:10rpx;margin-top:30rpx;' mode='widthFix' catchtap='ewm' />
+        </view>
+    </view>
+</view>
+
+
+<block wx:if='{{sort}}'>
+<view class="bg" style='display:block'></view>
+<view class="show" style='display:block;'>
+    <image src='../../img/xz-2-kb-5.png' style='width:60rpx;margin-left:89%;' mode='widthFix' bindtap='del'/>
+    <view class='img_ewm'></view>
+    <button plain='true' style='margin-top:80rpx; border:none' open-type='share	'>
+        <view class='botton'>分享</view>
+    </button>
+</view>
+</block>

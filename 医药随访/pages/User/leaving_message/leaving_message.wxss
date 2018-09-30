@@ -1,0 +1,56 @@
+/* pages/User/leaving_message/leaving_message.wxss */
+.top{
+  height: 60rpx;
+  /* border: 1rpx solid black; */
+  margin-top: 30rpx;
+  line-height: 60rpx;
+}
+.list{
+  margin-left: 20rpx;
+  color: #505050;
+  font-size: 32rpx;
+}
+.my_leaving{
+  width:  200rpx;
+  color: white;
+  background-color: #0AB087;
+  height: 60rpx;
+  font-size: 30rpx;
+  border-radius:5rpx; 
+  margin-left: 300rpx;
+}
+.my_leaving_text{
+  margin-left: 40rpx;
+}
+.div{
+  border: 1rpx solid #F6F6F6;
+  border-radius: 5rpx;
+  background-color: white;
+  margin-top:30rpx;
+  width: 95%;
+  margin-left: 2.5%;
+}
+.imgs{
+  width: 50rpx;
+  margin-left: 20rpx;
+  /* border: 1rpx solid black; */
+}
+.right{
+  margin-left: 20rpx;
+  width: 85%;
+  /* border: 1rpx solid black; */
+}
+.div_right{
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 10rpx;
+  color:#535353;
+  font-size: 30rpx;
+}
+.right_text{
+  /* padding-top: 20rpx;
+  padding-bottom: 20rpx; */
+  line-height: 40rpx;
+  font-size: 27rpx;
+  color: #939393
+}

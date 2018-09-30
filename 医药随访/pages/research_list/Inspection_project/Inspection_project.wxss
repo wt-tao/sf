@@ -1,0 +1,123 @@
+/* pages/research_list/Inspection_project/Inspection_project.wxss */
+
+.div{
+  width: 100%;
+  margin-top: 30rpx;
+  background-color: white;
+  font-size: 28rpx;
+  color: #747474;
+  line-height: 80rpx;
+}
+.div_top{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: #191919;
+  background-color: #F8F8F8;
+}
+.list{
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #E1E1E1;
+  width: 100%;
+}
+.name{
+  margin-left: 20rpx;
+}
+.input{
+  height: 80rpx;
+  width: 240rpx;
+  /* border: 1rpx solid black; */
+}
+.left{
+  width:65%;
+  border-right:1rpx solid #E1E1E1;
+  display: flex;
+  flex-direction: row;
+}
+.texts{
+  position: relative;top:-10rpx;
+}
+.right{
+  display: flex;flex-direction: row;
+  width: 35%;
+}
+.div_div{
+  height: 325rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #E1E1E1;
+}
+.div_div_left{
+  width: 100rpx;
+}
+.wz{
+  width: 100rpx;
+  text-align: center;
+  height: 162rpx;
+  line-height: 162rpx;
+  border-right:1rpx solid #E1E1E1;
+}
+.div_div_cun{
+  width: 51.5%;
+  height: 325rpx;
+  border-right:1rpx solid #E1E1E1;
+}
+.div_div_cun_list{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom:1rpx solid #E1E1E1;
+  /* border: 1rpx solid black */
+}
+.div_div_right{
+  width: 35%;
+  height: 100%;
+  /* border: 1rpx solid black; */
+}
+.picker{
+  width: 100%;
+  height: 80rpx;
+  margin-left: 50rpx;
+  /* border: 1rpx solid black; */
+  display: flex;
+  flex-direction: row;
+}
+.times{
+  width: 80%;
+  text-align: right;
+  /* border: 1rpx solid black; */
+}
+.textarea{
+  width: 97.5%;
+  padding-left: 2.5%;
+  padding-top: 10rpx;
+  line-height: 40rpx;
+  height: 200rpx;
+  /* border: 1rpx solid black; */
+}
+.title1{
+  height:90rpx;
+  line-height: 90rpx;
+  margin-left: 20rpx;
+  background-color: #F8F8F8;
+  border-bottom: 1rpx solid #EEEEEE;
+  
+}
+.photo{
+  width: 97.5%;
+  min-height: 250rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: 1rpx solid black; */
+}
+.photo_img{
+  height: 125rpx;
+  width: 125rpx;
+  background-color: #D3D3D3;
+  margin-top: 20rpx;
+  margin-left: 2.5%;
+}

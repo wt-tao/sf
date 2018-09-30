@@ -1,0 +1,61 @@
+<!--pages/User/User.wxml-->
+<view class='top row'>
+    <!--头像  -->
+    <view class='head_img'></view>
+    <view class='name'>
+        <view class='uesr_name'>您好，明天</view>
+        <view class='uesr_name' style='font-size:26rpx;color:#8C8C8C'>病例编码：1513254588</view>
+    </view>
+    <view class='integral' bindtap='integral'>
+        <view class='integral_right row'>
+            <image src='../../img/tc-163.png' style='width:35rpx;margin-left:15rpx;margin-top:7rpx;' mode='widthFix'/>
+            <view class='integral_text'>积分:</view>
+            <view class='integral_number'>263</view>
+            <image src='../../img/xz-1-kb-4_90.png' style='width:12rpx;margin-top:14rpx;margin-left:10rpx;' mode='widthFix'/>
+        </view>
+    </view>
+</view>
+
+
+<view class='list' style='margin-top:30rpx;' bindtap='sign_in'>
+    <view class='img' >
+        <image src='../../img/tc-165-kb (6).png' style='width:100%;margin-top:15rpx;' mode='widthFix'/>
+    </view>
+    <view class='text'>每日签到</view>
+    <image src='../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:35rpx;margin-left:480rpx;' mode='widthFix'></image>
+</view>
+<view class='list' bindtap='remind'>
+    <view class='img'>
+        <image src='../../img/tc-165-kb (1).png' style='width:100%;margin-top:20rpx;' mode='widthFix'/>
+    </view>
+    <view class='text'>提醒事项</view>
+    <image src='../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:35rpx;margin-left:480rpx;' mode='widthFix'></image>
+</view>
+<view class='list' bindtap='presentation'>
+    <view class='img'>
+        <image src='../../img/tc-165-kb (2).png' style='width:90%;margin-top:15rpx;' mode='widthFix'/>
+    </view>
+    <view class='text'>报告查询</view>
+    <image src='../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:35rpx;margin-left:480rpx;' mode='widthFix'></image>
+</view>
+<view class='list' bindtap='activity'>
+    <view class='img'>
+        <image src='../../img/tc-165-kb (3).png' style='width:100%;margin-top:15rpx;' mode='widthFix'/>
+    </view>
+    <view class='text'>我的活动</view>
+    <image src='../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:35rpx;margin-left:480rpx;' mode='widthFix'></image>
+</view>
+<view class='list' bindtap='leaving_message'>
+    <view class='img'>
+        <image src='../../img/tc-165-kb (5).png' style='width:100%;margin-top:27rpx;' mode='widthFix'/>
+    </view>
+    <view class='text'>我的留言</view>
+    <image src='../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:35rpx;margin-left:480rpx;' mode='widthFix'></image>
+</view>
+<view class='list'  bindtap='information'>
+    <view class='img'>
+        <image src='../../img/tc-165-kb (4).png' style='width:100%;margin-top:20rpx;' mode='widthFix'/>
+    </view>
+    <view class='text'>个人信息</view>
+    <image src='../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:35rpx;margin-left:480rpx;' mode='widthFix'></image>
+</view>

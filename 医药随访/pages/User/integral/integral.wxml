@@ -1,0 +1,39 @@
+<!--pages/User/integral/integral.wxml-->
+<view class='top row'>
+    <view class='img'>
+        <image src='../../../img/tc-163.png' style='width:50rpx;margin-left:25rpx;' mode='widthFix' class='imgs'/>
+    </view>
+    <view class='my_integral'>我的积分:<text style='color:#E25C14;font-weight: 700;margin-left:10rpx;'>263</text></view>
+    <view class='right row'>
+        <view style='margin-left:40rpx;'>积分规则</view>
+        <image src='../../../img/wh.png' style='width:40rpx;margin-top:55rpx;margin-left:10rpx;' mode='widthFix'/>
+    </view>
+</view>
+
+
+<view class='tabber row'>
+    <view class='tabber_list {{sid==1?"on":""}}' data-s_id='1' bindtap='swin'>积分记录</view>
+    <view class='tabber_list {{sid==2?"on":""}}' data-s_id='2' bindtap='swin'>我要兑换</view>
+</view>
+
+<view hidden='{{s1}}'>
+    <view class='list row'>
+        <view class='time'>2018/09/02</view>
+        <view class='text'>参与随访记录填写</view>
+        <view class='number'>+100</view>
+    </view>
+</view>
+
+<view hidden='{{s2}}'>
+  <view class='lists_com row'>
+      <!-- 展示图片 -->
+      <view class='head_img'></view>
+      <view class='com_right'>
+          <view class='com_tit'>似懂非懂爱的风格梵蒂冈are个地方八卦are阿尔埃尔文官方给我</view>
+          <view class='jif_number'>积分:200</view>
+
+          <view class='dh'>我要兑换</view>
+      </view>
+      
+  </view>
+</view>

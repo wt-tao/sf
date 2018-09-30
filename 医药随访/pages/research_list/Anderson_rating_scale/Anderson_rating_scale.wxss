@@ -1,0 +1,51 @@
+/* pages/research_list/Anderson_rating_scale/Anderson_rating_scale.wxss */
+.div{
+  width: 100%;
+  margin-top: 30rpx;
+  background-color: white;
+}
+.text{
+  width: 95%;
+  margin-left: 2.5%;
+  flex-wrap: wrap;
+  padding-top: 20rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #3F3F3F;
+}
+.wz{
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #F0F1F2;
+}
+.list1{
+  color: white;
+  font-size: 30rpx;
+  background-color: #5D98E6;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.list2{
+  background-color: #F3F8FE;
+  color: #424343;
+  font-size: 28rpx;
+}
+.name{
+  margin-left:20rpx;
+}
+.list{
+  width: 100%;
+  color: #6F6F6F;
+  display: flex;
+  flex-direction: row;
+}
+.on{
+  background-color: #20C4E2;
+  color: white;
+}
+.number{
+  width: 10%;
+  text-align: center;
+  font-size: 28rpx;
+  border-right: 1rpx solid #F0F1F2;
+}

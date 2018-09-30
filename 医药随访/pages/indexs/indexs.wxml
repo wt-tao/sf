@@ -1,0 +1,10 @@
+<!--pages/indexs/indexs.wxml-->
+<image src='../../img/bg-kb.png' style='width:100%' mode='widthFix'></image>
+<view class='getuser'>
+    <view class='text'>登录</view>
+    <view class='imgs'></view>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"  plain='true' style='margin-top:30rpx;width:70%;margin-left:15%;border:none'>
+    <view class='button'>微信授权登录</view>  
+      </button>
+    <view class='texts'>授权后将显示您的信息</view>
+</view>

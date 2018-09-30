@@ -1,0 +1,77 @@
+/* pages/Message_push/Message_push.wxss */
+.top{
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 28rpx;
+  color: #4C4C4C;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.top_all{
+  width: 50%;
+  text-align: right;
+}
+.div{
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: white;
+  margin-top: 30rpx;
+  height: 600rpx;
+  border-radius: 10rpx;
+}
+.margin{
+  width: 95%;
+  margin-left: 2.5%;
+}
+.title{
+  height: 50rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  color: #323232;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: white;
+  border: none;
+}
+.time{
+  font-size: 26rpx;
+  color: #888888;
+  margin-top:10rpx;
+}
+.img{
+  height: 300rpx;
+  margin-top:10rpx;
+  border: 1rpx solid black;
+}
+.text{
+  height: 100rpx;
+  line-height: 50rpx;
+  flex-wrap: wrap;
+  font-size: 30rpx;
+  color: #444444;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+}
+.botton{
+  height: 80rpx;
+  margin-top: 20rpx;
+}
+.booton_an{
+  width: 120rpx;
+  font-size: 26rpx;
+  color: #888888;
+  text-align: center;
+  height: 40rpx;
+  border: 1rpx solid #D3D3D3;
+  margin-top:10rpx;
+  border-radius: 20rpx;
+}

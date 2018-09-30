@@ -1,0 +1,80 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='title'>
+      <image src='../../img/tc-151 (2).png' style='width:50rpx;margin-left:20rpx;margin-top:10rpx;' mode='widthFix'></image>
+      <view class='title_text'>个人信息<text style='color:#E64646'>（每项必填）</text></view>
+    </view>
+    <view class='list'>
+        <view class='list_text'>您的姓名</view>
+        <input class='input1'></input>
+    </view>
+    <view class='list'>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class='list_text'>{{array[index]}}
+              <image src='../../img/xz-2.png' style='width:20rpx;margin-left:40rpx;margin-top:40rpx;' mode='widthFix'></image>
+          </view>
+        </picker>
+        <view class='cardInput'>
+            <input class='input'></input>
+        </view>
+    </view>
+    <view class='list'>
+        <view class='list_text'>您的年龄</view>
+        <input class='input1' type='number' maxlength='3'></input>
+    </view>
+    <view class='list'>
+        <view class='list_text'>手机号码</view>
+        <input class='input1' type='number' maxlength='11'></input>
+    </view>
+</view>
+
+<view class="container" style='margin-top:30rpx;'>
+    <view class='title'>
+      <image src='../../img/tc-151 (3).png' style='width:50rpx;margin-left:20rpx;margin-top:10rpx;' mode='widthFix'></image>
+      <view class='title_text'>家庭联系方式<text style='color:#E64646'>（必填一个）</text></view>
+    </view>
+    <view class='list'>
+        <input class='input2' placeholder='1、姓名及联系电话' placeholder-style='font-size:30rpx;color:#919191'></input>
+    </view>
+    <view class='list'>
+        <input class='input2' placeholder='1、姓名及联系电话' placeholder-style='font-size:30rpx;color:#919191'></input>
+    </view>
+    <view class='list'>
+        <input class='input2' placeholder='1、姓名及联系电话' placeholder-style='font-size:30rpx;color:#919191' ></input>
+    </view>
+</view>
+
+<view class="container" style='margin-top:30rpx;'>
+    <view class='title'>
+      <image src='../../img/tc-151 (1).png' style='width:50rpx;margin-left:20rpx;margin-top:10rpx;' mode='widthFix'></image>
+      <view class='title_text'>常住地址<text style='color:#E64646'>（必填）</text></view>
+    </view>
+
+    <view class='list'>
+      <picker bindchange="bindProvincerChange" value="{{pro}}" range="{{province}}" style='width:33%;'>
+        <view class='list_city'>
+            <view class='list_city_text'>{{province[pro]}}</view>
+            <image src='../../img/xz-2.png' style='width:20rpx;margin-top:40rpx;margin-left:10rpx;' mode='widthFix'></image>
+        </view>
+      </picker>
+       <picker bindchange="bindCityChange" value="{{citys}}" range="{{city}}" style='width:33%;'>
+        <view class='list_city'>
+            <view class='list_city_text'>{{city[citys]}}</view>
+            <image src='../../img/xz-2.png' style='width:20rpx;margin-top:40rpx;margin-left:10rpx;' mode='widthFix'></image>
+        </view>
+      </picker>
+        <picker bindchange="bindContryChange" value="{{con}}" range="{{contry}}" style='width:33%;'>
+        <view class='list_city'>
+            <view class='list_city_text'>{{contry[con]}}</view>
+            <image src='../../img/xz-2.png' style='width:20rpx;margin-top:40rpx;margin-left:10rpx;' mode='widthFix'></image>
+        </view>
+      </picker>
+    </view>
+
+    <view class='list'>
+        <input class='input2' placeholder='您的详细地址' placeholder-style='font-size:30rpx;color:#919191' ></input>
+    </view>
+</view>
+
+<view class='button' bindtap='sure'>确定</view>
+<view style='height:100rpx;width:100%'></view>

@@ -1,0 +1,25 @@
+/* pages/User/remind/remind.wxss */
+.list{
+  width: 100%;
+  background-color: white;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #333333;
+  border-bottom: 1rpx solid #F2F2F2;
+}
+.img{
+  margin-top:20rpx;margin-left:20rpx;
+}
+.text{
+  margin-left: 20rpx;
+  width: 70%;
+}
+.dian{
+  width: 15rpx;
+  height: 15rpx;
+  border-radius: 50%;
+  background-color: #FF0000;
+  margin-top: 42.5rpx;
+  margin-left: 30rpx;
+}

@@ -1,0 +1,848 @@
+<!--pages/research_list/summary/summary.wxml-->
+<view class='div' style='margin-top:0'>
+    <view class='list direction'>
+        <view class='name'>入组前主要病史</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>签署知情同意书</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>一般资料登记</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>诊断</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >--</view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>治疗方案</view>
+        <view class='wzd'>填报完整度:<text style='color:#D52828'>85%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' style='background-color: #ADF0E4'>
+                  <image src='../../../img/xz-2-kb-2.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>实验室检查</view>
+        <view class='wzd'>填报完整度:<text style='color:#D52828'>85%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' style='background-color: #ADF0E4'>
+                  <image src='../../../img/xz-2-kb-2.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>生活方式</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>安德森症状评分量表</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>回生使用情况</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>抗凝药使用情况</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>CT(及病理)复查</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>肿瘤结局</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>VTE事件</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>出血事件</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>随访完成情况总结</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >--</view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>检查报告单拍照上传</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+           <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>CRO核查(完整及准确)</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+           <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+
+<view class='div'>
+    <view class='list direction'>
+        <view class='name'>管理员及三方</view>
+        <view class='wzd'>填报完整度:<text style='color:#00997E'>100%</text></view>
+    </view>
+    <view class='list direction'>
+          <view class="top_coun " >入组</view>
+          <view class="top_coun ls" >出院前 1天</view>
+          <view class="top_coun ls" >出院后 3月</view>
+          <view class="top_coun " >6月</view>
+          <view class="top_coun " >12月</view>
+          <view class="top_coun " >18月</view>
+          <view class="top_coun " >24月</view>
+    </view>
+    <view class='list direction'>
+           <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg' >
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+          <view class="top_coun " >
+              <view class='bg'>
+                  <image src='../../../img/xz-3-kb.png' style='width:40rpx;' mode='widthFix'></image>
+              </view>
+          </view>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list' style='border:none'>
+        <view class='name' style='color:#222222'>备注：</view>
+    </view>
+    <textarea class='textarea'></textarea>
+</view>
+<view class='button'  bindtap='submin'>提交</view>

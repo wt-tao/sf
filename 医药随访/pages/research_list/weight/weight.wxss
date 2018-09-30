@@ -1,0 +1,88 @@
+/* pages/research_list/weight/weight.wxss */
+.div{
+  margin-top: 30rpx;
+  background-color: white;
+  flex-direction: row;
+  font-size: 30rpx;
+  color: #474747;
+  line-height: 80rpx;
+}
+.on{
+  background-color: #20C4E2;
+  color: white;
+}
+.direction{
+  display: flex;
+  flex-direction: row;
+}
+.list{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #E7E7E7;
+}
+.name{
+  margin-left: 20rpx;
+}
+.input{
+  width: 350rpx;
+  margin-left: 10rpx;
+  height: 80rpx;
+  /* border: 1rpx solid black; */
+}
+.list_right{
+  width: 100rpx;
+  margin-left: 20rpx;
+  text-align: right;
+  /* border: 1rpx solid black; */
+}
+.tips{
+  height: 120rpx;
+  background-color: #EBEBEB;
+  width: 100%;
+  color: #797979;
+  border-bottom: 1rpx solid #E7E7E7;
+}
+.tips_text{
+  line-height: 80rpx;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+}
+.lists{
+  background-color: #F8F8F8;
+}
+.movement{
+  width: 100%;
+  height: 250rpx;
+  /* border: 1rpx solid black; */
+  border-bottom: 1rpx solid #E7E7E7;
+}
+.movement_list{
+  width: 20%;
+  margin-left:10rpx;
+}
+.bai{
+  width: 100%;
+  /* border: 1rpx solid black; */
+}
+.bai_input{
+  height: 60rpx;
+  margin-top: 10rpx;
+  width: 90rpx;
+  text-align: center;
+  margin-left: 20rpx;
+  border: 1rpx solid #CECECE;
+}
+.list_table{
+  flex-wrap: wrap;
+  width: 16.5%;
+  line-height: 100rpx;
+  text-align: center;
+  border-right: 1rpx solid #CECECE;
+}
+.line{
+  line-height: 80rpx;
+}
+.tt{
+  flex-wrap: wrap;
+  line-height: 50rpx;
+}

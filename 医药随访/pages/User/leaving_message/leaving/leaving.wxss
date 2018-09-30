@@ -1,0 +1,47 @@
+/* pages/User/leaving_message/leaving/leaving.wxss */
+.div{
+  background-color: white;
+  height: 600rpx;
+}
+.input{
+  width: 630rpx;
+  margin-left: 45rpx;
+  padding-left: 20rpx;
+  height: 80rpx;
+  border-radius: 5rpx;
+  border: 1rpx solid #DFDFDF;
+  font-size: 28rpx;
+  color:#888888;
+}
+.text{
+  margin-top: 30rpx;
+  height: 300rpx;
+}
+.textarea{
+  padding-top: 30rpx;
+}
+.list{
+  width: 650rpx;
+  margin-left: 45rpx;
+  height: 80rpx;
+  margin-top: 30rpx;
+  /* border: 1rpx solid black; */
+}
+.buq{
+  font-size: 26rpx;
+  color: #2F77D9;
+  margin-left: 20rpx;
+  line-height: 80rpx;
+}
+.qued{
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 130rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 8rpx;
+  background-color: #013F91;
+  color: white;
+  font-size: 30rpx;
+}

@@ -1,0 +1,174 @@
+<!--pages/research_list/case/case.wxml-->
+<view class='title'>
+    <image src='../../../img/xz-2-kb-7.png' style='width:50rpx;margin-top:30rpx;margin-left:20rpx;' mode='widthFix'/>
+    <view style='line-height:100rpx;margin-left:10rpx;font-size:30rpx;'>请认真填写并完善以下资料</view>
+    <image src='../../../img/yjjx-5-kb-2.png' style='width:40rpx;margin-top:40rpx;margin-left:260rpx;' mode='widthFix' hidden='{{s2}}' bindtap='sec'/>
+</view>
+
+<view class='top_sec' hidden='{{s4}}'>
+    <view class='name'>入组前主要病史：</view>
+    <image src='{{s1==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5.png"}}' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix'  bindtap='fly'/>
+  <view style='margin-left:20rpx;'>有</view>
+
+  <image src='{{s1==true?"../../../img/yjjx-5.png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix'  bindtap='fly'/>
+  <view style='margin-left:20rpx;'>无</view>
+</view>
+
+<view class='top_sec' hidden='{{s5}}'>
+    <view class='name'>入组前主要病史：</view>
+    <image src='../../../img/yjjx-5_49 (2).png' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix' />
+  <view style='margin-left:20rpx;'>有</view>
+
+  <image src='../../../img/yjjx-5.png' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix' />
+  <view style='margin-left:20rpx;'>无</view>
+</view>
+
+<view class='text'>提示：如“有”，请简述如下</view>
+
+<view class='table' hidden='{{s6}}'>
+  <view class='table_list'>
+      <view class='list_left'>疾病名称</view>
+      <view class='list_left' style='width:27.5%'>疾病持续时间</view>
+      <view class='list_left right'>
+          <view class='right_top'>转归</view>
+          <view class='right_top bottom'>
+              <view class='bottom_list'>安全控制</view>
+              <view class='bottom_list' style='width:26%'>好转</view>
+               <view class='bottom_list' style='width:41%'>未控制或加重</view>
+          </view>
+      </view>
+  </view>
+    <view class='table_list'>
+      <view class='list_left'>
+          <input class='input'></input>
+      </view>
+      <view class='list_left' style='width:27.5%'>
+          <input class='input'></input>
+      </view>
+      <view class='list_left right'>
+          <view class='right_top bottom bottoms'>
+              <view class='bottom_list' bindtap='c1'>
+                  <image src='{{c1==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+              <view class='bottom_list' style='width:26%' bindtap='c2'>
+                 <image src='{{c2==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+               <view class='bottom_list' style='width:41%' bindtap='c3'>
+                  <image src='{{c3==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+               </view>
+          </view>
+      </view>
+  </view>
+   <view class='table_list'>
+       <view class='list_left'>
+          <input class='input'></input>
+      </view>
+      <view class='list_left' style='width:27.5%'>
+          <input class='input'></input>
+      </view>
+      <view class='list_left right'>
+          <view class='right_top bottom bottoms'>
+              <view class='bottom_list' bindtap='c4'>
+                  <image src='{{c4==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+              <view class='bottom_list' style='width:26%' bindtap='c5'>
+                 <image src='{{c5==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+               <view class='bottom_list' style='width:41%' bindtap='c6'>
+                  <image src='{{c6==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+               </view>
+          </view>
+      </view>
+  </view>
+   <view class='table_list'>
+       <view class='list_left'>
+          <input class='input'></input>
+      </view>
+      <view class='list_left' style='width:27.5%'>
+          <input class='input'></input>
+      </view>
+      <view class='list_left right'>
+          <view class='right_top bottom bottoms'>
+               <view class='bottom_list' bindtap='c7'>
+                  <image src='{{c7==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+              <view class='bottom_list' style='width:26%' bindtap='c8'>
+                 <image src='{{c8==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+               <view class='bottom_list' style='width:41%' bindtap='c9'>
+                  <image src='{{c9==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+               </view>
+          </view>
+      </view>
+  </view>
+</view>
+
+<view class='table' hidden='{{s3}}'>
+  <view class='table_list'>
+      <view class='list_left'>疾病名称</view>
+      <view class='list_left' style='width:27.5%'>疾病持续时间</view>
+      <view class='list_left right'>
+          <view class='right_top'>转归</view>
+          <view class='right_top bottom'>
+              <view class='bottom_list'>安全控制</view>
+              <view class='bottom_list' style='width:26%'>好转</view>
+               <view class='bottom_list' style='width:41%'>未控制或加重</view>
+          </view>
+      </view>
+  </view>
+    <view class='table_list'>
+      <view class='list_left'></view>
+      <view class='list_left' style='width:27.5%'></view>
+      <view class='list_left right'>
+          <view class='right_top bottom bottoms'>
+              <view class='bottom_list'>
+                  <image src='../../../img/yjjx-5_49 (1).png' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+              <view class='bottom_list' style='width:26%'>
+                 <image src='../../../img/yjjx-5_49 (1).png' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+               <view class='bottom_list' style='width:41%'>
+                  <image src='../../../img/yjjx-5_49 (1).png' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+               </view>
+          </view>
+      </view>
+  </view>
+   <view class='table_list'>
+      <view class='list_left'></view>
+      <view class='list_left' style='width:27.5%'></view>
+      <view class='list_left right'>
+          <view class='right_top bottom bottoms'>
+              <view class='bottom_list'>
+                  <image src='../../../img/yjjx-5_49 (1).png' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+              <view class='bottom_list' style='width:26%'>
+                 <image src='../../../img/yjjx-5_49 (1).png' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+               <view class='bottom_list' style='width:41%'>
+                  <image src='../../../img/yjjx-5_49 (1).png' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+               </view>
+          </view>
+      </view>
+  </view>
+   <view class='table_list'>
+      <view class='list_left'></view>
+      <view class='list_left' style='width:27.5%'></view>
+      <view class='list_left right'>
+          <view class='right_top bottom bottoms'>
+              <view class='bottom_list'>
+                  <image src='../../../img/yjjx-5_49 (1).png' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+              <view class='bottom_list' style='width:26%'>
+                 <image src='../../../img/yjjx-5_49 (1).png' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+              </view>
+               <view class='bottom_list' style='width:41%'>
+                  <image src='../../../img/yjjx-5_49 (1).png' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+               </view>
+          </view>
+      </view>
+  </view>
+</view>
+
+
+
+<view class='button' hidden='{{s4}}' bindtap='submin'>提交</view>

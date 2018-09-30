@@ -1,0 +1,304 @@
+<!--pages/research_list/Anderson_rating_scale/Anderson_rating_scale.wxml-->
+<view class='title'>
+    <image src='../../../img/xz-2-kb-7.png' style='width:50rpx;margin-top:30rpx;margin-left:20rpx;' mode='widthFix'/>
+    <view style='line-height:100rpx;margin-left:10rpx;font-size:30rpx;'>请认真填写并完善以下资料</view>
+    <image src='../../../img/yjjx-5-kb-2.png' style='width:40rpx;margin-top:40rpx;margin-left:260rpx;' mode='widthFix' hidden='{{s1}}' bindtap='sec'/>
+</view>
+<view hidden='{{s2}}'>
+  <view class='div'>
+      <view class='text'>士大夫士大夫阿斯蒂芬阿飞艾尔非常想深V挖而非埃尔文官方啊阿尔法打女</view>
+      <view class='list1 wz' >表1 肿瘤常见症状及程度分布表</view>
+      <view class='list2 wz'>
+          <view class='name'>1.1您疼痛最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids?"on":""}}' wx:for='{{number}}'  bindtap='n1' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.2您疲劳（乏力）最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids1?"on":""}}' wx:for='{{number}}'  bindtap='n2' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.3您恶心最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids2?"on":""}}' wx:for='{{number}}'  bindtap='n3' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.4您睡眠不安最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids3?"on":""}}' wx:for='{{number}}'  bindtap='n4' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.5您最苦恼的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids4?"on":""}}' wx:for='{{number}}'  bindtap='n5' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.6您气短最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids5?"on":""}}' wx:for='{{number}}'  bindtap='n6' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.7那健忘最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids6?"on":""}}' wx:for='{{number}}'  bindtap='n7' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.8您胃口最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids7?"on":""}}' wx:for='{{number}}'  bindtap='n8' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.9您瞌睡（昏昏欲睡）最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids8?"on":""}}' wx:for='{{number}}'  bindtap='n9' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.10您口干最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids9?"on":""}}' wx:for='{{number}}'  bindtap='n10' id='{{item}}'>{{item}}</view>
+      </view>
+       <view class='list2 wz'>
+          <view class='name'>1.11您悲伤感最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids10?"on":""}}' wx:for='{{number}}'  bindtap='n11' id='{{item}}'>{{item}}</view>
+      </view>
+       <view class='list2 wz'>
+          <view class='name'>1.12您呕吐最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids11?"on":""}}' wx:for='{{number}}'  bindtap='n12' id='{{item}}'>{{item}}</view>
+      </view>
+        <view class='list2 wz'>
+          <view class='name'>1.13您麻木感最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids12?"on":""}}' wx:for='{{number}}'  bindtap='n13' id='{{item}}'>{{item}}</view>
+      </view>
+  </view>
+
+   <view class='div'>
+      <view class='text'>第二部分：症状对日常生活的干扰程度？0分表示“无干扰”，10分表示“完全干扰”</view>
+      <view class='list1 wz' >表2 肿瘤症状对患者生活的影响</view>
+      <view class='list2 wz'>
+          <view class='name'>2.1您的肺癌症状对您一般活动的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids20?"on":""}}' wx:for='{{number}}'  bindtap='n21' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>2.2您的肺癌症状对您情绪的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids21?"on":""}}' wx:for='{{number}}'  bindtap='n22' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>2.3您的肺癌症状对您工作（包括家务劳动）的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids22?"on":""}}' wx:for='{{number}}'  bindtap='n23' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>2.4您的肺癌症状对您与他人的关系的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids23?"on":""}}' wx:for='{{number}}'  bindtap='n24' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>2.5您的肺癌症状对您走路的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids24?"on":""}}' wx:for='{{number}}'  bindtap='n25' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>2.6您您的肺癌症状对您生活乐趣的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids25?"on":""}}' wx:for='{{number}}'  bindtap='n26' id='{{item}}'>{{item}}</view>
+      </view>
+  </view>
+
+  <view class='div'>
+      <view class='text'>第三部分：肺癌特征性症状,从0(无症状）至10（最严重程度）选填.</view>
+      <view class='list1 wz' >表3 修订版肺癌模块常见症状及症状分布表</view>
+      <view class='list2 wz'>
+          <view class='name'>3.1您咳嗽最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids30?"on":""}}' wx:for='{{number}}'  bindtap='n31' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>3.2您便秘最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids31?"on":""}}' wx:for='{{number}}'  bindtap='n32' id='{{item}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>3.3您喉咙痛最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number {{item==ids32?"on":""}}' wx:for='{{number}}'  bindtap='n33' id='{{item}}'>{{item}}</view>
+      </view>
+  </view>
+</view>
+
+<view hidden='{{s1}}'>
+  <view class='div'>
+      <view class='text'>士大夫士大夫阿斯蒂芬阿飞艾尔非常想深V挖而非埃尔文官方啊阿尔法打女</view>
+      <view class='list1 wz' >表1 肿瘤常见症状及程度分布表</view>
+      <view class='list2 wz'>
+          <view class='name'>1.1您疼痛最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.2您疲劳（乏力）最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.3您恶心最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.4您睡眠不安最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.5您最苦恼的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.6您气短最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.7那健忘最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.8您胃口最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.9您瞌睡（昏昏欲睡）最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>1.10您口干最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+       <view class='list2 wz'>
+          <view class='name'>1.11您悲伤感最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+       <view class='list2 wz'>
+          <view class='name'>1.12您呕吐最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+        <view class='list2 wz'>
+          <view class='name'>1.13您麻木感最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+         <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+  </view>
+
+   <view class='div'>
+      <view class='text'>第二部分：症状对日常生活的干扰程度？0分表示“无干扰”，10分表示“完全干扰”</view>
+      <view class='list1 wz' >表2 肿瘤症状对患者生活的影响</view>
+      <view class='list2 wz'>
+          <view class='name'>2.1您的肺癌症状对您一般活动的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>2.2您的肺癌症状对您情绪的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>2.3您的肺癌症状对您工作（包括家务劳动）的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>2.4您的肺癌症状对您与他人的关系的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>2.5您的肺癌症状对您走路的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>2.6您您的肺癌症状对您生活乐趣的影响程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+  </view>
+
+  <view class='div'>
+      <view class='text'>第三部分：肺癌特征性症状,从0(无症状）至10（最严重程度）选填.</view>
+      <view class='list1 wz' >表3 修订版肺癌模块常见症状及症状分布表</view>
+      <view class='list2 wz'>
+          <view class='name'>3.1您咳嗽最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>3.2您便秘最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+      <view class='list2 wz'>
+          <view class='name'>3.3您喉咙痛最严重的程度为？</view>
+      </view>
+      <view class='list wz'>
+          <view class='number' wx:for='{{number}}'>{{item}}</view>
+      </view>
+  </view>
+</view>
+<view class='button' hidden='{{s2}}' bindtap='submin' style='margin-top:30rpx;'>提交</view>

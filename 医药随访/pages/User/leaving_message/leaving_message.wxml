@@ -1,0 +1,55 @@
+<!--pages/User/leaving_message/leaving_message.wxml-->
+<view class='top row'>
+    <image src='../../../img/tc-163-kb-2.png' style='width:50rpx;margin-left:20rpx;margin-top:10rpx;' mode='widthFix'/>
+    <view class='list'>留言列表</view>
+    <view class='my_leaving row' bindtap='leaving'>
+        <view class='my_leaving_text'>我要留言</view>
+        <image src='../../../img/xz-1-kb-2_66.png' style='width:20rpx;margin-top:13rpx;margin-left:10rpx;' mode='widthFix'/>
+    </view>
+</view>
+
+<view class='div'>
+  <view class='row' style='border-bottom:1rpx solid #EDEDED'>
+    <view class='imgs'>
+        <image src='../../../img/wen.png' style='width:100%;margin-top:20rpx;' mode='widthFix'/>
+    </view>
+    <view class='right'>
+        <view class='div_right'>拍片CT显示两肺纹理增多</view>
+        <view class='right_text'>CT显示纹理增多，右下片见斑片影，这个是什么病？我不抽烟，最近也没感冒，请问这个怎么治，能根治好吗？</view>
+        <view class='right_text' style='font-size:26rpx;margin-top:20rpx;'>2018-09-22 10:26:11</view>
+    </view>
+  </view>
+   <view class='row' style='border-bottom:1rpx solid #EDEDED'>
+    <view class='imgs'>
+        <image src='../../../img/da.png' style='width:100%;margin-top:20rpx;' mode='widthFix'/>
+    </view>
+    <view class='right' style='margin-top:30rpx;'>
+        <view class='right_text' style='color:#676767'>您好，根据你描述的这种情况来看身体肺部炎症结核性的病变必须及时的进行调整防止结核病变加重。给你的建议就是您可以适当的改变口服药进行调整并注意好休息饮食卫生注意保暖</view>
+        <view class='right_text' style='font-size:26rpx;margin-top:20rpx;'>2018-09-22 10:26:11</view>
+    </view>
+  </view>
+</view>
+
+<view class='div'>
+  <view class='row' style='border-bottom:1rpx solid #EDEDED'>
+    <view class='imgs'>
+        <image src='../../../img/wen.png' style='width:100%;margin-top:20rpx;' mode='widthFix'/>
+    </view>
+    <view class='right'>
+        <view class='div_right'>拍片CT显示两肺纹理增多</view>
+        <view class='right_text'>CT显示纹理增多，右下片见斑片影，这个是什么病？我不抽烟，最近也没感冒，请问这个怎么治，能根治好吗？</view>
+        <view class='right_text' style='font-size:26rpx;margin-top:20rpx;'>2018-09-22 10:26:11</view>
+    </view>
+  </view>
+   <view class='row' style='border-bottom:1rpx solid #EDEDED'>
+    <view class='imgs'>
+        <image src='../../../img/da.png' style='width:100%;margin-top:20rpx;' mode='widthFix'/>
+    </view>
+    <view class='right' style='margin-top:30rpx;'>
+        <view class='right_text' style='color:#676767'>您好，根据你描述的这种情况来看身体肺部炎症结核性的病变必须及时的进行调整防止结核病变加重。给你的建议就是您可以适当的改变口服药进行调整并注意好休息饮食卫生注意保暖</view>
+        <view class='right_text' style='font-size:26rpx;margin-top:20rpx;'>2018-09-22 10:26:11</view>
+    </view>
+  </view>
+</view>
+
+<view style='height:30rpx width:100%;'></view>

@@ -1,0 +1,36 @@
+/* pages/User/Leaky_fill/Leaky_fill.wxss */
+.div{
+  width: 100%;
+  margin-top: 50rpx;
+  /* border: 1rpx solid black; */
+}
+.time{
+  width: 100%;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #8D8D8D;
+}
+.botton{
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 10rpx;
+}
+.head_img{
+  width: 80rpx;
+  height: 80rpx;
+  border: 1rpx solid black;
+  border-radius: 50%;
+}
+.ciount{
+  background-color: white;
+  margin-left: 20rpx;
+  width: 75%;
+  border-radius: 15rpx;
+  line-height: 50rpx;
+  padding-top: 20rpx;
+  font-size: 30rpx;
+  flex-wrap: wrap;
+  padding-left: 20rpx;
+  padding-bottom: 30rpx;
+}

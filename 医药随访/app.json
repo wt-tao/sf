@@ -1,0 +1,91 @@
+{
+  "pages":[
+    
+    "pages/indexs/indexs",
+    "pages/User/User",
+    "pages/User/integral/integral",
+    "pages/User/sign_in/sign_in",
+    "pages/User/remind/remind",
+    "pages/User/Leaky_fill/Leaky_fill",
+    "pages/User/presentation/presentation",
+    "pages/User/activity/activity",
+    "pages/User/leaving_message/leaving_message",
+    "pages/User/leaving_message/leaving/leaving",
+    "pages/User/information/information",
+
+    "pages/main/main",
+    "pages/research_list/research_list",
+    "pages/Typical_case/Typical_case",
+    "pages/follow-up_project/follow-up_project",
+    "pages/Choose_hospital/Choose_hospital",
+    "pages/project_list/project_list",
+    "pages/index/index",
+    
+    "pages/agree/agree",
+    "pages/Selection_section/Selection_section",
+    "pages/Message_push/Message_push",
+    "pages/Online_consulting/Online_consulting",
+    
+    "pages/research_list/General_information/General_information",
+    "pages/research_list/case/case",
+    "pages/research_list/Diagnosis/Diagnosis",
+    "pages/research_list/Diagnosis/upload/upload",
+    "pages/research_list/Treatment_plan/Treatment_plan",
+    "pages/research_list/Inspection_project/Inspection_project",
+    "pages/research_list/weight/weight",
+    "pages/research_list/Anderson_rating_scale/Anderson_rating_scale",
+    "pages/research_list/Use_of_retrogradation/Use_of_retrogradation",
+    "pages/research_list/Use_of_anticoagulants/Use_of_anticoagulants",
+    "pages/research_list/Photograph_and_upload/Photograph_and_upload",
+    "pages/research_list/CRO_Check/CRO_Check",
+    "pages/research_list/Management_verification/Management_verification",
+
+    "pages/research_list/CT_review/CT_review",
+    "pages/research_list/ending/ending",
+    "pages/research_list/VTE_event/VTE_event",
+    "pages/research_list/hemorrhage_event/hemorrhage_event",
+    "pages/research_list/summary/summary",
+
+
+
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#013F91",
+    "navigationBarTitleText": "地奥集团天府药业随访系统",
+    "navigationBarTextStyle":"white"
+  },
+    "tabBar": {
+      "color": "#B2B2B2",
+      "selectedColor": "#1C5199",
+      "borderStyle": "white",
+      "backgroundColor": "#fff",
+      "list": [
+        {
+          "pagePath": "pages/main/main",
+          "iconPath": "/img/ty-14-kb-2 (2).png",
+          "selectedIconPath": "/img/yjjx-14-kb-3 (2).png",
+          "text": "我的项目"
+        },
+        {
+          "pagePath": "pages/Message_push/Message_push",
+          "iconPath": "img/yjjx-14-kb-3 (1).png",
+          "selectedIconPath": "img/yjjx-14-kb-3_56.png",
+          "text": "消息推送"
+        },
+        {
+          "pagePath": "pages/Online_consulting/Online_consulting",
+          "iconPath": "img/yjjx-14-kb-3 (3).png",
+          "selectedIconPath": "img/ty-14-kb-2 (1).png",
+          "text": "在线咨询"
+        },
+        {
+          "pagePath": "pages/User/User",
+          "iconPath": "img/yjjx-14-kb-3 (4).png",
+          "selectedIconPath": "img/ty-16_44.png",
+          "text": "个人中心"
+        }
+      ]
+    }
+}

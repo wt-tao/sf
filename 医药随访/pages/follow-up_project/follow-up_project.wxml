@@ -1,0 +1,43 @@
+<!--pages/follow-up_project/follow-up_project.wxml-->
+<view class='title_div'>
+    <view class='title_tit'>
+        <view class='title_tit_text'>s电风扇法大使馆双方各 二是公司的风格双方各时光飞逝是色仍是施工方舒服个人不少人提供合格</view>
+        <view class='title_tit_text_idCard'>临床研究注册号：SFDSD12312412312</view>
+        <view class='title_count'>大师傅是大法官大公司是大法官是梵蒂冈阿尔高和他sdagfdasg覆盖阿斯顿法国 法规的收费的阿凡达噶大概爱的风格是否更舒服说翻滚吧收到在GVSargent而二哥上岗证的人更新扔啊覆盖</view>
+        <view style='height:60rpx;width:100%'></view>
+    </view>
+</view>
+
+<view class='list' style='margin-top:30rpx;' bindtap='Choose_hospital'>
+    <view class='name'>就诊医院</view>
+    <view class='text'>四川人民医院</view>
+    <image src='../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:30rpx;margin-left:10rpx;' mode='widthFix'></image>
+</view>
+
+<view class='list'>
+    <view class='name'>医院编号</view>
+    <input class='texts' placeholder='SCYY01521' placeholder-style='color: #9D9D9D;font-size:30rpx;'></input>
+</view>
+
+<view class='list' bindtap='Selection_section'>
+    <view class='name'>就诊科室</view>
+    <view class='text'>五官科</view>
+    <image src='../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:30rpx;margin-left:10rpx;' mode='widthFix'></image>
+</view>
+
+<view class='list'>
+    <view class='name'>科室编号</view>
+    <input class='texts' placeholder='SCYY01521' placeholder-style='color: #9D9D9D;font-size:30rpx;'></input>
+</view>
+
+<view class='list' style='margin-top:30rpx;' bindtap='agree'>
+    <view class='name' >
+        <image src='../../img/yjjx-5_49 (2).png' style='width:40rpx;margin-top:30rpx;' mode='widthFix' hidden='{{s1}}' catchtap='qxgx'></image>
+        <image src='../../img/yjjx-5.png' style='width:40rpx;margin-top:30rpx;' mode='widthFix'  hidden='{{s2}}' catchtap='gx'></image>
+    </view>
+    <view class='text' style='color:#272727' >已阅读并签署<text style='color:#0F6AF9'>《患者知情同意书》</text></view>
+    <image src='../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:30rpx;margin-left:90rpx;' mode='widthFix'></image>
+</view>
+
+<view class='botton' bindtap='sure'>确定</view>
+<view style='height:50rpx;width:100rpx;'></view>

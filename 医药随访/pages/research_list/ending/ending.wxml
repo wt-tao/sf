@@ -1,0 +1,292 @@
+<!--pages/research_list/ending/ending.wxml-->
+<view class='title'>
+    <image src='../../../img/xz-2-kb-7.png' style='width:50rpx;margin-top:30rpx;margin-left:20rpx;' mode='widthFix'/>
+    <view style='line-height:100rpx;margin-left:10rpx;font-size:30rpx;'>请认真填写并完善以下资料</view>
+      <!-- <view class='uploads'></view> -->
+    <view class='uploads' bindtap='upload'>
+        <image src='../../../img/tc-166.png' style='width:40rpx;margin-top:15rpx;margin-left:15rpx;' mode='widthFix'/>
+        <view style='margin-left:10rpx;'>我的上传</view>
+    </view>
+    <image src='../../../img/yjjx-5-kb-2.png' style='width:40rpx;margin-top:40rpx;margin-left:20rpx;' mode='widthFix' hidden='{{s1}}' bindtap='sec'/>
+</view>
+
+<view hidden='{{s2}}'>
+<view class='divs' >
+  <view class='title1'>
+    <view class='name'>生存结局</view>
+  </view>
+  <view class='date1' style='height:150rpx;'>
+    <view class='date_top' style='height:100rpx;'>
+      <view class='name' style='color:#015EDA'>D1</view>
+      <view class='names'>生存状态:</view>
+         <image src='{{s4==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5.png"}}' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix'  bindtap='flys'/>
+        <view style='margin-left:20rpx;'>死亡</view>
+
+        <image src='{{s4==true?"../../../img/yjjx-5.png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix'  bindtap='flys'/>
+        <view style='margin-left:20rpx;'>生存</view>
+    </view>
+    <view class='tips'>
+        <view class='names' style='color: #D22626;'>提示:选“生存”请跳到D2和D3</view>
+    </view>
+  </view>
+ <view hidden='{{h1}}'>
+  <view class='date date1'>
+      <view class='names'>死亡日期:</view>
+      <view class='inp'>{{date}}</view>
+      <picker mode="date" bindchange='bindDateChange' value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:20rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+  </view>
+  <view class='date1' style='height:210rpx;'>
+      <view class='names' style='height:70rpx;line-height:70rpx;'>死亡原因：</view>
+      <view class='date date1' style='height:70rpx;line-height:70rpx;border:none;width:95;margin-left:2.5%'>
+          <view class='dei_list date' wx:for='{{dei}}' >
+              <view >{{item.name}}</view>
+               <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:15rpx;' mode='widthFix'  bindtap='de' id='{{item.id}}'/>
+          </view>
+      </view>
+      <view class='date date1' style='height:70rpx;line-height:70rpx;'>
+          <view class='names' style='color:#888888'>其他原因死亡请备注：</view>
+          <input class='input'></input>
+      </view>
+  </view>
+ </view>
+ <view hidden='{{h2}}'>
+  <view class='date date1'>
+      <view class='names'>死亡日期:</view>
+      <view class='inp'>{{date}}</view>
+      <view mode="date" value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:20rpx;' mode='widthFix'/>
+          </view>
+        </view>
+  </view>
+  <view class='date1' style='height:210rpx;'>
+      <view class='names' style='height:70rpx;line-height:70rpx;'>死亡原因：</view>
+      <view class='date date1' style='height:70rpx;line-height:70rpx;border:none;width:95;margin-left:2.5%'>
+          <view class='dei_list date' wx:for='{{dei}}' >
+              <view >{{item.name}}</view>
+               <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:15rpx;margin-left:10rpx' mode='widthFix' />
+          </view>
+      </view>
+      <view class='date date1' style='height:70rpx;line-height:70rpx;'>
+          <view class='names' style='color:#888888'>其他原因死亡请备注：</view>
+          <view class='input'></view>
+      </view>
+  </view>
+ </view>
+</view>
+
+<view class='divs' >
+  <view class='title1'>
+    <view class='name'>肿瘤结局</view>
+  </view>
+  <view class='date date1'>
+      <view class='name' style='color:#015EDA'>D2</view>
+      <view class='names'>是否复发:</view>
+         <image src='{{s3==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5.png"}}' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix'  bindtap='fly'/>
+        <view style='margin-left:20rpx;'>是</view>
+
+        <image src='{{s3==true?"../../../img/yjjx-5.png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix'  bindtap='fly'/>
+        <view style='margin-left:20rpx;'>否</view>
+  </view>
+  <view class='date date1'>
+      <view class='names'>复发日期:</view>
+      <view class='inp'>{{dates}}</view>
+      <picker mode="date" bindchange='bindDatesChange' value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:20rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+  </view>
+  <view class='text'>
+    <view class='names' style='line-height:60rpx;'>复发情况描述:</view>
+    <textarea class='textarea'></textarea>
+  </view>
+  <view class='date date1'>
+      <view class='name' style='color:#015EDA'>D3</view>
+      <view class='names'>是否(新增)转移:</view>
+         <image src='{{s5==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5.png"}}' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix'  bindtap='fly5'/>
+        <view style='margin-left:20rpx;'>是</view>
+
+        <image src='{{s5==true?"../../../img/yjjx-5.png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix'  bindtap='fly5'/>
+        <view style='margin-left:20rpx;'>否</view>
+  </view>
+   <view class='date date1'>
+      <view class='names'>(新增)转移时间:</view>
+      <view class='inp' style='width:50%'>{{dates}}</view>
+      <picker mode="date" bindchange='bindDatesChange' value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:20rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+  </view>
+    <view class='date1' style='height:210rpx;'>
+      <view class='names' style='height:70rpx;line-height:70rpx;'>(新增)转移部位：</view>
+      <view class='date date1' style='height:70rpx;line-height:70rpx;border:none;width:95;margin-left:2.5%'>
+          <view class='dei_list date' wx:for='{{position}}'  style='width:25%;font-size:22rpx;'>
+              <view style=''>{{item.name}}</view>
+               <image src='{{item.id==idp?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:15rpx;' mode='widthFix'  bindtap='des' id='{{item.id}}'/>
+          </view>
+      </view>
+      <view class='date date1' style='height:70rpx;line-height:70rpx;'>
+          <view class='names' style='color:#888888'>其他部位请备注：</view>
+          <input class='input'></input>
+      </view>
+  </view>
+
+   <view class='text'>
+    <view class='names' style='line-height:60rpx;'>(新增)转移情况描述:</view>
+    <textarea class='textarea'></textarea>
+  </view>
+</view>
+
+
+
+<view class='divs' style='min-height:450rpx;'>
+  <view class='title1'>
+    <view class='name'>附件上传</view>
+  </view>
+  <view style='line-height:80rpx;color:#8F8F8F;margin-left:20rpx;'>请上传诊断结论</view>
+  <view class='photo' >
+      <view class='photo_img' wx:for='{{tempFilePaths}}' wx:if='{{tempFilePaths!=""}}'>
+        <image src='{{item}}' style='width:100%;height:100%' mode='aspectFill'/>
+      </view>
+      <view class='photo_img' bindtap='img'  wx:if='{{tempFilePaths.length<=8}}'>
+        <image src='../../../img/tc-154-kb.png' style='width:50rpx;margin-left:37.5rpx;margin-top:37rpx;' mode='widthFix'/>
+      </view>
+  </view>
+  <view style='height:20rpx;width:100%'></view>
+</view>
+</view>
+
+<view hidden='{{s1}}'>
+<view class='divs' >
+  <view class='title1'>
+    <view class='name'>生存结局</view>
+  </view>
+  <view class='date1' style='height:150rpx;'>
+    <view class='date_top' style='height:100rpx;'>
+      <view class='name' style='color:#015EDA'>D1</view>
+      <view class='names'>生存状态:</view>
+         <image src='{{s4==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5.png"}}' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix'  />
+        <view style='margin-left:20rpx;'>死亡</view>
+
+        <image src='{{s4==true?"../../../img/yjjx-5.png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix'  />
+        <view style='margin-left:20rpx;'>生存</view>
+    </view>
+    <view class='tips'>
+        <view class='names' style='color: #D22626;'>提示:选“生存”请跳到D2和D3</view>
+    </view>
+  </view>
+
+  <view class='date date1'>
+      <view class='names'>死亡日期:</view>
+      <view class='inp'>{{date}}</view>
+      <view mode="date" value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:20rpx;' mode='widthFix'/>
+          </view>
+        </view>
+  </view>
+  <view class='date1' style='height:210rpx;'>
+      <view class='names' style='height:70rpx;line-height:70rpx;'>死亡原因：</view>
+      <view class='date date1' style='height:70rpx;line-height:70rpx;border:none;width:95;margin-left:2.5%'>
+          <view class='dei_list date' wx:for='{{dei}}' >
+              <view >{{item.name}}</view>
+               <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:15rpx;margin-left:10rpx' mode='widthFix' />
+          </view>
+      </view>
+      <view class='date date1' style='height:70rpx;line-height:70rpx;'>
+          <view class='names' style='color:#888888'>其他原因死亡请备注：</view>
+          <view class='input'></view>
+      </view>
+  </view>
+</view>
+
+<view class='divs' >
+  <view class='title1'>
+    <view class='name'>肿瘤结局</view>
+  </view>
+  <view class='date date1'>
+      <view class='name' style='color:#015EDA'>D2</view>
+      <view class='names'>是否复发:</view>
+         <image src='{{s3==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5.png"}}' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix'  />
+        <view style='margin-left:20rpx;'>是</view>
+
+        <image src='{{s3==true?"../../../img/yjjx-5.png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix'  />
+        <view style='margin-left:20rpx;'>否</view>
+  </view>
+  <view class='date date1'>
+      <view class='names'>复发日期:</view>
+      <view class='inp'>{{dates}}</view>
+      <view mode="date"  value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:20rpx;' mode='widthFix'/>
+          </view>
+        </view>
+  </view>
+  <view class='text'>
+    <view class='names' style='line-height:60rpx;'>复发情况描述:</view>
+    <view class='textarea'></view>
+  </view>
+  <view class='date date1'>
+      <view class='name' style='color:#015EDA'>D3</view>
+      <view class='names'>是否(新增)转移:</view>
+         <image src='{{s5==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5.png"}}' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix'  />
+        <view style='margin-left:20rpx;'>是</view>
+
+        <image src='{{s5==true?"../../../img/yjjx-5.png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix'  />
+        <view style='margin-left:20rpx;'>否</view>
+  </view>
+   <view class='date date1'>
+      <view class='names'>(新增)转移时间:</view>
+      <view class='inp' style='width:50%'>{{dates}}</view>
+      <view mode="date" value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:20rpx;' mode='widthFix'/>
+          </view>
+        </view>
+  </view>
+    <view class='date1' style='height:210rpx;'>
+      <view class='names' style='height:70rpx;line-height:70rpx;'>(新增)转移部位：</view>
+      <view class='date date1' style='height:70rpx;line-height:70rpx;border:none;width:95;margin-left:2.5%'>
+          <view class='dei_list date' wx:for='{{position}}'  style='width:25%;font-size:22rpx;'>
+              <view style=''>{{item.name}}</view>
+               <image src='{{item.id==idp?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:15rpx;' mode='widthFix'  />
+          </view>
+      </view>
+      <view class='date date1' style='height:70rpx;line-height:70rpx;'>
+          <view class='names' style='color:#888888'>其他部位请备注：</view>
+          <view class='input'></view>
+      </view>
+  </view>
+
+   <view class='text'>
+    <view class='names' style='line-height:60rpx;'>(新增)转移情况描述:</view>
+    <view class='textarea'></view>
+  </view>
+</view>
+
+
+
+<view class='divs' style='min-height:450rpx;'>
+  <view class='title1'>
+    <view class='name'>附件上传</view>
+  </view>
+  <view style='line-height:80rpx;color:#8F8F8F;margin-left:20rpx;'>请上传诊断结论</view>
+  <view class='photo' >
+      <view class='photo_img' wx:for='{{tempFilePaths}}' wx:if='{{tempFilePaths!=""}}'>
+        <image src='{{item}}' style='width:100%;height:100%' mode='aspectFill'/>
+      </view>
+      <view class='photo_img'   wx:if='{{tempFilePaths.length<=8}}'>
+        <image src='../../../img/tc-154-kb.png' style='width:50rpx;margin-left:37.5rpx;margin-top:37rpx;' mode='widthFix'/>
+      </view>
+  </view>
+  <view style='height:20rpx;width:100%'></view>
+</view>
+</view>
+
+<view class='button' hidden='{{s2}}' bindtap='submin'>提交</view>

@@ -1,0 +1,51 @@
+/* pages/research_list/summary/summary.wxss */
+.div{
+  background-color: white;
+  width: 100%;
+  font-size: 30rpx;
+  margin-top: 30rpx; 
+}
+.direction{
+  display: flex;
+  flex-direction: row;
+}
+.list{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+.name{
+  margin-left: 20rpx;
+  color: #222222;
+  width: 50%;
+}
+.wzd{
+  color: #888888;
+  width: 45%;
+  text-align: right;
+}
+.top_coun{
+  width: 14.5%;
+  color: #555555;
+  text-align: center;
+  height: 100rpx;
+  flex-wrap: wrap;
+  line-height: 100rpx;
+  border-right: 1rpx solid #E5E5E5;
+}
+.ls{
+  line-height: 50rpx;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  background-color: #00C2A0
+}
+.textarea{
+  height: 250rpx;
+  width: 95%;
+  padding-left:2.5%;
+  padding-top: 20rpx;
+  /* border: 1rpx solid black; */
+}

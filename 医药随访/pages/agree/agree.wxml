@@ -1,0 +1,44 @@
+<!--pages/agree/agree.wxml-->
+<view class='top'>
+    <view class='top_title'>患者知情同意书</view>
+    <view class='top_count'>
+        <text>尊敬的患者：
+        关于“啊实打实大声道啊实打实大撒的发生大幅爱人发鬼地方挨饿的鬼地方”研究项目的基本信息(目的、方法、可能获得治疗效益和可能产生不良反应)。
+        您已详细了解，并愿意参与此项研究,并与医生充分合作.
+        </text>
+    </view>
+    <view style='height:70rpx;width:100%;'></view>
+</view>
+
+<view class='photo'>
+    <view class='title'>请上传图片附件</view>
+    <view class='photo_img'>
+        <view class='imgs'>
+            <image src='../../img/tc-154-kb.png' style='width:50%;margin-left:25%;margin-top:40rpx;' mode='widthFix' />
+        </view>
+        <view class='imgs'></view>
+    </view>
+    <view style='height:20rpx;width:100%;'></view>
+</view>
+
+<view class='list' style='background-color: #F8F8F8;margin-top:30rpx;'>
+  <image src='../../img/tc-154-kb-2.png' style='width:60rpx;margin-left:20rpx;margin-top:10rpx;' mode='widthFix'/>
+  <view style='margin-left:10rpx;color:#5D5D5D'>知情同意书签署</view>
+</view>
+<view class='list' >
+  <view style='margin-left:20rpx;'>是否签署:</view>
+  <image src='../../img/yjjx-5_49 (2).png' style='width:40rpx;margin-top:20rpx;margin-left:20rpx' mode='widthFix' hidden='{{s1}}'/>
+  <image src='../../img/yjjx-5.png' style='width:40rpx;margin-top:20rpx;margin-left:20rpx' mode='widthFix' hidden='{{s2}}' bindtap='flys'/>
+  <view style='margin-left:20rpx;'>是</view>
+
+  <image src='../../img/yjjx-5_49 (2).png' style='width:40rpx;margin-top:20rpx;margin-left:80rpx' mode='widthFix' hidden='{{s3}}'/>
+  <image src='../../img/yjjx-5.png' style='width:40rpx;margin-top:20rpx;margin-left:80rpx' mode='widthFix' hidden='{{s4}}' bindtap='fly'/>
+  <view style='margin-left:20rpx;'>否</view>
+</view>
+<view class='list' >
+  <view style='margin-left:20rpx;'>签署日期:</view>
+  <input class='input' placeholder='2018年8月29日' placeholder-style='font-size:30rpx;color:#9E9E9E'></input>
+</view>
+
+<view class='sure' bindtap='sure'>确定</view>
+<view style='width:100%;height:50rpx;'></view>

@@ -1,0 +1,154 @@
+<!--pages/research_list/VTE_event/VTE_event.wxml-->
+<view class='title'>
+    <image src='../../../img/xz-2-kb-7.png' style='width:50rpx;margin-top:30rpx;margin-left:20rpx;' mode='widthFix'/>
+    <view style='line-height:100rpx;margin-left:10rpx;font-size:30rpx;'>请认真填写并完善以下资料</view>
+      <!-- <view class='uploads'></view> -->
+    <view class='uploads' bindtap='upload'>
+        <image src='../../../img/tc-166.png' style='width:40rpx;margin-top:15rpx;margin-left:15rpx;' mode='widthFix'/>
+        <view style='margin-left:10rpx;'>我的上传</view>
+    </view>
+    <image src='../../../img/yjjx-5-kb-2.png' style='width:40rpx;margin-top:40rpx;margin-left:20rpx;' mode='widthFix' hidden='{{s1}}' bindtap='sec'/>
+</view>
+<view hidden='{{s2}}'>
+<view class='conm direction' style='margin-top:30rpx;'>
+    <view class='name'>项目期间是否发生VTE事件?</view>
+    <image src='{{s3==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5.png"}}' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix'  bindtap='fly'/>
+    <view style='margin-left:20rpx;'>是</view>
+
+    <image src='{{s3==true?"../../../img/yjjx-5.png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix'  bindtap='fly'/>
+    <view style='margin-left:20rpx;'>否</view>
+</view>
+<view class='tips'>
+    <view class='name' style='color: #D22626;'>提示:若“是”，请填写下表</view>
+</view>
+  <view class='conm direction' >
+      <view class='name'>发生时间:</view>
+      <view class='inp'>{{date}}</view>
+      <picker mode="date" bindchange='bindDateChange' value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:25rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+  </view>
+  <view class='div'>
+    <view class='conm' style='border:none'>
+      <view class='name'>相关事件情况描述:</view>
+    </view>
+    <view class='checked direction'>
+      <view class='checked direction' style='margin-left: 2.5%;width:95%'>
+        <view class='checked_list direction' wx:for='{{situation}}'>
+            <view style='margin-left:20rpx;'>{{item.name}}</view>
+            <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:30rpx;' mode='widthFix'  bindtap='de' id='{{item.id}}'/>
+        </view>
+      </view>
+    </view>
+    <view class='conm' style='border:none'>
+      <view class='name' style='color:#888888'>情况不明请描述:</view>
+    </view>
+    <view class='conm' >
+      <input class='name' ></input>
+    </view>
+     <view class='conm' style='border:none'>
+      <view class='name' >回生使用情况:</view>
+    </view>
+    <view class='conm' >
+      <input class='name' ></input>
+    </view>
+      <view class='conm' style='border:none'>
+      <view class='name' >抗凝药使用情况:</view>
+    </view>
+    <view class='conm' >
+      <input class='name' ></input>
+    </view>
+  </view>
+ 
+
+<view class='divs' style='min-height:450rpx;'>
+  <view class='title1'>
+    <view class='name'>附件上传</view>
+  </view>
+  <view style='line-height:80rpx;color:#8F8F8F;margin-left:20rpx;'>请上传诊断结论</view>
+  <view class='photo' >
+      <view class='photo_img' wx:for='{{tempFilePaths}}' wx:if='{{tempFilePaths!=""}}'>
+        <image src='{{item}}' style='width:100%;height:100%' mode='aspectFill'/>
+      </view>
+      <view class='photo_img' bindtap='img'  wx:if='{{tempFilePaths.length<=8}}'>
+        <image src='../../../img/tc-154-kb.png' style='width:50rpx;margin-left:37.5rpx;margin-top:37rpx;' mode='widthFix'/>
+      </view>
+  </view>
+  <view style='height:20rpx;width:100%'></view>
+</view>
+</view>
+
+
+<view hidden='{{s1}}'>
+<view class='conm direction' style='margin-top:30rpx;'>
+    <view class='name'>项目期间是否发生VTE事件?</view>
+    <image src='{{s3==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5.png"}}' style='width:40rpx;margin-top:30rpx;margin-left:20rpx' mode='widthFix'  />
+    <view style='margin-left:20rpx;'>是</view>
+
+    <image src='{{s3==true?"../../../img/yjjx-5.png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:80rpx' mode='widthFix'  />
+    <view style='margin-left:20rpx;'>否</view>
+</view>
+<view class='tips'>
+    <view class='name' style='color: #D22626;'>提示:若“是”，请填写下表</view>
+</view>
+  <view class='conm direction' >
+      <view class='name'>发生时间:</view>
+      <view class='inp'>{{date}}</view>
+      <view mode="date"  value="{{date}}" style='width:10%' >
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:25rpx;' mode='widthFix'/>
+          </view>
+        </view>
+  </view>
+  <view class='div'>
+    <view class='conm' style='border:none'>
+      <view class='name'>相关事件情况描述:</view>
+    </view>
+    <view class='checked direction'>
+      <view class='checked direction' style='margin-left: 2.5%;width:95%'>
+        <view class='checked_list direction' wx:for='{{situation}}'>
+            <view style='margin-left:20rpx;'>{{item.name}}</view>
+            <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:30rpx;' mode='widthFix'  />
+        </view>
+      </view>
+    </view>
+    <view class='conm' style='border:none'>
+      <view class='name' style='color:#888888'>情况不明请描述:</view>
+    </view>
+    <view class='conm' >
+      <view class='name' ></view>
+    </view>
+     <view class='conm' style='border:none'>
+      <view class='name' >回生使用情况:</view>
+    </view>
+    <view class='conm' >
+      <view class='name' ></view>
+    </view>
+      <view class='conm' style='border:none'>
+      <view class='name' >抗凝药使用情况:</view>
+    </view>
+    <view class='conm' >
+      <view class='name' ></view>
+    </view>
+  </view>
+ 
+
+<view class='divs' style='min-height:450rpx;'>
+  <view class='title1'>
+    <view class='name'>附件上传</view>
+  </view>
+  <view style='line-height:80rpx;color:#8F8F8F;margin-left:20rpx;'>请上传诊断结论</view>
+  <view class='photo' >
+      <view class='photo_img' wx:for='{{tempFilePaths}}' wx:if='{{tempFilePaths!=""}}'>
+        <image src='{{item}}' style='width:100%;height:100%' mode='aspectFill'/>
+      </view>
+      <view class='photo_img'  wx:if='{{tempFilePaths.length<=8}}'>
+        <image src='../../../img/tc-154-kb.png' style='width:50rpx;margin-left:37.5rpx;margin-top:37rpx;' mode='widthFix'/>
+      </view>
+  </view>
+  <view style='height:20rpx;width:100%'></view>
+</view>
+</view>
+<view class='button' hidden='{{s2}}' bindtap='submin'>提交</view>

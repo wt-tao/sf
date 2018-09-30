@@ -1,0 +1,73 @@
+/* pages/research_list/VTE_event/VTE_event.wxss */
+page{
+  color: #333333;
+  font-size: 30rpx;
+}
+.conm{
+ height: 100rpx;
+  width: 100%;
+  background-color: white;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #DDDDDD;
+}
+
+.direction{
+  display: flex;
+  flex-direction: row;
+}
+.inp{
+  width: 60%;
+  margin-left: 30rpx;
+}
+.div{
+  width: 100%;
+  /* border-bottom: 1rpx solid #DDDDDD; */
+}
+.checked{
+  flex-wrap: wrap;
+  background-color: white;
+  width: 100%;
+  line-height: 100rpx;
+  /* margin-left: 2.5% */
+}
+.checked_list{
+  width:33%;
+  height: 100rpx;
+  font-size: 24rpx;
+}
+.tips{
+  width: 100%;
+  line-height: 100rpx;
+}
+.divs{
+  width: 100%;
+  margin-top:30rpx;
+  background-color: white;
+  border-bottom: 1rpx solid #DDDDDD;
+}
+.title1{
+  height:90rpx;
+  line-height: 90rpx;
+  background-color: #F8F8F8;
+  border-bottom: 1rpx solid #EEEEEE;
+}
+.name{
+margin-left: 20rpx;
+color: #555555;
+}
+
+.photo{
+  width: 97.5%;
+  min-height: 250rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: 1rpx solid black; */
+}
+.photo_img{
+  height: 125rpx;
+  width: 125rpx;
+  background-color: #D3D3D3;
+  margin-top: 20rpx;
+  margin-left: 2.5%;
+}

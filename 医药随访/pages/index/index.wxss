@@ -1,0 +1,92 @@
+/**index.wxss**/
+page{
+  background-color: #EBEBEB;
+}
+.container{
+  background-color: white
+}
+.title{
+  height: 70rpx;
+  width: 100%;
+  background-color: #F8F8F8;
+  border-bottom: 1rpx solid #EBEBEB;
+  display: flex;
+  flex-direction: row;
+}
+.title_text{
+  margin-left: 10rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #6F6F6F;
+}
+.list{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #EBEBEB;
+}
+.list_text{
+  color: #919191;
+  line-height: 90rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+  /* border: 1rpx solid black; */
+}
+.cardInput{
+  margin-left: 10rpx;
+  height: 90rpx;
+  width: 490rpx;
+  border-left: 1rpx solid #EBEBEB;
+}
+.input1{
+  width: 500rpx;
+  margin-left:70rpx; 
+  font-size: 28rpx;
+  margin-top: 15rpx;
+  padding-left: 3%;
+  /* border: 1rpx solid black; */
+}
+.input{
+  width: 97%;
+  font-size: 28rpx;
+  margin-top: 15rpx;
+  padding-left: 3%;
+}
+.input2{
+  width: 97%;
+  font-size: 28rpx;
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+}
+.list_city{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-left: 1rpx solid #EBEBEB;
+  font-size: 30rpx;
+  color: #949494;
+  line-height: 90rpx;
+}
+.list_city_text{
+  width: 75%;
+  margin-left: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+   /* border: 1rpx solid black; */
+}
+.button{
+  width: 95%;
+  margin-left: 2.5%;
+  height: 100rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background-color: #013F91;
+  color: white;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  margin-top: 80rpx;
+}
