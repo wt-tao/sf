@@ -1,7 +1,7 @@
 {
   "pages":[
     
-    "pages/indexs/indexs",
+    "pages/index/index",
     "pages/User/User",
     "pages/User/integral/integral",
     "pages/User/sign_in/sign_in",
@@ -19,8 +19,8 @@
     "pages/follow-up_project/follow-up_project",
     "pages/Choose_hospital/Choose_hospital",
     "pages/project_list/project_list",
-    "pages/index/index",
     
+    "pages/indexs/indexs",
     "pages/agree/agree",
     "pages/Selection_section/Selection_section",
     "pages/Message_push/Message_push",

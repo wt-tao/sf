@@ -13,10 +13,13 @@
 <view class='photo'>
     <view class='title'>请上传图片附件</view>
     <view class='photo_img'>
-        <view class='imgs'>
+        <view class='imgs'   wx:for='{{tempFilePaths}}' wx:if='{{tempFilePaths!=""}}'>
+            <image  src='{{item}}' style='width:100%;height:100%' mode='aspectFill' />
+        </view>
+        <view class='imgs' bindtap='img' wx:if='{{tempFilePaths.length<=8}}'>
             <image src='../../img/tc-154-kb.png' style='width:50%;margin-left:25%;margin-top:40rpx;' mode='widthFix' />
         </view>
-        <view class='imgs'></view>
+        
     </view>
     <view style='height:20rpx;width:100%;'></view>
 </view>

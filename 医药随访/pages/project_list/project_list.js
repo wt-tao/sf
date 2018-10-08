@@ -5,7 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    sort: false,
+    tit:'典型病例'
+  },
+  del: function () {
+    this.setData({
+      sort: false,
+    })
+  },
+  ewm: function () {
+    this.setData({
+      sort: true,
+    })
   },
   sure:function(){
       wx.navigateTo({

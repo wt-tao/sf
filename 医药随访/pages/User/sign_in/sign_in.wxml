@@ -1,2 +1,38 @@
 <!--pages/User/sign_in/sign_in.wxml-->
-<text>pages/User/sign_in/sign_in.wxml</text>
+<image src='../../../img/tc-166_97.png' style='width:100%;height:500rpx;z-index: 1001' />
+<view class='div'>
+    <view class='circular'> </view>
+    <view class='circular_l' >签到</view>
+    <view class='div_text'>您已累计签到：6天</view>
+</view>
+<view class='celandar'>
+    <view class='celandar_top'>{{myDate}}</view>
+    <swiper circular current='1' bindchange='swiperChange' duration='300'>
+    <swiper-item wx:for='{{dateArr}}' wx:for-item='dateArrItem' wx:key='this'>
+      <view class='xingqi'>
+        <text class='xingqi_sub' wx:for='{{week}}' wx:key='this'>{{item}}</text>
+      </view>
+      <view class='date_box'>
+        <view class='date_sub' wx:for='{{dateArrItem}}' wx:key='this' style='{{(item.bg=="1")?"opacity: 0;":(item.date<ri)?"color:#A0CDFF":"color:#3A8BE5"}}' data-index='{{index}}' data-item='{{item}}' catchtap='dateTap'>
+          <view class='today_icon' wx:if='{{index+1==today}}'></view>
+          
+          <image class='convention_img' src='/image/foot.png' wx:if='{{item.type==2}}'></image>
+          <image class='mark_img' src='/image/flags.png' wx:if='{{item.type==1}}'></image>
+          
+          <text class='date_text' >{{item.date}}</text>
+          <!-- style='{{index+1==today&&"color:#DD71E3;"}}' -->
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class='sign_in'>
+      <view style='font-size:30rpx;color:#333333;line-height:50rpx;margin-top:30rpx;'>签到规则</view>
+      <text>1、签到每天可获得20积分;
+      2、连续签到1周可额外获得50积分,连续签到2周可额外获得100积分,连续签到3周可额外获得150积分,连续签到1个月可额外获得200积分；
+      3、中途间断签到,会重新计算连续签到日期；
+      4、没有1号会清空上个月签到天数;
+      </text>
+
+</view>

@@ -1,1 +1,104 @@
 /* pages/User/sign_in/sign_in.wxss */
+.div{
+  width: 100%;
+  height: 500rpx;
+  /* position: relative; */
+  margin-top: -510rpx;
+  z-index: 1001;
+  /* border: 1rpx solid black; */
+}
+.circular{
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.3;
+  margin-top: 50rpx;
+  margin-left: 250rpx;
+}
+.circular_l{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 75rpx;
+  left:275rpx;
+  font-size: 50rpx;
+  color: #00B6A7;
+  line-height: 200rpx;
+  text-align: center;
+}
+.div_text{
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.celandar{
+  width: 95%;
+  margin-left: 2.5%;
+  height: 430rpx;
+  font-size: 30rpx;
+  background-color: white;
+  margin-top: -150rpx;
+  position: relative;
+  z-index: 1003;
+  border-radius: 5rpx;
+}
+.celandar_top{
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  line-height: 80rpx;
+  color: #575757;
+  border-bottom:1rpx solid #19519B;
+}
+swiper,swiper-item{
+  width: 100%;
+  height: 350rpx;
+  /* border: 1rpx solid black; */
+}
+.xingqi{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  /*  */
+}
+.xingqi_sub{
+  width: 100rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.date_box{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  
+}
+.date_sub{
+  width: 100rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  /* color: #fff; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.date_text{
+  width: 100rpx;
+  height: 50rpx;
+  position: absolute;
+}
+.sign_in{
+  width: 95%;
+  margin-left: 2.5%;
+  font-size: 28rpx;
+  color: #555555;  
+}

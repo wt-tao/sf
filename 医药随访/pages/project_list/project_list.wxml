@@ -24,10 +24,10 @@
           <image src='../../img/yjjx-5_49 (1).png' style='width:45rpx;margin-left:2.5%;margin-top:30rpx;' mode='widthFix' wx:if='{{s1}}'></image>
         </view>
         <view class='list_right'>
-            <view class='list_title'>按时发的撒阿斯蒂芬是DF水电费SDF dSDF 都是分工的方式的发布的</view>
-            <view class='id_card'>
+            <view class='list_title'>{{tit}}</view>
+            <view class='id_card' style='{{tit.length<18?"margin-top:50rpx;":""}}'>
                <view class='list_right_id'>临床研究注册号：DATF121231231234</view>
-               <image src='../../img/tc-159-kb-4.png' style='width:40rpx;margin-top:45rpx;margin-left:60rpx;' mode='widthFix'></image>
+               <image src='../../img/tc-159-kb-4.png' style='width:40rpx;margin-top:45rpx;margin-left:60rpx;' mode='widthFix' catchtap='ewm'></image>
             </view>
         </view>
     </view>
@@ -37,3 +37,13 @@
 <view class='sure' bindtap='sure'>确定</view>
 
 
+<block wx:if='{{sort}}'>
+<view class="bg" style='display:block'></view>
+<view class="show" style='display:block;'>
+    <image src='../../img/xz-2-kb-5.png' style='width:60rpx;margin-left:89%;' mode='widthFix' bindtap='del'/>
+    <view class='img_ewm'></view>
+    <button plain='true' style='margin-top:80rpx; border:none' open-type='share'>
+        <view class='botton'>分享</view>
+    </button>
+</view>
+</block>

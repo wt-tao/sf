@@ -9,6 +9,7 @@ Page({
     s2:true,
     s4: false,
     s3: true,
+    tempFilePaths:[],
   },
 
   flys:function(){
@@ -30,6 +31,22 @@ Page({
   sure:function(){
     wx.navigateBack({
       delta:1
+    })
+  },
+  img: function () {
+    var that = this
+    var tempFilePaths1 = this.data.tempFilePaths
+    wx.chooseImage({
+      count: 9, // 默认9
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+      success: function (res) {
+        tempFilePaths1.push(res.tempFilePaths)
+        console.log('tempFilePaths1', tempFilePaths1)
+        that.setData({
+          tempFilePaths: tempFilePaths1,
+        })
+      }
     })
   },
   /**

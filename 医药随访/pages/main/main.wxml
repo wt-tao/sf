@@ -46,7 +46,7 @@
 <view class="show" style='display:block;'>
     <image src='../../img/xz-2-kb-5.png' style='width:60rpx;margin-left:89%;' mode='widthFix' bindtap='del'/>
     <view class='img_ewm'></view>
-    <button plain='true' style='margin-top:80rpx; border:none' open-type='share	'>
+    <button plain='true' style='margin-top:80rpx; border:none' open-type='share'>
         <view class='botton'>分享</view>
     </button>
 </view>
