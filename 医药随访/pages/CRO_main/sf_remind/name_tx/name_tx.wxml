@@ -1,0 +1,24 @@
+<!--pages/CRO_main/sf_remind/name_tx/name_tx.wxml-->
+<view class='tops_text'>
+  <view style='margin-left:20rpx;'>
+      提醒时段:<text style='color:#E71D1D'> 出院后第三月 </text>提前一周提醒
+  </view>
+</view>
+<view class='tx_text'>
+    <view class='text'>随访项目：《凝血指标对非小细胞肺癌复发转移的影响及消除化瘀法干预效果的注册登记研究》</view>
+</view>
+
+<view class='list'>
+    <view class='list_com' bindtap='wechat_tx'>
+        <image src='../../../../img/tc-168_25 (2).png' style='width:70%;margin-left:45rpx;margin-top:30rpx;' mode='widthFix'/>
+        <view class='list_text'>小程序提醒</view>
+    </view>
+     <view class='list_com'>
+        <image src='../../../../img/tc-168_25 (3).png' style='width:70%;margin-left:45rpx;margin-top:30rpx;' mode='widthFix'/>
+        <view class='list_text'>短信提醒</view>
+    </view>
+     <view class='list_com'>
+        <image src='../../../../img/tc-168_25 (1).png' style='width:70%;margin-left:45rpx;margin-top:30rpx;' mode='widthFix'/>
+        <view class='list_text'>电话提醒</view>
+    </view>
+</view>

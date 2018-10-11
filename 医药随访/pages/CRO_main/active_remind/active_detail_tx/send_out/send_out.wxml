@@ -1,0 +1,15 @@
+<!--pages/CRO_main/active_remind/active_detail_tx/send_out/send_out.wxml-->
+<view class='div'>
+    <view style='height:30rpx;'></view>
+    <view class='div_div' style='white-space: pre-line'>
+        <view class='text'>您好，您参与的活动<text style='color:#0E54B2'>——康复协会组织“与健康同行”骑行活动，</text>将于一周后开始，请合理安排时间准时参加哟~；<text style='color:#0E54B2'>活动时间:</text><text style='color:#DE1A1A'>2018-10-11、</text> <text style='color:#0E54B2'>活动地点:</text><text style='color:#DE1A1A'>成都市青羊区浣花溪花园</text>；
+          祝您早日康复、生活愉快！
+          
+        </view>
+        <view style='height:20rpx;'></view>
+    </view>
+     <view style='height:30rpx;'></view>
+</view>
+
+
+<view class='send_out'>发送</view>

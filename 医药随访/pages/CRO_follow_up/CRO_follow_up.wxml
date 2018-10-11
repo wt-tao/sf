@@ -1,0 +1,3 @@
+<!--pages/CRO_follow_up/CRO_follow_up.wxml-->
+<import src="../../template/template.wxml"/>
+     <template   is="CRO_follow_up" ></template>

@@ -1,0 +1,28 @@
+/* pages/CRO_main/sjUpload_remind/sjUpload_remind.wxss */
+.tops_text{
+  width: 100%;
+  font-size: 28rpx;
+  color: #474747;
+  line-height: 80rpx;
+  background-color: #F8F8F8;
+}
+
+.list{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #242424;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+.name{
+  width: 400rpx;
+  margin-left: 20rpx;
+}
+.tx{
+  width: 250rpx;
+  text-align: right;
+}

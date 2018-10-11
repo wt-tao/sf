@@ -1,0 +1,13 @@
+<!--pages/CRO_main/sf_remind/wechat_tx/wechat_tx.wxml-->
+<view class='head'>
+    <image src='../../../../img/tc-168_25 (2).png' style='width:80rpx;margin-top:10rpx;margin-left:20rpx;' mode='widthFix'/>
+    <view class='tx_text'>小程序提醒</view>
+</view>
+<view class='div'>
+    <view style='height:50rpx;'></view>
+    <view class='div_div'>
+        <view class='div_div_text'>您好,您参与的<text style='color:#367EDB'>《凝血指标对非小细胞肺癌复发转移的影响及消除化瘀法干预效果的注册登记研究》</text>将于一周后开始随访调查,请注意相关时段表格填写,谢谢您的配合,祝您早日康复，生活愉快！</view>
+    </view>
+</view>
+
+<view class='fs'>发送</view>

@@ -1,0 +1,21 @@
+<!--pages/CRO_main/active_remind/active_remind.wxml-->
+<view class='list' style='margin-top:0' bindtap='active_detail_tx' >
+    <view class='top' >
+        <view class='name'>康复协会组织“与健康同行”骑行活动</view>
+        <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:40rpx;' mode='widthFix'/>
+    </view>
+    <view class='top'>
+        <view class='text1'>参与人数：<text style='color:#E71D1D'>1</text>人</view>
+        <view class='text1' style='text-align: right'>活动时间：<text style='color:#E71D1D'>2018-10-28</text></view>
+    </view>
+</view>
+<view class='list' >
+    <view class='top'>
+        <view class='name'>康复协会组织“与健康同行”骑行活动</view>
+        <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:40rpx;' mode='widthFix'/>
+    </view>
+    <view class='top'>
+        <view class='text1'>参与人数：<text style='color:#E71D1D'>1</text>人</view>
+        <view class='text1' style='text-align: right'>活动时间：<text style='color:#E71D1D'>2018-10-28</text></view>
+    </view>
+</view>

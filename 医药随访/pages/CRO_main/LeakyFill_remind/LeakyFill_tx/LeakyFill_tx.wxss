@@ -1,9 +1,27 @@
 
+.tops_text{
+  width: 100%;
+  font-size: 30rpx;
+  color: #474747;
+  line-height: 80rpx;
+  background-color: white;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+.tx_text{
+  background-color: white;
+  font-size: 28rpx;
+  color: #7A7A7A;
+  line-height: 40rpx;
+}
+.text{
+  width: 95%;
+  margin-left: 2.5%;
+  flex-wrap: wrap;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
 
-.swiper-box{ 
-  height: 100%; 
-  width: 100%; 
-} 
+
 .top{
   width: 100%;
   height: 100rpx;
@@ -29,15 +47,10 @@
   color: white;
   border: none
 }
-.title{
-  width: 100%;
-  height: 100rpx;
-  display: flex;
-  flex-direction: row;
-  color: #397CDA;
-  background-color: #F8F8F8;
-  border-bottom: 1rpx solid #ECECEC;
+swiper-item{
+  height: 500rpx;
 }
+
 .list{
   width: 100%;
   background-color: white;

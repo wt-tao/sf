@@ -1,0 +1,43 @@
+/* pages/CRO_main/sf_remind/name_tx/name_tx.wxss */
+.tops_text{
+  width: 100%;
+  font-size: 30rpx;
+  color: #474747;
+  line-height: 80rpx;
+  background-color: white;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+.tx_text{
+  background-color: white;
+  font-size: 28rpx;
+  color: #7A7A7A;
+  line-height: 40rpx;
+}
+.text{
+  width: 95%;
+  margin-left: 2.5%;
+  flex-wrap: wrap;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.list{
+  width: 100%;
+  height: 350rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-top: 30rpx;
+  font-size: 34rpx;
+  color: #474747;
+}
+.list_com{
+  width: 33.3%;
+  height: 100%;
+}
+.list_text{
+  width: 100%;
+  text-align: center;
+  line-height: 70rpx;
+  font-weight: 700;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,30 @@
+<!--pages/CRO_main/active_remind/active_detail_tx/active_detail_tx.wxml-->
+<view class='head'>
+    <view class='left'>
+        <view class='lis' style='line-height: 85rpx;'>活动名称：康复协会组织“与健康同行”骑行活动</view>
+        <view class='lis' style='line-height: 55rpx;'>开始时间：<text style='color:#E71D1D'>2018-10-28</text></view>
+    </view> 
+    <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:50rpx;' mode='widthFix'/> 
+</view>
+
+<view class='top'>
+    <view class='top_text'>参与人数：<text style='color:#E71D1D'>10</text>人</view>
+    <view class='top_text' style='width:42%;margin-left:0;'>
+        <image src='../../../../img/xz-1-kb-4 (2).png' style='width:35rpx;margin-top:25rpx;margin-left:220rpx;' mode='widthFix'/>
+        <!-- <image src='../../../../img/ty-9 (2).png' style='width:35rpx;margin-top:25rpx;margin-left:220rpx;' mode='widthFix'/> -->
+        <view style='color:#9C9C9C;margin-left:10rpx;font-size:26rpx;'>全选</view>
+    </view>
+</view>
+<view class='list'>
+    <image src='../../../../img/yjjx-5_49 (2).png' style='width:40rpx;margin-left:20rpx;margin-top:20rpx;' mode='widthFix'/>
+    <view class='name' >姓名1</view>
+    <view class='time'>参与日期：2018-10-20</view>
+</view>
+<view class='list'>
+    <image src='../../../../img/yjjx-5_49 (2).png' style='width:40rpx;margin-left:20rpx;margin-top:20rpx;' mode='widthFix'/>
+    <view class='name' >姓名2</view>
+    <view class='time'>参与日期：2018-10-20</view>
+</view>
+<view style='height:130rpx;'></view>
+
+<view class='send' bindtap='send_out'>发布小程序提醒</view>

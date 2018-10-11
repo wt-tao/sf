@@ -1,0 +1,86 @@
+
+
+<template name="main">
+    <view class='tabble'>
+        <view class='tabble_list'  >
+              <image src='../../img/hover_66.png'  mode='widthFix' class='imgs'/>
+          <view class='tabble_list_text' style='line-height: 30rpx;color:#013F91'>项目提醒</view>
+      </view>
+       <view class='tabble_list'  bindtap='CRO_Patient'>
+              <image src='../../img/link.png'  mode='widthFix' style='width:50rpx;' class='imgs'/>
+          <view class='tabble_list_text' style='line-height: 40rpx;'>病人管理</view>
+      </view>
+       <view class='tabble_list' bindtap='CRO_follow_up' >
+              <image src='../../img/link_77.png' class='imgs' style='width:45rpx;' mode='widthFix'/>
+          <view class='tabble_list_text' style='line-height: 35rpx;'>随访管理</view>
+      </view>
+       <view class='tabble_list' bindtap='CRO_typical' >
+              <image src='../../img/link_92.png' class='imgs' mode='widthFix'/>
+          <view class='tabble_list_text' style='line-height: 25rpx;'>典型病例</view>
+      </view>
+  </view>
+</template>
+
+<template name="Patient">
+  <view class='tabble'>
+       <view class='tabble_list' bindtap='CRO_main' >
+              <image src='../../img/link_34.png'  mode='widthFix' class='imgs'/>
+          <view class='tabble_list_text' style='line-height: 30rpx;'>项目提醒</view>
+      </view>
+       <view class='tabble_list'  >
+              <image src='../../img/hover.png'  mode='widthFix' style='width:50rpx;' class='imgs'/>
+          <view class='tabble_list_text' style='line-height: 40rpx;color:#013F91'>病人管理</view>
+      </view>
+       <view class='tabble_list'  bindtap='CRO_follow_up'>
+              <image src='../../img/link_77.png' class='imgs' style='width:45rpx;' mode='widthFix'/>
+          <view class='tabble_list_text' style='line-height: 35rpx;'>随访管理</view>
+      </view>
+       <view class='tabble_list'  bindtap='CRO_typical'>
+              <image src='../../img/link_92.png' class='imgs' mode='widthFix'/>
+          <view class='tabble_list_text' style='line-height: 25rpx;'>典型病例</view>
+      </view>
+ </view>
+</template>
+
+<template name="CRO_follow_up">
+  <view class='tabble'>
+       <view class='tabble_list'  bindtap='CRO_main'>
+              <image src='../../img/link_34.png'  mode='widthFix' class='imgs'/>
+          <view class='tabble_list_text' style='line-height: 30rpx;'>项目提醒</view>
+      </view>
+       <view class='tabble_list'  bindtap='CRO_Patient'>
+              <image src='../../img/link.png'  mode='widthFix' style='width:50rpx;' class='imgs'/>
+          <view class='tabble_list_text' style='line-height: 40rpx;'>病人管理</view>
+      </view>
+       <view class='tabble_list'  >
+              <image src='../../img/hover_16.png' class='imgs' style='width:45rpx;' mode='widthFix'/>
+          <view class='tabble_list_text' style='line-height: 35rpx;color:#013F91' >随访管理</view>
+      </view>
+       <view class='tabble_list'  bindtap='CRO_typical'>
+              <image src='../../img/link_92.png' class='imgs' mode='widthFix'/>
+          <view class='tabble_list_text' style='line-height: 25rpx;'>典型病例</view>
+      </view>
+  </view>
+</template>
+
+
+<template name="CRO_typical"> 
+  <view class='tabble'>
+       <view class='tabble_list'  bindtap='CRO_main'>
+              <image src='../../img/link_34.png'  mode='widthFix' class='imgs'/>
+          <view class='tabble_list_text' style='line-height: 30rpx;'>项目提醒</view>
+      </view>
+       <view class='tabble_list'  bindtap='CRO_Patient'>
+              <image src='../../img/link.png'  mode='widthFix' style='width:50rpx;' class='imgs'/>
+          <view class='tabble_list_text' style='line-height: 40rpx;'>病人管理</view>
+      </view>
+       <view class='tabble_list'  bindtap='CRO_follow_up'>
+              <image src='../../img/link_77.png' class='imgs' style='width:45rpx;' mode='widthFix'/>
+          <view class='tabble_list_text' style='line-height: 35rpx;'>随访管理</view>
+      </view>
+       <view class='tabble_list'  >
+              <image src='../../img/hover_44.png' class='imgs' mode='widthFix'/>
+          <view class='tabble_list_text' style='line-height: 25rpx;color:#013F91'>典型病例</view>
+      </view>
+  </view>
+</template>

@@ -1,0 +1,2 @@
+/* pages/patient/patient.wxss */
+@import "../../template/template.wxss";

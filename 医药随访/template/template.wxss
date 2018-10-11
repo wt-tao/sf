@@ -1,0 +1,27 @@
+.tabble{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  height: 100rpx;
+  /* border: 1rpx solid black; */
+}
+.tabble_list{
+  width: 25%;
+  font-size: 26rpx;
+  color: #5D5D5D;
+  /* border: 1rpx solid black; */
+}
+
+.tabble_list_text{
+  line-height: 50rpx;
+  width: 100%;
+  text-align: center;
+}
+.imgs{
+  width: 40rpx;
+  margin-left: 73rpx;
+  margin-top:10rpx;
+}

@@ -1,0 +1,33 @@
+/* pages/CRO_main/active_remind/active_detail_tx/send_out/send_out.wxss */
+.div{
+  width: 100%;
+  background-color: white;
+}
+.div_div{
+  width: 90%;
+  margin-left: 5%;
+  border: 1rpx solid #ECECEC;
+  border-radius: 10rpx;
+}
+.text{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20rpx;
+  flex-wrap: wrap;
+  color: #3A3A3A;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+
+.send_out{
+  width: 95%;
+  margin-left: 2.5%;
+  font-size: 30rpx;
+  color: white;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #013F91;
+  border-radius: 10rpx;
+  margin-top: 150rpx;
+}

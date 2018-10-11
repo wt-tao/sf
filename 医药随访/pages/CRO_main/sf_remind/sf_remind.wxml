@@ -1,0 +1,13 @@
+<!--pages/CRO_main/sf_remind/sf_remind.wxml-->
+<view class='tops_text'>
+  <view style='margin-left:20rpx;'>
+      共<text style='color:#E71D1D'> 3 </text>位患者需核查并上传
+  </view>
+</view>
+<view style='width100%;height:30rpx;'></view>
+<view class='list' wx:for='{{name}}' bindtap='name_tx' data-name='{{item.name}}' data-id='{{item.id}}'>
+    <view class='name'>{{item.name}}</view>
+    <view class='tx' style='color:#15AD5F'>已提醒</view>
+     <!-- <view class='tx' style='color:#E71D1D'>未提醒</view> -->
+    <image src='../../../img/tc-164-kb_3.png' style='width:18rpx;margin-top:25rpx;margin-left:30rpx;' mode='widthFix'/>
+</view>

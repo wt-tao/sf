@@ -1,0 +1,293 @@
+
+<view class='tops_text'>
+  <view style='margin-left:20rpx;'>
+      随访阶段:<text style='color:#E71D1D'> 入组 </text>
+  </view>
+</view>
+<view class='tx_text'>
+    <view class='text'>随访项目：《凝血指标对非小细胞肺癌复发转移的影响及消除化瘀法干预效果的注册登记研究》</view>
+</view>
+
+<!--pages/research_list/research_list.wxml-->
+<view class='top' style='margin-top:30rpx;'>
+  <view class="top_coun ls {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">入组</view>
+  <view class="top_coun {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">出院前 1天</view>
+  <view class="top_coun {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">出院后 3月</view>
+  <view class="top_coun ls {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">6月</view>
+  <view class="top_coun ls {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">12月</view>
+  <view class="top_coun ls {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap="swichNav">18月</view>
+  <view class="top_coun ls {{currentTab==6 ? 'on' : ''}}" data-current="6" bindtap="swichNav">24月</view>
+</view>
+
+<swiper current="{{currentTab}}"   style="height:880rpx;">
+<!-- 入组 -->
+    <swiper-item style="overflow: scroll;">
+        <view class='list' bindtap='General_information'>
+            <view class='left'>一般资料登记</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='case'>
+            <view class='left'>入组前主要病史</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Diagnosis'>
+            <view class='left'>诊断</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Treatment_plan'>
+            <view class='left'>治疗方案</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Inspection_project'>
+            <view class='left'>实验室检查项目</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='weight'>
+            <view class='left'>生活方式</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Anderson_rating_scale'>
+            <view class='left'>安德森症状评分量表</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Use_of_retrogradation'>
+            <view class='left'>回生使用情况</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Use_of_anticoagulants'>
+            <view class='left'>抗凝药使用情况</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Photograph_and_upload'>
+            <view class='left'>检查报告单拍照上传</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='CRO_Check'>
+            <view class='left'>CRO核查</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Management_verification'>
+            <view class='left'>管理员及三方（抽样）核查</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view style='height:30rpx;width:100%'></view>
+    </swiper-item>
+    <!-- 出院前一天 -->
+    <swiper-item style="height:800rpx;overflow: scroll;">
+      <view class='list' bindtap='Treatment_plan'>
+            <view class='left'>治疗方案</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Inspection_project'>
+            <view class='left'>实验室检查项目</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='weight'>
+            <view class='left'>生活方式</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Anderson_rating_scale'>
+            <view class='left'>安德森症状评分量表</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Use_of_retrogradation'>
+            <view class='left'>回生使用情况</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Use_of_anticoagulants'>
+            <view class='left'>抗凝药使用情况</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+            <view class='list'  bindtap='CT_review'>
+            <view class='left'>影像学(CT）及病理学复查</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='ending'>
+            <view class='left'>结局</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='VTE_event'>
+            <view class='left'>VTE事件</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+      
+        <view class='list' bindtap='hemorrhage_event'>
+            <view class='left'>出血事件</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+         <view class='list' bindtap='summary'>
+            <view class='left'>随访完成情况总结</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+          <view class='list' bindtap='Photograph_and_upload'>
+            <view class='left'>检查报告单拍照上传</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='CRO_Check'>
+            <view class='left'>CRO核查</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view class='list' bindtap='Management_verification'>
+            <view class='left'>管理员及三方（抽样）核查</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+        <view style='height:30rpx;width:100%'></view>
+    </swiper-item>
+</swiper>
+
