@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    list: [{ id: 1, name: "王良银", card: 'wly20180808' }, { id: 2, name: "曹寅", card: 'wly20180808' },]
   },
   CRO_Patient: function () {
     wx.reLaunch({
@@ -20,6 +20,11 @@ Page({
   CRO_follow_up: function () {
     wx.reLaunch({
       url: '../CRO_follow_up/CRO_follow_up',
+    })
+  },
+  name_detail: function (e) {
+    wx.navigateTo({
+      url: 'illness_detail/illness_detail?id=' + e.currentTarget.id,
     })
   },
   /**

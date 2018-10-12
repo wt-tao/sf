@@ -1,0 +1,66 @@
+/* pages/CRO_patient/new_push/new_push.wxss */
+.div{
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: white;
+  margin-top: 20rpx;
+  height: 600rpx;
+  border-radius: 10rpx;
+}
+.imsg{
+  position: relative;
+  right: -320rpx;
+}
+.margin{
+  width: 95%;
+  margin-left: 2.5%;
+}
+.title{
+  height: 50rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  color: #323232;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: white;
+  border: none;
+}
+.time{
+  font-size: 26rpx;
+  color: #888888;
+  margin-top:10rpx;
+}
+.img{
+  height: 300rpx;
+  margin-top:30rpx;
+  border: 1rpx solid black;
+}
+.text{
+  margin-top: 20rpx;
+  height: 100rpx;
+  line-height: 50rpx;
+  flex-wrap: wrap;
+  font-size: 30rpx;
+  color: #444444;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+}
+.botton{
+  height: 80rpx;
+  width: 100%;
+  margin-top: 20rpx;
+  /* border: 1rpx solid black; */
+}
+.booton_an{
+  width: 50%;
+  font-size: 26rpx;
+  color: #888888;
+  margin-left:20rpx;
+  height: 40rpx;
+  margin-top:10rpx;
+}

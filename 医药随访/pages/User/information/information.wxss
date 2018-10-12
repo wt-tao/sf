@@ -1,7 +1,5 @@
 /**index.wxss**/
-page{
-  background-color: #EBEBEB;
-}
+
 .container{
   background-color: white
 }

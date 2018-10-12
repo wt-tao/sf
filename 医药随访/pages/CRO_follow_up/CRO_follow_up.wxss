@@ -1,2 +1,84 @@
 /* pages/CRO_follow_up/CRO_follow_up.wxss */
 @import "../../template/template.wxss";
+.search{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.input{
+  width: 650rpx;
+  margin-left: 20rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+  /* border: 1rpx solid black */
+}
+.top{
+  margin-top: 30rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #F8F8F8;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.patient_list{
+  margin-left: 10rpx;
+}
+.right_count{
+  width: 22%;
+  margin-left:20rpx; 
+  color: #898989;
+  /* border: 1rpx solid black; */
+}
+.sec{
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  width: 250rpx;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+  margin-left: 80rpx;
+  color: #527FBB;
+  border: 1rpx solid #527FBB;
+}
+.picker{
+  width: 80%;
+  /* border: 1rpx solid black; */
+}
+.ppc{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom: 1rpx solid #ECECEC;
+  height: 160rpx;
+  width: 100%;
+}
+.list_left{
+  width: 75%;
+  /* border: 1rpx solid black; */
+}
+.list_text{
+  margin-left: 20rpx;
+  height:80rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+}
+.fh{
+  width: 20%;
+  background-color: #2EACE7;
+  color: white;
+  height: 60rpx;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  text-align: center;
+  margin-top: 50rpx;
+  border-radius: 30rpx;
+}

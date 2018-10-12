@@ -16,6 +16,36 @@ Page({
 
     dei: [{ 'id': 1, 'name': '因复发转移而死亡' }, { 'id': 2, 'name': '因VTE而死亡' }, { 'id': 3, 'name': '其他原因死亡' }],
     position: [{ 'id': 1, 'name': '脑' }, { 'id': 2, 'name': '双肺' }, { 'id': 3, 'name': '盆腔种植转移' }, { 'id': 4, 'name': '其他部位' }],
+
+    news: [{ 'id': 1, 'name': '临床表现' }, { 'id': 2, 'name': '实验室检查' }, { 'id': 3, 'name': '超声' }, { 'id': 4, 'name': '影像学' }, { 'id': 5, 'name': '病理' }, { 'id': 6, 'name': '其他' }],
+    newss:[],
+  },
+  //新增转移部位
+  news:function(e){
+    console.log(e)
+    var index = e.currentTarget.dataset.index
+    var news = this.data.news
+    var newss = this.data.newss
+    news[index].checked = !news[index].checked
+    if (news[index].checked == true) {
+      newss.push(e.currentTarget.dataset.name)
+    }
+    else {
+      for (var i = 0; i < newss.length; i++) {
+        if (newss[i] == e.currentTarget.dataset.name) {
+          // console.log('点击取消')
+          newss.splice(i, 1)
+          console.log('welfs', welfs)
+          console.log('删除后', newss)
+        }
+      }
+    }
+    var welfs = String(newss)
+    console.log('welfs', welfs)
+    this.setData({
+      news: news,
+      welfs: welfs
+    });
   },
   // 死亡原因
   de:function(e){

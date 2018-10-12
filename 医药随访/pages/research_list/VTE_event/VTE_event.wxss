@@ -71,3 +71,8 @@ color: #555555;
   margin-top: 20rpx;
   margin-left: 2.5%;
 }
+.news1{
+  min-width: 22%;
+  height: 100rpx;
+  font-size: 24rpx;
+}

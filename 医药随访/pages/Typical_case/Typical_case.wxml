@@ -1,4 +1,4 @@
-<!--pages/Typical_case/Typical_case.wxml-->
+
 <view class='div' style='margin-top:0'>
     <view class='list'>
         <view class='name'>填写时间：</view>

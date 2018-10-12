@@ -1,0 +1,65 @@
+<!--pages/CRO_patient/suspension/suspension.wxml-->
+
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='name'>中止试验情况表</view>
+    </view>
+
+     <view class='list' >
+        <view class='name left'>最后复诊时间为：</view>
+        <view class='time'>{{date}}</view>
+        <picker mode="date" value="{{date}}" style='width:100rpx;' bindchange="bindDateChange">
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:60rpx;margin-top:20rpx;margin-left:50rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+    </view>
+    <view class='list' >
+        <view class='name left'>患者中止实验日期：</view>
+        <view class='time'>{{dates}}</view>
+        <picker mode="date" value="{{date}}" style='width:100rpx;' bindchange="bindDatesChange">
+          <view class="picker">
+            <image src='../../../img/tc-164-kb_17.png' style='width:60rpx;margin-top:20rpx;margin-left:50rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+    </view>
+</view>
+
+<view class='div'>
+    <view class='list' style='background-color: #F8F8F8;'>
+        <view class='name'>中止试验的主要原因：（选择一个）</view>
+    </view>
+    <view class='list' wx:for='{{list}}' bindtap='xz' id='{{item.id}}'>
+      <view class='name le'>{{item.text}}</view>
+      <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:200rpx;' mode='widthFix' />
+    </view>
+  
+</view>
+
+<textarea class='textarea' placeholder='其他原因备注：' placeholder-style='font-size:30rpx;'></textarea>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<view class='button fixed' bindtap='button'>推送</view>

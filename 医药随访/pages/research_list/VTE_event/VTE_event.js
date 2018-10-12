@@ -10,7 +10,36 @@ Page({
     s3: true,
     tempFilePaths: [],
 
-    situation: [{ 'id': 1, 'name': '肺栓塞' }, { 'id': 2, 'name': '心梗' }, { 'id': 3, 'name': '脑梗' }, { 'id': 4, 'name': '下肢深静脉血栓' }, { 'id': 5, 'name': '情况不明' },],
+    situation: [{ 'id': 1, 'name': '肺栓塞' }, { 'id': 2, 'name': '量表' }, { 'id': 3, 'name': '其他情况' },],
+    news: [{ 'id': 1, 'name': '临床表现' }, { 'id': 2, 'name': '实验室检查' }, { 'id': 3, 'name': '实验室指标(如D-2二聚体等)' }, { 'id': 4, 'name': '超声检查' }, { 'id': 5, 'name': '影像学' }, { 'id': 6, 'name': '其他' }],
+    newss: [],
+  },
+  //诊断依据
+  news: function (e) {
+    console.log(e)
+    var index = e.currentTarget.dataset.index
+    var news = this.data.news
+    var newss = this.data.newss
+    news[index].checked = !news[index].checked
+    if (news[index].checked == true) {
+      newss.push(e.currentTarget.dataset.name)
+    }
+    else {
+      for (var i = 0; i < newss.length; i++) {
+        if (newss[i] == e.currentTarget.dataset.name) {
+          // console.log('点击取消')
+          newss.splice(i, 1)
+          console.log('welfs', welfs)
+          console.log('删除后', newss)
+        }
+      }
+    }
+    var welfs = String(newss)
+    console.log('welfs', welfs)
+    this.setData({
+      news: news,
+      welfs: welfs
+    });
   },
   de: function (e) {
     this.setData({

@@ -143,6 +143,24 @@
   </view>
 </view>
 
+<view class='divs' >
+  <view class='title1'>
+    <view class='name'>诊断依据（可多选）</view>
+  </view>
+    <view class='names' style='height:70rpx;line-height:70rpx;'>(新增)转移部位：</view>
+      <view class='date date1' style='border:none;width:95;margin-left:2.5%;flex-wrap: wrap;height:160rpx;'>
+          <view class='newss date' wx:for='{{news}}' bindtap='news' data-name='{{item.name}}' data-index="{{index}}" style='height:70rpx;line-height:70rpx;margin-left:30rpx;'>
+              <view >{{item.name}}</view>
+               <image src='{{item.checked?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:15rpx;margin-left:10rpx' mode='widthFix' />
+          </view>
+      </view>
+
+  <view class='date date1' style='height:70rpx;line-height:70rpx;'>
+          <view class='names' style='color:#888888'>其他请备注：</view>
+          <view class='input'></view>
+    </view>
+</view>
+
 
 
 <view class='divs' style='min-height:450rpx;'>
@@ -268,6 +286,24 @@
     <view class='names' style='line-height:60rpx;'>(新增)转移情况描述:</view>
     <view class='textarea'></view>
   </view>
+</view>
+
+<view class='divs' >
+  <view class='title1'>
+    <view class='name'>诊断依据（可多选）</view>
+  </view>
+    <view class='names' style='height:70rpx;line-height:70rpx;'>(新增)转移部位：</view>
+      <view class='date date1' style='border:none;width:95;margin-left:2.5%;flex-wrap: wrap;height:160rpx;'>
+          <view class='newss date' wx:for='{{news}}'  data-name='{{item.name}}' data-index="{{index}}" style='height:70rpx;line-height:70rpx;margin-left:30rpx;'>
+              <view >{{item.name}}</view>
+               <image src='{{item.checked?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:15rpx;margin-left:10rpx' mode='widthFix' />
+          </view>
+      </view>
+
+  <view class='date date1' style='height:70rpx;line-height:70rpx;'>
+          <view class='names' style='color:#888888'>其他请备注：</view>
+          <view class='input'></view>
+    </view>
 </view>
 
 

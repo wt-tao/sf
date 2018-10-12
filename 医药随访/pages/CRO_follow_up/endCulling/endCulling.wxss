@@ -1,0 +1,19 @@
+/* pages/CRO_follow_up/endCulling/endCulling.wxss */
+page{
+  font-size: 30rpx;
+}
+.div{
+  width: 100%;
+  background-color: white;
+  border-bottom:1rpx solid #E9E9E9;
+}
+.name{
+  margin-left: 20rpx;
+  color: #7F7F7F;
+  line-height: 100rpx;
+}
+.textarea{
+  width: 95%;
+  height: 250rpx;
+  padding: 20rpx;
+}

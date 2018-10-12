@@ -1,0 +1,67 @@
+<!--pages/research_list/Diagnosis/upload/upload.wxml-->
+<view class='top'>
+    <view class='text'>已上传的附件</view>
+    <image src='../../../../img/xz-1-kb-4 (2).png' style='width:40rpx;margin-top:25rpx;margin-left:300rpx;' mode='widthFix'/>
+    <image src='../../../../img/ty-8-kb.png' style='width:40rpx;margin-top:25rpx;margin-left:300rpx;' mode='widthFix' wx:if='{{s1}}'/>
+    <view class='se'>全选</view>
+    <image src='../../../../img/xz-1-kb-4 (1).png' style='width:40rpx;margin-top:25rpx;margin-left:20rpx;' mode='widthFix'/>
+    <view class='se'>删除</view>
+</view>
+
+<view class='titl'>
+    <view class='titlCom {{cur==0?"on1":""}}' id='0' catchtap='curs'>我的上传</view>
+    <view class='titlCom {{cur==1?"on1":""}}' id='1' catchtap='curs'>患者上传</view>
+</view>
+
+<view hidden='{{cur!=0}}'>
+<view class='div'>
+    <image src='../../../../img/yjjx-5_49 (2).png' style='width:40rpx;margin-left:20rpx;margin-top:40rpx;' mode='widthFix'></image>
+    <view class='imgs'>
+      <!-- 图片 -->
+    </view>
+    <view class='right'>
+        <view class='top_texe'>脑部影像学（CT）诊断报告阿萨德</view>
+        <view class='te'>上传日期：2018-9-10</view>
+        <view class='te'>文件格式：.JPG</view>
+    </view>
+</view>
+<view class='div'>
+    <image src='../../../../img/yjjx-5_49 (2).png' style='width:40rpx;margin-left:20rpx;margin-top:40rpx;' mode='widthFix'></image>
+    <view class='imgs'>
+      <!-- 图片 -->
+    </view>
+    <view class='right'>
+        <view class='top_texe'>脑部影像学（CT）诊断报告阿萨德</view>
+        <view class='te'>上传日期：2018-9-10</view>
+        <view class='te'>文件格式：.JPG</view>
+    </view>
+</view>
+</view>
+
+
+<view hidden='{{cur!=1}}'>
+<view class='div'>
+    <image src='../../../../img/yjjx-5_49 (2).png' style='width:40rpx;margin-left:20rpx;margin-top:40rpx;' mode='widthFix'></image>
+    <view class='imgs'>
+      <!-- 图片 -->
+    </view>
+    <view class='right'>
+        <view class='top_texe'>脑部影像学2（CT）诊断报告阿萨德</view>
+        <view class='te'>上传日期：2018-9-10</view>
+        <view class='te'>文件格式：.JPG</view>
+    </view>
+</view>
+<view class='div'>
+    <image src='../../../../img/yjjx-5_49 (2).png' style='width:40rpx;margin-left:20rpx;margin-top:40rpx;' mode='widthFix'></image>
+    <view class='imgs'>
+      <!-- 图片 -->
+    </view>
+    <view class='right'>
+        <view class='top_texe'>脑部影像学2（CT）诊断报告阿萨德</view>
+        <view class='te'>上传日期：2018-9-10</view>
+        <view class='te'>文件格式：.JPG</view>
+    </view>
+</view>
+</view>
+
+<view class='upload' bindtap='dow'>下载</view>

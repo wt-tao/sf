@@ -23,7 +23,7 @@
       <view class='name'>症状:</view>
     </view>
      <view class='list direction'>
-      <view class='name'>发生时间:</view>
+      <view class='name'>持续时间:</view>
        <view class='inp'>{{date}}</view>
        <picker mode="date" bindchange='bindDateChange' value="{{date}}" style='width:10%' >
           <view class="picker">
@@ -32,22 +32,10 @@
         </picker>
     </view>
     <view class='list direction'>
-        <view class='list_list' wx:for='{{degree}}'>
+        <view class='list_list list_listss' wx:for='{{degree}}'>
               <view style='margin-left:20rpx;'>{{item.name}}</view>
               <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  bindtap='de' id='{{item.id}}'/>
         </view>
-    </view>
-     <view class='list' style='border:none'>
-        <view class='name'>回生使用情况:</view>
-    </view>
-     <view class='list'>
-        <input class='name'></input>
-    </view>
-     <view class='list' style='border:none'>
-        <view class='name'>抗凝药使用情况:</view>
-    </view>
-     <view class='list'>
-        <input class='name'></input>
     </view>
 </view>
 
@@ -56,7 +44,7 @@
       <view class='name'>症状:</view>
     </view>
      <view class='list direction'>
-      <view class='name'>发生时间:</view>
+      <view class='name'>持续时间:</view>
        <view class='inp'>{{date1}}</view>
        <picker mode="date" bindchange='bindDate1Change' value="{{date}}" style='width:10%' >
           <view class="picker">
@@ -65,57 +53,15 @@
         </picker>
     </view>
     <view class='list direction'>
-        <view class='list_list' wx:for='{{degree}}'>
+        <view class='list_list list_listss' wx:for='{{degree}}'>
               <view style='margin-left:20rpx;'>{{item.name}}</view>
               <image src='{{item.id==ids1?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  bindtap='de1' id='{{item.id}}'/>
         </view>
     </view>
-     <view class='list' style='border:none'>
-        <view class='name'>回生使用情况:</view>
-    </view>
-     <view class='list'>
-        <input class='name'></input>
-    </view>
-     <view class='list' style='border:none'>
-        <view class='name'>抗凝药使用情况:</view>
-    </view>
-     <view class='list'>
-        <input class='name'></input>
-    </view>
+ 
 </view>
 
-<view class='div'>
-    <view class='list'>
-      <view class='name'>症状:</view>
-    </view>
-     <view class='list direction'>
-      <view class='name'>发生时间:</view>
-       <view class='inp'>{{date2}}</view>
-       <picker mode="date" bindchange='bindDate2Change' value="{{date}}" style='width:10%' >
-          <view class="picker">
-            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:15rpx;' mode='widthFix'/>
-          </view>
-        </picker>
-    </view>
-    <view class='list direction'>
-        <view class='list_list' wx:for='{{degree}}'>
-              <view style='margin-left:20rpx;'>{{item.name}}</view>
-              <image src='{{item.id==ids2?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  bindtap='de2' id='{{item.id}}'/>
-        </view>
-    </view>
-     <view class='list' style='border:none'>
-        <view class='name'>回生使用情况:</view>
-    </view>
-     <view class='list'>
-        <input class='name'></input>
-    </view>
-     <view class='list' style='border:none'>
-        <view class='name'>抗凝药使用情况:</view>
-    </view>
-     <view class='list'>
-        <input class='name'></input>
-    </view>
-</view>
+
 
 <view class='div'>
     <view class='list' style='border:none'>
@@ -127,15 +73,19 @@
               <image src='{{item.id==cls?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  bindtap='cl' id='{{item.id}}'/>
         </view>
     </view>
-    <view class='list' style='border:none'>
-        <view class='name'>对所观察干预药品采取的措施:</view>
+        <view class='list' style='border:none'>
+        <view class='name'>有无药物停用:</view>
     </view>
      <view class='list direction'>
-        <view class='list_list' style='width：25%;border:none;font-size:24rpx;' wx:for='{{measures}}'>
+        <view class='list_list' style='border:none;font-size:24rpx;margin-left:10rpx;' wx:for='{{measures}}'>
               <view style='margin-left:20rpx;'>{{item.name}}</view>
-              <image src='{{item.id==css?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  bindtap='cs' id='{{item.id}}'/>
+              <image src='{{item.id==css?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:20rpx;' mode='widthFix' bindtap='cs' id='{{item.id}}' />
         </view>
+        <view style='color:#A1A1A1;margin-left:20rpx;'>包括：</view>
+        <input style='width:400rpx;margin-top:10rpx;'></input>
     </view>
+
+
 </view>
 
 <view class='div'>
@@ -248,7 +198,7 @@
       <view class='name'>症状:</view>
     </view>
      <view class='list direction'>
-      <view class='name'>发生时间:</view>
+      <view class='name'>持续时间:</view>
        <view class='inp'>{{date}}</view>
        <view mode="date"  value="{{date}}" style='width:10%' >
           <view class="picker">
@@ -257,23 +207,12 @@
         </view>
     </view>
     <view class='list direction'>
-        <view class='list_list' wx:for='{{degree}}'>
+        <view class='list_list list_listss' wx:for='{{degree}}'>
               <view style='margin-left:20rpx;'>{{item.name}}</view>
               <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  />
         </view>
     </view>
-     <view class='list' style='border:none'>
-        <view class='name'>回生使用情况:</view>
-    </view>
-     <view class='list'>
-        <view class='name'></view>
-    </view>
-     <view class='list' style='border:none'>
-        <view class='name'>抗凝药使用情况:</view>
-    </view>
-     <view class='list'>
-        <view class='name'></view>
-    </view>
+
 </view>
 
 <view class='div'>
@@ -281,7 +220,7 @@
       <view class='name'>症状:</view>
     </view>
      <view class='list direction'>
-      <view class='name'>发生时间:</view>
+      <view class='name'>持续时间:</view>
        <view class='inp'>{{date1}}</view>
        <view mode="date"  value="{{date}}" style='width:10%' >
           <view class="picker">
@@ -290,12 +229,12 @@
         </view>
     </view>
     <view class='list direction'>
-        <view class='list_list' wx:for='{{degree}}'>
+        <view class='list_list list_listss' wx:for='{{degree}}'>
               <view style='margin-left:20rpx;'>{{item.name}}</view>
               <image src='{{item.id==ids1?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  />
         </view>
     </view>
-     <view class='list' style='border:none'>
+     <!-- <view class='list' style='border:none'>
         <view class='name'>回生使用情况:</view>
     </view>
      <view class='list'>
@@ -306,41 +245,10 @@
     </view>
      <view class='list'>
         <view class='name'></view>
-    </view>
+    </view> -->
 </view>
 
-<view class='div'>
-    <view class='list'>
-      <view class='name'>症状:</view>
-    </view>
-     <view class='list direction'>
-      <view class='name'>发生时间:</view>
-       <view class='inp'>{{date2}}</view>
-       <view mode="date"  value="{{date}}" style='width:10%' >
-          <view class="picker">
-            <image src='../../../img/tc-164-kb_17.png' style='width:50rpx;margin-left:40rpx;margin-top:15rpx;' mode='widthFix'/>
-          </view>
-        </view>
-    </view>
-    <view class='list direction'>
-        <view class='list_list' wx:for='{{degree}}'>
-              <view style='margin-left:20rpx;'>{{item.name}}</view>
-              <image src='{{item.id==ids2?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:100rpx;width:40rpx;margin-top:20rpx;' mode='widthFix'  />
-        </view>
-    </view>
-     <view class='list' style='border:none'>
-        <view class='name'>回生使用情况:</view>
-    </view>
-     <view class='list'>
-        <view class='name'></view>
-    </view>
-     <view class='list' style='border:none'>
-        <view class='name'>抗凝药使用情况:</view>
-    </view>
-     <view class='list'>
-        <view class='name'></view>
-    </view>
-</view>
+
 
 <view class='div'>
     <view class='list' style='border:none'>
@@ -353,13 +261,15 @@
         </view>
     </view>
     <view class='list' style='border:none'>
-        <view class='name'>对所观察干预药品采取的措施:</view>
+        <view class='name'>有无药物停用:</view>
     </view>
      <view class='list direction'>
-        <view class='list_list' style='width：25%;border:none;font-size:24rpx;' wx:for='{{measures}}'>
+        <view class='list_list' style='border:none;font-size:24rpx;margin-left:10rpx;' wx:for='{{measures}}'>
               <view style='margin-left:20rpx;'>{{item.name}}</view>
               <image src='{{item.id==css?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:20rpx;' mode='widthFix' />
         </view>
+        <view style='color:#A1A1A1;margin-left:20rpx;'>包括：</view>
+        <view style='width:400rpx;margin-top:10rpx;'></view>
     </view>
 </view>
 

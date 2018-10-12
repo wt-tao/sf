@@ -38,7 +38,12 @@
      <view class='list direction'>
         <view class='list_left'>使用情况说明:</view>
         <view class='list_right'>
-            <input class='input'></input>
+             <view class='hssy direction'>
+                <view class='hssy_com direction' wx:for='{{list}}' bindtap='list_xz' id='{{item.id}}'>
+                    <view class='hssy_com_text'>{{item.text}}</view>
+                    <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:20rpx;' mode='widthFix'/>
+                </view>
+            </view>
         </view>
     </view>
 </view>
@@ -66,7 +71,12 @@
      <view class='list direction'>
         <view class='list_left'>使用情况说明:</view>
         <view class='list_right'>
-            <!-- <input class='input'></input> -->
+             <view class='hssy direction'>
+                <view class='hssy_com direction' wx:for='{{list}}' >
+                    <view class='hssy_com_text'>{{item.text}}</view>
+                    <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:20rpx;' mode='widthFix'/>
+                </view>
+            </view>
         </view>
     </view>
 </view>
@@ -107,7 +117,12 @@
      <view class='list direction'>
         <view class='list_left'>使用情况说明:</view>
         <view class='list_right'>
-            <!-- <input class='input'></input> -->
+            <view class='hssy direction'>
+                <view class='hssy_com direction' wx:for='{{list}}'>
+                    <view class='hssy_com_text'>{{item.text}}</view>
+                    <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:20rpx;' mode='widthFix'/>
+                </view>
+            </view>
         </view>
     </view>
 </view>

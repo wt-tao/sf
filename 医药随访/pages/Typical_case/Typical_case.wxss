@@ -1,4 +1,4 @@
-/* pages/Typical_case/Typical_case.wxss */
+
 page{
   color: #979797;
   font-size: 30rpx;

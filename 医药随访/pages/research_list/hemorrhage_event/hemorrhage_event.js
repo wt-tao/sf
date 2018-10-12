@@ -9,7 +9,7 @@ Page({
     s2: true,
     degree: [{ 'id': 1, 'name': '轻(1)' }, { 'id': 2, 'name': '中(2)' }, { 'id': 3, 'name': '重(3)' }],
     handle: [{ 'id': 1, 'name': '否' }, { 'id': 2, 'name': '对症处理' }, { 'id': 3, 'name': '需住院治疗' }, { 'id': 4, 'name': '其他' }],
-    measures: [{ 'id': 1, 'name': '无' }, { 'id': 2, 'name': '减少次数' }, { 'id': 3, 'name': '短暂停用' }, { 'id': 4, 'name': '永久停用' }],
+    measures: [{ 'id': 1, 'name': '无' }, { 'id': 2, 'name': '有' }, ],
   },
   de: function (e) {
     this.setData({
@@ -31,6 +31,11 @@ Page({
       cls: e.currentTarget.id
     })
   },
+  cs: function (e) {
+    this.setData({
+      css: e.currentTarget.id
+    })
+  },
   fly: function () {
     this.setData({
       s3: !this.data.s3
@@ -48,12 +53,12 @@ Page({
       date1: e.detail.value
     })
   },
-  bindDate2Change: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      date2: e.detail.value
-    })
-  },
+  // bindDate2Change: function (e) {
+  //   console.log('picker发送选择改变，携带值为', e.detail.value)
+  //   this.setData({
+  //     date2: e.detail.value
+  //   })
+  // },
   // 不良反应时间
   bindDates1Change: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)

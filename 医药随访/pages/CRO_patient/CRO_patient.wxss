@@ -1,2 +1,54 @@
 /* pages/patient/patient.wxss */
 @import "../../template/template.wxss";
+
+.search{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.input{
+  width: 650rpx;
+  margin-left: 20rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+  /* border: 1rpx solid black */
+}
+.top{
+  margin-top: 30rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #F8F8F8;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.patient_list{
+  margin-left: 10rpx;
+  width: 42%;
+}
+.right_count{
+  width: 42%;
+  text-align: right;
+  color: #898989;
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-bottom: 1rpx solid #ECECEC;
+  height: 160rpx;
+  width: 100%;
+}
+.list_left{
+  width: 90%;
+  /* border: 1rpx solid black; */
+}
+.list_text{
+  margin-left: 20rpx;
+  height:80rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+}

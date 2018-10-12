@@ -1,0 +1,12 @@
+<!--pages/CRO_follow_up/endCulling/endCulling.wxml-->
+<view class='div'>
+    <view class='name'>剔除患者：<text style='color:#494949'>曹艳</text></view>
+</view>
+
+<view class='div'>
+    <view class='name'>剔除原因：</view>
+    <textarea class='textarea'></textarea>
+</view>
+
+
+<view class='button fixed' bindtap='sur'>确定剔除</view>

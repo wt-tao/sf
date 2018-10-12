@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    list: [{ id: 1, name: "王良银", card: 'wly20180808' }, { id: 2, name: "曹寅", card: 'wly20180808' },]
   },
   CRO_main: function () {
     wx.reLaunch({
@@ -20,6 +20,12 @@ Page({
   CRO_typical: function () {
     wx.reLaunch({
       url: '../CRO_typical/CRO_typical',
+    })
+  },
+
+  name_detail:function(e){
+    wx.navigateTo({
+      url: 'name_detail/name_detail?id='+e.currentTarget.id,
     })
   },
   /**

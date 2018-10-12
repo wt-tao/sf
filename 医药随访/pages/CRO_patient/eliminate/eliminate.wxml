@@ -1,0 +1,62 @@
+<!--pages/CRO_patient/eliminate/eliminate.wxml-->
+<view class='head'>剔除标准，请根据下表判断：</view>
+
+
+<view class='titles'>
+    <view class='titleText'>1、剔除入组后30天内出现严重并发症(包括心力衰竭、呼吸衰竭、和非VTE导致的深度昏迷等)或死亡。</view>
+</view>
+<view class='pand titles'>
+    <image src='{{s1==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:200rpx;' mode='widthFix' bindtap='s1'/>
+    <view class='wz'>是</view>
+
+    <image src='{{s1==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:200rpx;' mode='widthFix' bindtap='s1'/>
+    <view class='wz'>否</view>
+</view>
+
+<view class='titles'>
+    <view class='titleText'>2、患有不易控制的神经，精神疾病或精神障碍者。</view>
+</view>
+<view class='pand titles'>
+    <image src='{{s2==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:200rpx;' mode='widthFix' bindtap='s2'/>
+    <view class='wz'>是</view>
+
+    <image src='{{s2==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:200rpx;' mode='widthFix' bindtap='s2'/>
+    <view class='wz'>否</view>
+</view>
+
+<view class='titles'>
+    <view class='titleText'>3、非疾病导致意外死亡病例。</view>
+</view>
+<view class='pand titles'>
+    <image src='{{s3==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:200rpx;' mode='widthFix' bindtap='s3'/>
+    <view class='wz'>是</view>
+
+    <image src='{{s3==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:200rpx;' mode='widthFix' bindtap='s3'/>
+    <view class='wz'>否</view>
+</view>
+
+<view class='titles' style='height:100rpx;line-height:100rpx;'>
+    <text class='titleText'  decode='true'>4、依从性差，资料完整性 &lt; 50% 。</text>
+</view>
+<view class='pand titles'>
+    <image src='{{s4==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:200rpx;' mode='widthFix' bindtap='s4'/>
+    <view class='wz'>是</view>
+
+    <image src='{{s4==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:200rpx;' mode='widthFix' bindtap='s4'/>
+    <view class='wz'>否</view>
+</view>
+
+<view class='titles'>
+    <view class='titleText'>5、失访。</view>
+</view>
+<view class='pand titles'>
+    <image src='{{s5==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:200rpx;' mode='widthFix' bindtap='s5'/>
+    <view class='wz'>是</view>
+
+    <image src='{{s5==true?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='width:40rpx;margin-top:30rpx;margin-left:200rpx;' mode='widthFix' bindtap='s5'/>
+    <view class='wz'>否</view>
+</view>
+
+<textarea class='textarea' placeholder='剔除备注：'></textarea>
+
+<view class='button' bindtap='button'>确定</view>

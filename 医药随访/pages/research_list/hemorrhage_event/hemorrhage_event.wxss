@@ -44,10 +44,12 @@ color: #555555;
   height: 80rpx;
 }
 .list_list{
-  width: 33.3%;
   display: flex;
   flex-direction: row;
   border-right: 1rpx solid #DDDDDD;
+}
+.list_listss{
+  width: 33.3%
 }
 .inpt{
   width: 50%;

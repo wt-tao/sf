@@ -1,26 +1,36 @@
 {
-  "pages":[   
-               
-                
-            
+  "pages":[  
+    
+    "pages/research_list/Use_of_anticoagulants/Use_of_anticoagulants",
+     "pages/CRO_follow_up/CRO_follow_up",
+            "pages/CRO_follow_up/endCulling/endCulling",
+            "pages/CRO_follow_up/name_details/name_details",
+        
+      "pages/CRO_patient/CRO_patient",         
+            "pages/CRO_patient/suspension/suspension",
+            "pages/CRO_patient/name_detail/name_detail",
+            "pages/CRO_patient/eliminate/eliminate",
+            "pages/CRO_patient/new_push/new_push",
+                        
     "pages/CRO_main/CRO_main",
-        "pages/CRO_main/sf_remind/sf_remind",
-                  "pages/CRO_main/sf_remind/wechat_tx/wechat_tx",
-                  "pages/CRO_main/sf_remind/name_tx/name_tx",
+            "pages/CRO_main/sf_remind/sf_remind",
+            "pages/CRO_main/sf_remind/wechat_tx/wechat_tx",
+            "pages/CRO_main/sf_remind/name_tx/name_tx",
 
-        "pages/CRO_main/sjUpload_remind/sjUpload_remind",
-                  "pages/CRO_main/sjUpload_remind/Sname_main/Sname_main",
+            "pages/CRO_main/sjUpload_remind/sjUpload_remind",
+            "pages/CRO_main/sjUpload_remind/Sname_main/Sname_main",
 
-        "pages/CRO_main/LeakyFill_remind/LeakyFill_remind",
-                    "pages/CRO_main/LeakyFill_remind/LeakyFill_tx/LeakyFill_tx",
+            "pages/CRO_main/LeakyFill_remind/LeakyFill_remind",
+            "pages/CRO_main/LeakyFill_remind/LeakyFill_tx/LeakyFill_tx",
 
-        "pages/CRO_main/active_remind/active_remind",
-                      "pages/CRO_main/active_remind/active_detail_tx/active_detail_tx",
-                           "pages/CRO_main/active_remind/active_detail_tx/send_out/send_out",
+            "pages/CRO_main/active_remind/active_remind",
+            "pages/CRO_main/active_remind/active_detail_tx/active_detail_tx",
+            "pages/CRO_main/active_remind/active_detail_tx/send_out/send_out",
                       
-    "pages/CRO_patient/CRO_patient",
-    "pages/CRO_follow_up/CRO_follow_up",
     "pages/CRO_typical/CRO_typical",
+            "pages/CRO_typical/upload/upload",
+            "pages/CRO_typical/illness_detail/illness_detail",
+            
 
 
 
@@ -59,7 +69,7 @@
     "pages/research_list/weight/weight",
     "pages/research_list/Anderson_rating_scale/Anderson_rating_scale",
     "pages/research_list/Use_of_retrogradation/Use_of_retrogradation",
-    "pages/research_list/Use_of_anticoagulants/Use_of_anticoagulants",
+    
     "pages/research_list/Photograph_and_upload/Photograph_and_upload",
     "pages/research_list/CRO_Check/CRO_Check",
     "pages/research_list/Management_verification/Management_verification",

@@ -85,3 +85,7 @@ color: #555555;
   margin-top: 20rpx;
   margin-left: 2.5%;
 }
+.newss{
+  width:200rpx;
+  
+}

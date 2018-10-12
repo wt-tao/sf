@@ -48,14 +48,26 @@
     <view class='conm' >
       <input class='name' ></input>
     </view>
-     <view class='conm' style='border:none'>
-      <view class='name' >回生使用情况:</view>
+ 
+  </view>
+
+    <view class='conm direction'style='margin-top:30rpx;background-color: #F8F8F8;' >
+      <view class='name' style='width:70%'>VTE诊断依据（可多选）</view>
+  </view>
+  <view class='div'>
+    <view class='conm' style='border:none'>
+      <view class='name'>相关事件情况描述:</view>
     </view>
-    <view class='conm' >
-      <input class='name' ></input>
+    <view class='checked direction'>
+      <view class='checked direction' style='margin-left: 2.5%;width:95%'>
+        <view class=' news1 direction' wx:for='{{news}}'  bindtap='news' data-name='{{item.name}}' data-index="{{index}}">
+            <view style='margin-left:20rpx;'>{{item.name}}</view>
+            <image src='{{item.checked?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:30rpx;' mode='widthFix'  />
+        </view>
+      </view>
     </view>
-      <view class='conm' style='border:none'>
-      <view class='name' >抗凝药使用情况:</view>
+    <view class='conm' style='border:none'>
+      <view class='name' style='color:#888888'>其他请备注:</view>
     </view>
     <view class='conm' >
       <input class='name' ></input>
@@ -120,14 +132,27 @@
     <view class='conm' >
       <view class='name' ></view>
     </view>
-     <view class='conm' style='border:none'>
-      <view class='name' >回生使用情况:</view>
+  
+  </view>
+
+
+   <view class='conm direction'style='margin-top:30rpx;background-color: #F8F8F8;' >
+      <view class='name' style='width:70%'>VTE诊断依据（可多选）</view>
+  </view>
+  <view class='div'>
+    <view class='conm' style='border:none'>
+      <view class='name'>相关事件情况描述:</view>
     </view>
-    <view class='conm' >
-      <view class='name' ></view>
+    <view class='checked direction'>
+      <view class='checked direction' style='margin-left: 2.5%;width:95%'>
+        <view class=' news1 direction' wx:for='{{news}}'  data-name='{{item.name}}' data-index="{{index}}">
+            <view style='margin-left:20rpx;'>{{item.name}}</view>
+            <image src='{{item.checked?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' style='margin-left:10rpx;width:40rpx;margin-top:30rpx;' mode='widthFix'  />
+        </view>
+      </view>
     </view>
-      <view class='conm' style='border:none'>
-      <view class='name' >抗凝药使用情况:</view>
+    <view class='conm' style='border:none'>
+      <view class='name' style='color:#888888'>其他请备注:</view>
     </view>
     <view class='conm' >
       <view class='name' ></view>

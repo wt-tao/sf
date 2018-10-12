@@ -1,3 +1,41 @@
 <!--pages/CRO_follow_up/CRO_follow_up.wxml-->
 <import src="../../template/template.wxml"/>
      <template   is="CRO_follow_up" ></template>
+<view class='search'>
+    <input class='input' placeholder='输入患者姓名或项目编号进行搜索' placeholder-style='color:#ABABAB;font-size:28rpx;'/>
+    <image src='../../img/xz-2-kb.png' style='width:50rpx;margin-top:30rpx;' mode='widthFix'/>
+</view>
+
+<view class='top'>
+    <image src='../../img/tc-160-kb.png' style='width:55rpx;margin-left:20rpx;margin-top:12rpx;' mode='widthFix'/>
+    <view class='patient_list'>患者列表</view>
+    <view class='right_count'>共<text style='color:#EC0B0B'>30</text>人</view>
+    <view class='sec'>
+        <picker bindchange="bindPickerChange"  value="{{index}}" range="{{array}}">
+          <view class='ppc'>
+            <view class="picker">
+              {{array[index]}}
+            </view>
+            <image src='../../img/xz-1.png' style='width:30rpx;margin-top:22rpx;' mode='widthFix'/>
+          </view>
+        </picker>
+    </view>
+</view>
+
+<view class='list' wx:for='{{list}}' bindtap='name_details' id='{{item.id}}' hidden='{{s1}}'>
+      <view class='list_left'>
+          <view class='list_text'>{{item.name}}</view>
+          <view class='list_text' style='color:#838383;font-size:28rpx;line-height: 60rpx;'>项目编号：{{item.card}}</view>
+      </view>
+      <image src='../../img/tc-164-kb_3.png' style='width:30rpx;margin-top:40rpx;margin-left:120rpx;' mode='widthFix'/>
+</view>
+
+<view class='list' wx:for='{{list}}' bindtap='name_details' id='{{item.id}}' hidden='{{s2}}'>
+      <view class='list_left'>
+          <view class='list_text'>{{item.name}}22</view>
+          <view class='list_text' style='color:#838383;font-size:28rpx;line-height: 60rpx;'>项目编号：{{item.card}}</view>
+      </view>
+   <view class='fh'>恢复</view>
+      <!-- <image src='../../img/tc-164-kb_3.png' style='width:30rpx;margin-top:40rpx;' mode='widthFix'/> -->
+</view>
+

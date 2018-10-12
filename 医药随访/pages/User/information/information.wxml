@@ -2,7 +2,7 @@
 <view class="container">
     <view class='title'>
       <image src='../../../img/tc-151 (2).png' style='width:50rpx;margin-left:20rpx;margin-top:10rpx;' mode='widthFix'></image>
-      <view class='title_text'>个人信息</view>
+      <view class='title_text'>基本信息</view>
       <image src='../../../img/yjjx-5-kb-2.png' style='width:45rpx;margin-left:500rpx;margin-top:15rpx;' mode='widthFix' hidden='{{s1}}' bindtap='s1'/>
     </view>
   <view hidden='{{s2}}'>

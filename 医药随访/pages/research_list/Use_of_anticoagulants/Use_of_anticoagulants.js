@@ -6,7 +6,13 @@ Page({
    */
   data: {
     s1: false, s2: true, s3:true,
-    ip: false, ip1:true
+    ip: false, ip1:true,
+    list: [{ id: 1, text: '持续' }, { id: 2, text: '间断' }, { id: 3, text: '偶尔' },],
+  },
+  list_xz: function (e) {
+    this.setData({
+      ids: e.currentTarget.id
+    })
   },
   fly: function () {
     var s3 = this.data.s3
