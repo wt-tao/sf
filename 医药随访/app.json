@@ -1,7 +1,8 @@
 {
   "pages":[  
     
-    "pages/research_list/Use_of_anticoagulants/Use_of_anticoagulants",
+    
+    
      "pages/CRO_follow_up/CRO_follow_up",
             "pages/CRO_follow_up/endCulling/endCulling",
             "pages/CRO_follow_up/name_details/name_details",
@@ -11,7 +12,7 @@
             "pages/CRO_patient/name_detail/name_detail",
             "pages/CRO_patient/eliminate/eliminate",
             "pages/CRO_patient/new_push/new_push",
-                        
+                                   
     "pages/CRO_main/CRO_main",
             "pages/CRO_main/sf_remind/sf_remind",
             "pages/CRO_main/sf_remind/wechat_tx/wechat_tx",
@@ -31,10 +32,6 @@
             "pages/CRO_typical/upload/upload",
             "pages/CRO_typical/illness_detail/illness_detail",
             
-
-
-
-
     "pages/index/index",
     "pages/User/User",
     "pages/User/integral/integral",
@@ -46,20 +43,17 @@
     "pages/User/leaving_message/leaving_message",
     "pages/User/leaving_message/leaving/leaving",
     "pages/User/information/information",
-
     "pages/main/main",
-    "pages/research_list/research_list",
     "pages/Typical_case/Typical_case",
     "pages/follow-up_project/follow-up_project",
     "pages/Choose_hospital/Choose_hospital",
     "pages/project_list/project_list",
-    
     "pages/indexs/indexs",
     "pages/agree/agree",
     "pages/Selection_section/Selection_section",
     "pages/Message_push/Message_push",
     "pages/Online_consulting/Online_consulting",
-    
+    "pages/research_list/research_list",
     "pages/research_list/General_information/General_information",
     "pages/research_list/case/case",
     "pages/research_list/Diagnosis/Diagnosis",
@@ -68,11 +62,13 @@
     "pages/research_list/Inspection_project/Inspection_project",
     "pages/research_list/weight/weight",
     "pages/research_list/Anderson_rating_scale/Anderson_rating_scale",
+    "pages/research_list/QLQ_life/QLQ_life",
     "pages/research_list/Use_of_retrogradation/Use_of_retrogradation",
-    
+    "pages/research_list/Use_of_anticoagulants/Use_of_anticoagulants",
     "pages/research_list/Photograph_and_upload/Photograph_and_upload",
     "pages/research_list/CRO_Check/CRO_Check",
     "pages/research_list/Management_verification/Management_verification",
+    
 
     "pages/research_list/CT_review/CT_review",
     "pages/research_list/ending/ending",

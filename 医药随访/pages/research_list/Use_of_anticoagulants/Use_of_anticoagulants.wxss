@@ -26,8 +26,8 @@
   background-color: white;
 }
 .list{
-  height: 80rpx;  
-  line-height: 80rpx;
+  height: 100rpx;  
+  line-height: 100rpx;
   font-size: 20rpx;
   color: #4A4A4A;
   border-bottom:1rpx solid #EBEBEB;
@@ -46,5 +46,9 @@
   width: 95%;
   margin-left: 2.5%;
   height: 80rpx;
+  /* border: 1rpx solid black; */
+}
+.list_left_com{
+  width: 33%;
   /* border: 1rpx solid black; */
 }

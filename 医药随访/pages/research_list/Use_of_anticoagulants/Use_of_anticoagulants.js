@@ -9,9 +9,20 @@ Page({
     ip: false, ip1:true,
     list: [{ id: 1, text: '持续' }, { id: 2, text: '间断' }, { id: 3, text: '偶尔' },],
   },
+
   list_xz: function (e) {
     this.setData({
       ids: e.currentTarget.id
+    })
+  },
+  list_xz1: function (e) {
+    this.setData({
+      ids1: e.currentTarget.id
+    })
+  },
+  list_xz2: function (e) {
+    this.setData({
+      ids2: e.currentTarget.id
     })
   },
   fly: function () {

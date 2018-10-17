@@ -1,0 +1,723 @@
+<!--pages/research_list/QLQ_life/QLQ_life.wxml-->
+<view class='title'>
+    <image src='../../../img/xz-2-kb-7.png' style='width:50rpx;margin-top:30rpx;margin-left:20rpx;' mode='widthFix'/>
+    <view style='line-height:100rpx;margin-left:10rpx;font-size:30rpx;'>请认真填写并完善以下资料</view>
+    <image src='../../../img/yjjx-5-kb-2.png' style='width:40rpx;margin-top:40rpx;margin-left:260rpx;' mode='widthFix' hidden='{{s1}}' bindtap='sec'/>
+</view>
+
+<view class='list1'>
+    <view class='tou {{tous==1?"on":""}}' id='1' catchtap='touq' >QLQ-C30量表</view>
+    <view class='tou {{tous==2?"on":""}}' id='2' catchtap='touq' >QLQ-LC13量表</view>
+</view>
+<view hidden='{{if1}}'>
+<view class='wz'>
+  <view class='wz_text'>我们想了解有关您和您的健康的一些情况，请您亲自回答下面所有问题,这里的答案并没有“对”与“不对”之分，只要求在最能反映您情况的选项中选择。您提供的资料我们将会严格保密</view>
+</view>
+
+
+<view hidden='{{s2}}'>
+<view class='li'>
+  <view class='li_title'>1、您从事一些费力的活动有困难吗，比如说提很重的购物袋或手提箱？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids1?"on1":""}}' wx:for='{{list}}' bindtap='list1' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>2、长距离行走对您来说有困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids2?"on1":""}}' wx:for='{{list}}' bindtap='list2' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>3、户外短距离行走对您来说有困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids3?"on1":""}}' wx:for='{{list}}' bindtap='list3' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>4、您白天需要待在床上或椅子上吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids4?"on1":""}}' wx:for='{{list}}' bindtap='list4' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>5、您在吃饭、穿衣、洗澡或上厕所时需要其他人帮忙吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids5?"on1":""}}' wx:for='{{list}}' bindtap='list5' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='list' style='margin-top:30rpx;'>
+    <view class='list_red'>在过去一星期内：</view>
+</view>
+<view class='li'>
+  <view class='li_title'>6、您在工作或日常活动中是否收到限制？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids6?"on1":""}}' wx:for='{{list}}' bindtap='list6' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>7、您在从事您的爱好或休闲活动时是否受到限制？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids7?"on1":""}}' wx:for='{{list}}' bindtap='list7' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>8、您有气喘吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids8?"on1":""}}' wx:for='{{list}}' bindtap='list8' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>9、您有疼痛吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids9?"on1":""}}' wx:for='{{list}}' bindtap='list9' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>10、您需要休息吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids10?"on1":""}}' wx:for='{{list}}' bindtap='list10' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>11、您睡眠有困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids11?"on1":""}}' wx:for='{{list}}' bindtap='list11' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>12、您觉得虚弱吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids12?"on1":""}}' wx:for='{{list}}' bindtap='list12' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>13、您食欲不振（没有胃口）吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids13?"on1":""}}' wx:for='{{list}}' bindtap='list13' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>14、您觉得恶心吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids14?"on1":""}}' wx:for='{{list}}' bindtap='list14' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>15、您有呕吐吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids15?"on1":""}}' wx:for='{{list}}' bindtap='list15' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>16、您有便秘吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids16?"on1":""}}' wx:for='{{list}}' bindtap='list16' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>17、您有腹泻吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids17?"on1":""}}' wx:for='{{list}}' bindtap='list17' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>18、您觉得累吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids18?"on1":""}}' wx:for='{{list}}' bindtap='list18' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>19、疼痛影响您的日常活动吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids19?"on1":""}}' wx:for='{{list}}' bindtap='list19' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>20、您集中精力做事有困难吗，如读报或看电视？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids20?"on1":""}}' wx:for='{{list}}' bindtap='list20' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>21、您觉得紧张吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids21?"on1":""}}' wx:for='{{list}}' bindtap='list21' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>22、您觉得忧虑吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids22?"on1":""}}' wx:for='{{list}}' bindtap='list22' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>23、您觉得脾气急躁吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids23?"on1":""}}' wx:for='{{list}}' bindtap='list23' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>24、您觉得压抑（情绪低落）吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids24?"on1":""}}' wx:for='{{list}}' bindtap='list24' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>25、您感到记忆困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids25?"on1":""}}' wx:for='{{list}}' bindtap='list25' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>26、您的身体状况或治疗影响您的家庭生活吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids26?"on1":""}}' wx:for='{{list}}' bindtap='list26' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>27、您的身体状况或治疗影响您的社交活动吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids27?"on1":""}}' wx:for='{{list}}' bindtap='list27' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>28、您的身体状况或治疗使您陷入经济困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids28?"on1":""}}' wx:for='{{list}}' bindtap='list28' id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+
+<view class='list' style='margin-top:30rpx;'>
+    <view class='list_red'>对下列问题，请在1-7之间选出一个最适合您的数字：</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>29、您如何评价在过去一星期内您总的健康情况？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids29?"on1":""}}' style='width:14.2%' wx:for='{{list1}}' bindtap='list29' id='{{item.id}}'>
+      <view style='line-height:40rpx;'>{{item.id}}</view>
+      <view style='line-height:40rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>30、您如何评价在过去一星期内您总的生命质量？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids30?"on1":""}}' style='width:14.2%' wx:for='{{list1}}' bindtap='list30' id='{{item.id}}'>
+      <view style='line-height:40rpx;'>{{item.id}}</view>
+      <view style='line-height:40rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+<view class='button' hidden='{{s2}}' bindtap='del'>提交</view>
+</view>
+
+<view hidden='{{s1}}'>
+<view class='li'>
+  <view class='li_title'>1、您从事一些费力的活动有困难吗，比如说提很重的购物袋或手提箱？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids1?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>2、长距离行走对您来说有困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids2?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>3、户外短距离行走对您来说有困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids3?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>4、您白天需要待在床上或椅子上吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids4?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>5、您在吃饭、穿衣、洗澡或上厕所时需要其他人帮忙吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids5?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='list' style='margin-top:30rpx;'>
+    <view class='list_red'>在过去一星期内：</view>
+</view>
+<view class='li'>
+  <view class='li_title'>6、您在工作或日常活动中是否收到限制？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids6?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>7、您在从事您的爱好或休闲活动时是否受到限制？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids7?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>8、您有气喘吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids8?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>9、您有疼痛吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids9?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>10、您需要休息吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids10?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>11、您睡眠有困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids11?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>12、您觉得虚弱吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids12?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>13、您食欲不振（没有胃口）吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids13?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>14、您觉得恶心吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids14?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>15、您有呕吐吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids15?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>16、您有便秘吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids16?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>17、您有腹泻吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids17?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>18、您觉得累吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids18?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>19、疼痛影响您的日常活动吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids19?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>20、您集中精力做事有困难吗，如读报或看电视？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids20?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>21、您觉得紧张吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids21?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>22、您觉得忧虑吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids22?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>23、您觉得脾气急躁吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids23?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>24、您觉得压抑（情绪低落）吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids24?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>25、您感到记忆困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids25?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>26、您的身体状况或治疗影响您的家庭生活吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids26?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>27、您的身体状况或治疗影响您的社交活动吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids27?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>28、您的身体状况或治疗使您陷入经济困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids28?"on1":""}}' wx:for='{{list}}'  id='{{item.id}}'>{{item.text}}</view>
+</view>
+
+
+<view class='list' style='margin-top:30rpx;'>
+    <view class='list_red'>对下列问题，请在1-7之间选出一个最适合您的数字：</view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>29、您如何评价在过去一星期内您总的健康情况？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids29?"on1":""}}' style='width:14.2%' wx:for='{{list1}}'  id='{{item.id}}'>
+      <view style='line-height:40rpx;'>{{item.id}}</view>
+      <view style='line-height:40rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+
+<view class='li'>
+  <view class='li_title'>30、您如何评价在过去一星期内您总的生命质量？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids30?"on1":""}}' style='width:14.2%' wx:for='{{list1}}'  id='{{item.id}}'>
+      <view style='line-height:40rpx;'>{{item.id}}</view>
+      <view style='line-height:40rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+</view>
+</view>
+
+
+<view hidden='{{if2}}'>
+
+<view class='wz' style='height:150rpx;'>
+  <view class='wz_text'>病人有时会有以下临床症状。请指出在过去一周内您所出现的这些临床症状或问题的程度，选出最适合您的答案</view>
+</view>
+<view hidden='{{s2}}'>
+<view class='li'>
+  <view class='li_title'>31、您经常咳嗽吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids31?"on1":""}}'  bindtap='list31' wx:for='{{list2}}'  id='{{item.id}}'>
+      <view style='line-height:80rpx;'>{{item.text}}</view>  
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>32、您咳血吗（痰中带血）？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids32?"on1":""}}' wx:for='{{list2}}' bindtap='list32'  id='{{item.id}}'>
+      <!-- <view style='line-height:40rpx;'>{{item.id}}</view> -->
+      <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>33、您休息时感到气短吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids33?"on1":""}}' wx:for='{{list2}}'  bindtap='list33'  id='{{item.id}}'>
+       <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>34、您散步时感到气短吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids34?"on1":""}}'  wx:for='{{list2}}' bindtap='list34'  id='{{item.id}}'>
+      <view style='line-height:80rpx;'>{{item.text}}</view>    
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>35、您爬楼梯时感到气短吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids35?"on1":""}}'  wx:for='{{list2}}' bindtap='list35'  id='{{item.id}}'>
+      <view style='line-height:80rpx;'>{{item.text}}</view>    
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>36、您有过口腔或舌头疼痛吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids36?"on1":""}}'  wx:for='{{list2}}' bindtap='list36'  id='{{item.id}}'>
+   <view style='line-height:80rpx;'>{{item.text}}</view>    
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>37、您有过吞咽困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids37?"on1":""}}'  wx:for='{{list2}}' bindtap='list37'  id='{{item.id}}'>
+     <view style='line-height:80rpx;'>{{item.text}}</view>     
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>38、您有过手脚发麻/刺痛吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids38?"on1":""}}'  wx:for='{{list2}}' bindtap='list38'  id='{{item.id}}'>
+       <view style='line-height:80rpx;'>{{item.text}}</view>  
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>39、您有过脱发吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids39?"on1":""}}'  wx:for='{{list2}}' bindtap='list39'   id='{{item.id}}'>
+       <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>40、您有过胸痛吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids40?"on1":""}}'  wx:for='{{list2}}' bindtap='list40'  id='{{item.id}}'>
+       <view style='line-height:80rpx;'>{{item.text}}</view>    
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>41、您有过手臂或肩膀疼痛吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids41?"on1":""}}'  wx:for='{{list2}}' bindtap='list41'   id='{{item.id}}'>
+       <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>42、您有过身体其他部位疼痛吗？</view>
+</view>
+<view class='list' >
+    <view class='list_red' style='color:#808080'>如果有，请写出部位：</view>
+    <input class='input'></input>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids42?"on1":""}}'  wx:for='{{list2}}' bindtap='list42'   id='{{item.id}}'>
+      <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>43、您服用过止疼药吗？</view>
+</view>
+<view class='list' style='border:1rpx solid #DDDDDD' >
+    <image src='{{f1==false?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-left:70rpx;margin-top:20rpx;' mode='widthFix' bindtap='fly'/>
+    <view style='margin-left:15rpx;color:#333333' >没有</view>
+
+    <image src='{{f1==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-left:80rpx;margin-top:20rpx;' mode='widthFix' bindtap='fly'/>
+    <view style='margin-left:15rpx;color:#333333' >有</view>
+    <view style='margin-left:20rpx;color:#808080'>如果用过，止疼作用大吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids43?"on1":""}}'  wx:for='{{list2}}' bindtap='list43'   id='{{item.id}}'>
+      <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+
+<view class='button' hidden='{{s2}}' bindtap='del1'>提交</view>
+</view>
+
+
+<view hidden='{{s1}}'>
+<view class='li'>
+  <view class='li_title'>31、您经常咳嗽吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids31?"on1":""}}'  wx:for='{{list2}}'  id='{{item.id}}'>
+      <view style='line-height:80rpx;'>{{item.text}}</view>  
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>32、您咳血吗（痰中带血）？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids32?"on1":""}}' wx:for='{{list2}}'  id='{{item.id}}'>
+      <!-- <view style='line-height:40rpx;'>{{item.id}}</view> -->
+      <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>33、您休息时感到气短吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids33?"on1":""}}' wx:for='{{list2}}'    id='{{item.id}}'>
+       <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>34、您散步时感到气短吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids34?"on1":""}}'  wx:for='{{list2}}' id='{{item.id}}'>
+      <view style='line-height:80rpx;'>{{item.text}}</view>    
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>35、您爬楼梯时感到气短吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids35?"on1":""}}'  wx:for='{{list2}}'   id='{{item.id}}'>
+      <view style='line-height:80rpx;'>{{item.text}}</view>    
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>36、您有过口腔或舌头疼痛吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids36?"on1":""}}'  wx:for='{{list2}}'   id='{{item.id}}'>
+   <view style='line-height:80rpx;'>{{item.text}}</view>    
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>37、您有过吞咽困难吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids37?"on1":""}}'  wx:for='{{list2}}'   id='{{item.id}}'>
+     <view style='line-height:80rpx;'>{{item.text}}</view>     
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>38、您有过手脚发麻/刺痛吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids38?"on1":""}}'  wx:for='{{list2}}'  id='{{item.id}}'>
+       <view style='line-height:80rpx;'>{{item.text}}</view>  
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>39、您有过脱发吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids39?"on1":""}}'  wx:for='{{list2}}'   id='{{item.id}}'>
+       <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>40、您有过胸痛吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids40?"on1":""}}'  wx:for='{{list2}}'   id='{{item.id}}'>
+       <view style='line-height:80rpx;'>{{item.text}}</view>    
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>41、您有过手臂或肩膀疼痛吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids41?"on1":""}}'  wx:for='{{list2}}'    id='{{item.id}}'>
+       <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>42、您有过身体其他部位疼痛吗？</view>
+</view>
+<view class='list' >
+    <view class='list_red' style='color:#808080'>如果有，请写出部位：</view>
+    <view class='input'></view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids42?"on1":""}}'  wx:for='{{list2}}'    id='{{item.id}}'>
+      <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+<view class='li'>
+  <view class='li_title'>43、您服用过止疼药吗？</view>
+</view>
+<view class='list' style='border:1rpx solid #DDDDDD' >
+    <image src='{{f1==false?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-left:70rpx;margin-top:20rpx;' mode='widthFix' />
+    <view style='margin-left:15rpx;color:#333333' >没有</view>
+
+    <image src='{{f1==true?"../../../img/yjjx-5_49 (1).png":"../../../img/yjjx-5_49 (2).png"}}' style='width:40rpx;margin-left:80rpx;margin-top:20rpx;' mode='widthFix' />
+    <view style='margin-left:15rpx;color:#333333' >有</view>
+    <view style='margin-left:20rpx;color:#808080'>如果用过，止疼作用大吗？</view>
+</view>
+<view class='list'>
+    <view class='list_com {{item.id == ids43?"on1":""}}'  wx:for='{{list2}}'   id='{{item.id}}'>
+      <view style='line-height:80rpx;'>{{item.text}}</view>   
+    </view>
+</view>
+</view>
+</view>
+
+<view style='height:30rpx;' hidden='{{s1}}'></view>
+

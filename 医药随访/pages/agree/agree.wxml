@@ -7,7 +7,10 @@
         您已详细了解，并愿意参与此项研究,并与医生充分合作.
         </text>
     </view>
-    <view style='height:70rpx;width:100%;'></view>
+    <view class='zqty' style='height:70rpx;line-height:70rpx;'>
+        <view style='margin-left:420rpx;'>查看完整知情同意书 > </view>
+        <!-- <image src='../../img/'/> -->
+    </view>
 </view>
 
 <view class='photo'>

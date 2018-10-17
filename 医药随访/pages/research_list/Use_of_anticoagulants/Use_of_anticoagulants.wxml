@@ -35,8 +35,11 @@
         <view class='list_left'>
             <input class='input'></input>
         </view>
-        <view class='list_left'>
-            <input class='input'></input>
+          <view class='list_left direction'>
+            <view class='list_left_com' wx:for='{{list}}'>
+                <view style='line-height:20rpx;margin-top:10rpx;'>{{item.text}}</view>
+                <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' id='{{item.id}}' style='width:40rpx;margin-top:-10rpx;' mode='widthFix' bindtap='list_xz'/>
+            </view>
         </view>
     </view>
      <view class='list direction'>
@@ -50,8 +53,11 @@
         <view class='list_left'>
             <input class='input'></input>
         </view>
-        <view class='list_left'>
-            <input class='input'></input>
+          <view class='list_left direction'>
+            <view class='list_left_com' wx:for='{{list}}'>
+                <view style='line-height:20rpx;margin-top:10rpx;'>{{item.text}}</view>
+                <image src='{{item.id==ids1?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' id='{{item.id}}' style='width:40rpx;margin-top:-10rpx;' mode='widthFix' bindtap='list_xz1'/>
+            </view>
         </view>
     </view>
      <view class='list direction'>
@@ -65,8 +71,11 @@
         <view class='list_left'>
             <input class='input'></input>
         </view>
-        <view class='list_left'>
-            <input class='input'></input>
+          <view class='list_left direction'>
+            <view class='list_left_com' wx:for='{{list}}'>
+                <view style='line-height:20rpx;margin-top:10rpx;'>{{item.text}}</view>
+                <image src='{{item.id==ids2?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' id='{{item.id}}' style='width:40rpx;margin-top:-10rpx;' mode='widthFix' bindtap='list_xz2'/>
+            </view>
         </view>
     </view>
 </view>
@@ -85,21 +94,36 @@
         <view class='list_left'></view>
         <view class='list_left'></view>
         <view class='list_left'></view>
-        <view class='list_left'></view>
+          <view class='list_left direction'>
+            <view class='list_left_com' wx:for='{{list}}'>
+                <view style='line-height:20rpx;margin-top:10rpx;'>{{item.text}}</view>
+                <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' id='{{item.id}}' style='width:40rpx;margin-top:-10rpx;' mode='widthFix'/>
+            </view>
+        </view>
     </view>
      <view class='list direction'>
         <view class='list_left'>阿司匹林</view>
         <view class='list_left'></view>
         <view class='list_left'></view>
         <view class='list_left'></view>
-        <view class='list_left'></view>
+          <view class='list_left direction'>
+            <view class='list_left_com' wx:for='{{list}}'>
+                <view style='line-height:20rpx;margin-top:10rpx;'>{{item.text}}</view>
+                <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' id='{{item.id}}' style='width:40rpx;margin-top:-10rpx;' mode='widthFix' />
+            </view>
+        </view>
     </view>
      <view class='list direction'>
         <view class='list_left'>其他类</view>
         <view class='list_left'></view>
         <view class='list_left'></view>
         <view class='list_left'></view>
-        <view class='list_left'></view>
+          <view class='list_left direction'>
+            <view class='list_left_com' wx:for='{{list}}'>
+                <view style='line-height:20rpx;margin-top:10rpx;'>{{item.text}}</view>
+                <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' id='{{item.id}}' style='width:40rpx;margin-top:-10rpx;' mode='widthFix' />
+            </view>
+        </view>
     </view>
 </view>
 </view>
@@ -130,21 +154,36 @@
         <view class='list_left'></view>
         <view class='list_left'></view>
         <view class='list_left'></view>
-        <view class='list_left'></view>
+          <view class='list_left direction'>
+            <view class='list_left_com' wx:for='{{list}}'>
+                <view style='line-height:20rpx;margin-top:10rpx;'>{{item.text}}</view>
+                <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' id='{{item.id}}' style='width:40rpx;margin-top:-10rpx;' mode='widthFix'/>
+            </view>
+        </view>
     </view>
      <view class='list direction'>
         <view class='list_left'>阿司匹林</view>
         <view class='list_left'></view>
         <view class='list_left'></view>
         <view class='list_left'></view>
-        <view class='list_left'></view>
+          <view class='list_left direction'>
+            <view class='list_left_com' wx:for='{{list}}'>
+                <view style='line-height:20rpx;margin-top:10rpx;'>{{item.text}}</view>
+                <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' id='{{item.id}}' style='width:40rpx;margin-top:-10rpx;' mode='widthFix' />
+            </view>
+        </view>
     </view>
      <view class='list direction'>
         <view class='list_left'>其他类</view>
         <view class='list_left'></view>
         <view class='list_left'></view>
         <view class='list_left'></view>
-        <view class='list_left'></view>
+          <view class='list_left direction'>
+            <view class='list_left_com' wx:for='{{list}}'>
+                <view style='line-height:20rpx;margin-top:10rpx;'>{{item.text}}</view>
+                <image src='{{item.id==ids?"../../../img/yjjx-5_49 (2).png":"../../../img/yjjx-5_49 (1).png"}}' id='{{item.id}}' style='width:40rpx;margin-top:-10rpx;' mode='widthFix' />
+            </view>
+        </view>
     </view>
 </view>
 </view>

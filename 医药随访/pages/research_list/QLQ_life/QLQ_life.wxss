@@ -1,0 +1,77 @@
+/* pages/research_list/QLQ_life/QLQ_life.wxss */
+.list1{
+  margin-top: 30rpx;
+  height:100rpx;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  border-bottom:1rpx solid #DDDDDD; 
+}
+.tou{
+  width: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  border-right: 1rpx solid #DDDDDD; 
+}
+.on{
+  border-bottom:6rpx solid #013F91;  
+}
+.wz{
+  background-color: white;
+  width: 100%;
+  height: 220rpx;
+  line-height: 45rpx;
+  border-bottom: 1rpx solid #DDDDDD;  
+}
+.wz_text{
+  padding: 20rpx;
+  font-size: 28rpx;
+}
+.li{
+  background-color: #F3F8FE;
+  line-height: 50rpx;
+  width: 100%;
+  border-bottom:1rpx solid #DDDDDD;
+}
+.li_title{
+  width: 95%;
+  margin-left: 2.5%;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  font-size: 30rpx;
+   
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  height: 80rpx;
+   color: #555555;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  text-align: center;
+ 
+}
+.list_com{
+  width: 25%;
+  border-bottom:1rpx solid #DDDDDD; 
+  border-right: 1rpx solid #DDDDDD; 
+}
+.on1{
+  background-color: #20C4E2;
+  color: white;
+}
+.list_red{
+  text-align: left;
+  color: #E43737;
+  margin-left: 20rpx;
+}
+.input{
+  width: 400rpx;
+  /* border: 1rpx solid black; */
+  height: 80rpx;
+  text-align: left
+}

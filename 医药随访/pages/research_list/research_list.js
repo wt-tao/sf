@@ -77,6 +77,11 @@ Page({
       url: '../research_list/Anderson_rating_scale/Anderson_rating_scale',
     })
   },
+  QLQ_life: function () {
+    wx.navigateTo({
+      url: '../research_list/QLQ_life/QLQ_life',
+    })
+  },
   Use_of_retrogradation: function () {
     wx.navigateTo({
       url: '../research_list/Use_of_retrogradation/Use_of_retrogradation',

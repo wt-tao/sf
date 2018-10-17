@@ -93,6 +93,16 @@
             </view>
             <image src='../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
         </view>
+          <view class='list' bindtap='QLQ_life'>
+            <view class='left'>生活质量QLQ量表</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
         <view class='list' bindtap='Use_of_retrogradation'>
             <view class='left'>回生使用情况</view>
             <view class='zhong' >
@@ -179,6 +189,16 @@
         </view>
         <view class='list' bindtap='Anderson_rating_scale'>
             <view class='left'>安德森症状评分量表</view>
+            <view class='zhong' >
+              <block wx:if='{{s1}}'>
+                <image src='../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
+                <view>请完善填写</view>
+              </block>
+            </view>
+            <image src='../../../img/tc-164-kb_3.png' style='width:20rpx;margin-top:25rpx;' mode='widthFix'/>
+        </view>
+          <view class='list' bindtap='QLQ_life'>
+            <view class='left'>生活质量QLQ量表</view>
             <view class='zhong' >
               <block wx:if='{{s1}}'>
                 <image src='../../../img/tc-162.png' style='width:35rpx;margin-top:27.5rpx;margin-left:20rpx;' mode='widthFix'/>
